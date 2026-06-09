@@ -139,31 +139,81 @@ export default function Navbar() {
               </button>
 
               {categoriesOpen && (
-                <div className="absolute top-full left-1/2 -translate-x-1/2 w-[340px] bg-[var(--card)] border border-[var(--border)] card-shadow rounded-2xl p-4 grid grid-cols-1 gap-2 transition-all duration-300 animate-pop-in">
-                  <div className="font-poppins text-xs font-bold text-[var(--muted)] uppercase tracking-wider mb-1 px-2">Popular Collections</div>
-                  {CATEGORIES.slice(0, 8).map((cat) => (
-                    <Link 
-                      key={cat.id} 
-                      href={`/categories/${cat.slug}`}
-                      className="flex items-center space-x-3 p-2 rounded-lg hover:bg-[var(--accent-light)] hover:text-primary hover:translate-x-1 transition-all duration-200"
-                      onClick={() => setCategoriesOpen(false)}
-                    >
-                      <span className="text-xl p-1 bg-[var(--background)] rounded-lg shadow-sm group-hover:scale-110 transition-transform">{cat.image}</span>
-                      <div>
-                        <div className="font-semibold text-sm">{cat.name}</div>
-                        <div className="text-xs text-[var(--muted)] line-clamp-1">{cat.desc}</div>
-                      </div>
-                    </Link>
-                  ))}
-                  <div className="border-t border-[var(--border)] pt-2 mt-1 text-center">
-                    <Link 
-                      href="/shop" 
-                      className="text-xs font-bold text-primary hover:underline hover:scale-105 transition-all inline-block"
-                      onClick={() => setCategoriesOpen(false)}
-                    >
-                      View All Categories →
-                    </Link>
+                <div className="absolute top-full left-1/2 -translate-x-1/2 w-[760px] lg:w-[840px] bg-[var(--card)] border border-[var(--border)] card-shadow rounded-[32px] p-6 grid grid-cols-12 gap-6 transition-all duration-300 animate-pop-in z-50">
+                  
+                  {/* Left Column - 2-Column Categories Grid (8 cols) */}
+                  <div className="col-span-8 space-y-4">
+                    <div className="flex items-center justify-between border-b border-[var(--border)] pb-2 px-2">
+                      <span className="font-poppins text-xs font-black text-[var(--muted)] uppercase tracking-wider">Browse Toy Collections</span>
+                      <Link 
+                        href="/shop" 
+                        className="text-[11px] font-bold text-primary hover:underline"
+                        onClick={() => setCategoriesOpen(false)}
+                      >
+                        All Toys
+                      </Link>
+                    </div>
+
+                    <div className="grid grid-cols-2 gap-x-4 gap-y-2">
+                      {CATEGORIES.map((cat) => (
+                        <Link 
+                          key={cat.id} 
+                          href={`/categories/${cat.slug}`}
+                          className="flex items-center space-x-3 p-2 rounded-2xl hover:bg-[var(--accent-light)] border border-transparent hover:border-primary/10 transition-all duration-200 group/item hover:translate-x-1"
+                          onClick={() => setCategoriesOpen(false)}
+                        >
+                          <span className="text-2xl p-2 bg-[var(--background)] rounded-xl shadow-sm group-hover/item:scale-110 group-hover/item:rotate-6 group-hover/item:animate-wiggle transition-all duration-300">
+                            {cat.image}
+                          </span>
+                          <div>
+                            <div className="font-poppins font-bold text-xs text-[var(--foreground)] group-hover/item:text-primary transition-colors">
+                              {cat.name}
+                            </div>
+                            <div className="text-[10px] text-[var(--muted)] line-clamp-1 group-hover/item:text-[var(--foreground)] transition-colors">
+                              {cat.desc}
+                            </div>
+                          </div>
+                        </Link>
+                      ))}
+                    </div>
                   </div>
+
+                  {/* Right Column - Premium Promo Sidebar (4 cols) */}
+                  <div className="col-span-4 bg-gradient-to-br from-amber-50 to-orange-100 dark:from-slate-900 dark:to-orange-950/20 border border-orange-200/50 dark:border-orange-900/10 rounded-2xl p-5 flex flex-col justify-between relative overflow-hidden">
+                    <div className="space-y-2 relative z-10">
+                      <span className="inline-block px-2 py-0.5 bg-orange-200 text-orange-800 dark:bg-orange-900/40 dark:text-orange-300 rounded-full text-[9px] font-bold uppercase tracking-wider">
+                        Interactive
+                      </span>
+                      <h4 className="font-poppins font-black text-sm text-[var(--foreground)] flex items-center gap-1.5">
+                        <span>Gift Finder Wizard</span>
+                        <span>🪄</span>
+                      </h4>
+                      <p className="text-[11px] text-[var(--muted)] leading-relaxed">
+                        Stuck on what to buy? Let our wizard find the perfect toy for any age or milestone in 3 clicks!
+                      </p>
+                    </div>
+
+                    <div className="space-y-3 relative z-10 pt-4 border-t border-orange-200/20">
+                      <Link 
+                        href="/#gift-finder"
+                        className="w-full text-center block py-2 bg-gradient-to-r from-orange-500 to-primary hover:from-orange-600 hover:to-primary-hover text-white text-[11px] font-extrabold rounded-xl shadow-sm transition-all hover:scale-105 active:scale-95"
+                        onClick={() => setCategoriesOpen(false)}
+                      >
+                        Start Finder Wizard
+                      </Link>
+
+                      <div className="flex items-center space-x-2 text-[10px] text-[var(--muted)]">
+                        <span>🚚</span>
+                        <span className="font-medium">Free Local Delivery in Badlapur!</span>
+                      </div>
+                    </div>
+
+                    {/* Decorative Background Accents */}
+                    <div className="absolute -right-6 -bottom-6 text-6xl opacity-10 pointer-events-none select-none rotate-12">
+                      🎁
+                    </div>
+                  </div>
+
                 </div>
               )}
             </div>
