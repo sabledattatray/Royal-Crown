@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://toyshopee.com'),
   icons: {
     icon: [
-      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.png', type: 'image/png' },
     ],
-    apple: '/apple-touch-icon.svg',
+    apple: '/favicon.png',
   },
   openGraph: {
     title: 'Toy Shopee | Badlapur\'s Favorite Premium Toy & Gift Store',
