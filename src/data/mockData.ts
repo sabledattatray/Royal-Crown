@@ -1878,6 +1878,1278 @@ export const PRODUCTS: Product[] = [
     },
     isNew: true,
     deliveryDays: 3
+  },
+  {
+    id: 'prod-gen-1001',
+    name: 'Premium Educational Toys Collection 1',
+    category: 'Educational Toys',
+    price: 2332,
+    originalPrice: 5202,
+    rating: 4.2,
+    reviewsCount: 61,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Educational Toys category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1002',
+    name: 'Premium Baby Toys Collection 1',
+    category: 'Baby Toys',
+    price: 1737,
+    originalPrice: 3810,
+    rating: 4.5,
+    reviewsCount: 48,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Baby Toys category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1003',
+    name: 'Premium Remote Control Toys Collection 1',
+    category: 'Remote Control Toys',
+    price: 1544,
+    originalPrice: 5410,
+    rating: 4.3,
+    reviewsCount: 11,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Remote Control Toys category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1004',
+    name: 'Premium Board Games Collection 1',
+    category: 'Board Games',
+    price: 1377,
+    originalPrice: 2930,
+    rating: 4.3,
+    reviewsCount: 77,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Board Games category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1005',
+    name: 'Premium Hot Wheels Collection 1',
+    category: 'Hot Wheels',
+    price: 952,
+    originalPrice: 5381,
+    rating: 4.1,
+    reviewsCount: 61,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Hot Wheels category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1006',
+    name: 'Premium Action Figures Collection 1',
+    category: 'Action Figures',
+    price: 1858,
+    originalPrice: 4270,
+    rating: 4.2,
+    reviewsCount: 94,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Action Figures category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1007',
+    name: 'Premium Soft Toys Collection 1',
+    category: 'Soft Toys',
+    price: 521,
+    originalPrice: 2556,
+    rating: 5.0,
+    reviewsCount: 71,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Soft Toys category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1008',
+    name: 'Premium Outdoor Toys Collection 1',
+    category: 'Outdoor Toys',
+    price: 812,
+    originalPrice: 5252,
+    rating: 4.7,
+    reviewsCount: 10,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Outdoor Toys category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1009',
+    name: 'Premium Birthday Gifts Collection 1',
+    category: 'Birthday Gifts',
+    price: 1061,
+    originalPrice: 4323,
+    rating: 4.6,
+    reviewsCount: 92,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Birthday Gifts category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1010',
+    name: 'Premium Return Gifts Collection 1',
+    category: 'Return Gifts',
+    price: 1149,
+    originalPrice: 2931,
+    rating: 4.4,
+    reviewsCount: 69,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Return Gifts category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1011',
+    name: 'Premium Men\'s Perfumes Collection 1',
+    category: 'Men\'s Perfumes',
+    price: 1256,
+    originalPrice: 3230,
+    rating: 4.2,
+    reviewsCount: 104,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Men\'s Perfumes category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1012',
+    name: 'Premium Men\'s Perfumes Collection 2',
+    category: 'Men\'s Perfumes',
+    price: 660,
+    originalPrice: 4896,
+    rating: 4.2,
+    reviewsCount: 77,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Men\'s Perfumes category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1013',
+    name: 'Premium Men\'s Perfumes Collection 3',
+    category: 'Men\'s Perfumes',
+    price: 1228,
+    originalPrice: 4667,
+    rating: 4.0,
+    reviewsCount: 56,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Men\'s Perfumes category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1014',
+    name: 'Premium Men\'s Perfumes Collection 4',
+    category: 'Men\'s Perfumes',
+    price: 551,
+    originalPrice: 4855,
+    rating: 4.4,
+    reviewsCount: 92,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Men\'s Perfumes category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1015',
+    name: 'Premium Men\'s Perfumes Collection 5',
+    category: 'Men\'s Perfumes',
+    price: 2416,
+    originalPrice: 3915,
+    rating: 4.8,
+    reviewsCount: 36,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Men\'s Perfumes category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1016',
+    name: 'Premium Men\'s Perfumes Collection 6',
+    category: 'Men\'s Perfumes',
+    price: 700,
+    originalPrice: 5152,
+    rating: 4.8,
+    reviewsCount: 84,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Men\'s Perfumes category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1017',
+    name: 'Premium Women\'s Perfumes Collection 1',
+    category: 'Women\'s Perfumes',
+    price: 1388,
+    originalPrice: 3318,
+    rating: 4.6,
+    reviewsCount: 86,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Women\'s Perfumes category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1018',
+    name: 'Premium Women\'s Perfumes Collection 2',
+    category: 'Women\'s Perfumes',
+    price: 1050,
+    originalPrice: 5490,
+    rating: 4.7,
+    reviewsCount: 14,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Women\'s Perfumes category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1019',
+    name: 'Premium Women\'s Perfumes Collection 3',
+    category: 'Women\'s Perfumes',
+    price: 1501,
+    originalPrice: 4784,
+    rating: 4.9,
+    reviewsCount: 64,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Women\'s Perfumes category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1020',
+    name: 'Premium Women\'s Perfumes Collection 4',
+    category: 'Women\'s Perfumes',
+    price: 1075,
+    originalPrice: 2829,
+    rating: 4.2,
+    reviewsCount: 85,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Women\'s Perfumes category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1021',
+    name: 'Premium Women\'s Perfumes Collection 5',
+    category: 'Women\'s Perfumes',
+    price: 2262,
+    originalPrice: 3616,
+    rating: 4.1,
+    reviewsCount: 88,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Women\'s Perfumes category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1022',
+    name: 'Premium Women\'s Perfumes Collection 6',
+    category: 'Women\'s Perfumes',
+    price: 1522,
+    originalPrice: 2815,
+    rating: 4.8,
+    reviewsCount: 89,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Women\'s Perfumes category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1023',
+    name: 'Premium Attars & Oils Collection 1',
+    category: 'Attars & Oils',
+    price: 1522,
+    originalPrice: 3194,
+    rating: 4.3,
+    reviewsCount: 60,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Attars & Oils category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1024',
+    name: 'Premium Attars & Oils Collection 2',
+    category: 'Attars & Oils',
+    price: 2085,
+    originalPrice: 3932,
+    rating: 4.8,
+    reviewsCount: 30,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Attars & Oils category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1025',
+    name: 'Premium Attars & Oils Collection 3',
+    category: 'Attars & Oils',
+    price: 2126,
+    originalPrice: 3918,
+    rating: 4.6,
+    reviewsCount: 63,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Attars & Oils category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1026',
+    name: 'Premium Jewellery Collection 1',
+    category: 'Jewellery',
+    price: 1799,
+    originalPrice: 3229,
+    rating: 4.3,
+    reviewsCount: 47,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Jewellery category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1027',
+    name: 'Premium Jewellery Collection 2',
+    category: 'Jewellery',
+    price: 2317,
+    originalPrice: 4576,
+    rating: 4.7,
+    reviewsCount: 95,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Jewellery category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1028',
+    name: 'Premium Jewellery Collection 3',
+    category: 'Jewellery',
+    price: 2302,
+    originalPrice: 4692,
+    rating: 4.4,
+    reviewsCount: 86,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Jewellery category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1029',
+    name: 'Premium Jewellery Collection 4',
+    category: 'Jewellery',
+    price: 2435,
+    originalPrice: 3564,
+    rating: 4.1,
+    reviewsCount: 56,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Jewellery category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1030',
+    name: 'Premium Watch & Clocks Collection 1',
+    category: 'Watch & Clocks',
+    price: 1518,
+    originalPrice: 2607,
+    rating: 4.6,
+    reviewsCount: 81,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Watch & Clocks category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1031',
+    name: 'Premium Watch & Clocks Collection 2',
+    category: 'Watch & Clocks',
+    price: 809,
+    originalPrice: 2778,
+    rating: 4.0,
+    reviewsCount: 61,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Watch & Clocks category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1032',
+    name: 'Premium Watch & Clocks Collection 3',
+    category: 'Watch & Clocks',
+    price: 579,
+    originalPrice: 5416,
+    rating: 4.7,
+    reviewsCount: 23,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Watch & Clocks category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1033',
+    name: 'Premium Watch & Clocks Collection 4',
+    category: 'Watch & Clocks',
+    price: 956,
+    originalPrice: 4533,
+    rating: 4.6,
+    reviewsCount: 77,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Watch & Clocks category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1034',
+    name: 'Premium Wallets Collection 1',
+    category: 'Wallets',
+    price: 895,
+    originalPrice: 3422,
+    rating: 4.7,
+    reviewsCount: 54,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Wallets category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1035',
+    name: 'Premium Wallets Collection 2',
+    category: 'Wallets',
+    price: 1660,
+    originalPrice: 4717,
+    rating: 4.3,
+    reviewsCount: 100,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Wallets category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1036',
+    name: 'Premium Wallets Collection 3',
+    category: 'Wallets',
+    price: 951,
+    originalPrice: 2744,
+    rating: 4.2,
+    reviewsCount: 75,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Wallets category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1037',
+    name: 'Premium Wallets Collection 4',
+    category: 'Wallets',
+    price: 590,
+    originalPrice: 2659,
+    rating: 4.0,
+    reviewsCount: 104,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Wallets category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1038',
+    name: 'Premium Greetings Collection 1',
+    category: 'Greetings',
+    price: 2191,
+    originalPrice: 4569,
+    rating: 4.7,
+    reviewsCount: 76,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Greetings category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1039',
+    name: 'Premium Greetings Collection 2',
+    category: 'Greetings',
+    price: 1979,
+    originalPrice: 3908,
+    rating: 4.2,
+    reviewsCount: 13,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Greetings category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1040',
+    name: 'Premium Greetings Collection 3',
+    category: 'Greetings',
+    price: 2052,
+    originalPrice: 3875,
+    rating: 4.9,
+    reviewsCount: 101,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Greetings category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1041',
+    name: 'Premium Greetings Collection 4',
+    category: 'Greetings',
+    price: 1121,
+    originalPrice: 5078,
+    rating: 4.4,
+    reviewsCount: 65,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Greetings category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1042',
+    name: 'Premium Name Plates Collection 1',
+    category: 'Name Plates',
+    price: 1394,
+    originalPrice: 2804,
+    rating: 4.2,
+    reviewsCount: 32,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Name Plates category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1043',
+    name: 'Premium Name Plates Collection 2',
+    category: 'Name Plates',
+    price: 2436,
+    originalPrice: 4942,
+    rating: 4.7,
+    reviewsCount: 31,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Name Plates category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1044',
+    name: 'Premium Name Plates Collection 3',
+    category: 'Name Plates',
+    price: 799,
+    originalPrice: 3830,
+    rating: 4.4,
+    reviewsCount: 51,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Name Plates category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1045',
+    name: 'Premium Name Plates Collection 4',
+    category: 'Name Plates',
+    price: 2393,
+    originalPrice: 4430,
+    rating: 4.2,
+    reviewsCount: 25,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Name Plates category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1046',
+    name: 'Premium Corporate Gifting Collection 1',
+    category: 'Corporate Gifting',
+    price: 1126,
+    originalPrice: 3176,
+    rating: 4.3,
+    reviewsCount: 73,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Corporate Gifting category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1047',
+    name: 'Premium Corporate Gifting Collection 2',
+    category: 'Corporate Gifting',
+    price: 2404,
+    originalPrice: 4386,
+    rating: 4.7,
+    reviewsCount: 57,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Corporate Gifting category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1048',
+    name: 'Premium Corporate Gifting Collection 3',
+    category: 'Corporate Gifting',
+    price: 1595,
+    originalPrice: 2536,
+    rating: 4.5,
+    reviewsCount: 33,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Corporate Gifting category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1049',
+    name: 'Premium Corporate Gifting Collection 4',
+    category: 'Corporate Gifting',
+    price: 1594,
+    originalPrice: 2679,
+    rating: 4.8,
+    reviewsCount: 68,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Corporate Gifting category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1050',
+    name: 'Premium Photo Frames Collection 1',
+    category: 'Photo Frames',
+    price: 2072,
+    originalPrice: 2823,
+    rating: 4.7,
+    reviewsCount: 74,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Photo Frames category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1051',
+    name: 'Premium Photo Frames Collection 2',
+    category: 'Photo Frames',
+    price: 1727,
+    originalPrice: 3851,
+    rating: 4.0,
+    reviewsCount: 37,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Photo Frames category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1052',
+    name: 'Premium Photo Frames Collection 3',
+    category: 'Photo Frames',
+    price: 729,
+    originalPrice: 4724,
+    rating: 4.5,
+    reviewsCount: 108,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Photo Frames category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-gen-1053',
+    name: 'Premium Photo Frames Collection 4',
+    category: 'Photo Frames',
+    price: 1421,
+    originalPrice: 3390,
+    rating: 4.3,
+    reviewsCount: 32,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown Luxury',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A premium, highly sought-after product in the Photo Frames category. Perfectly designed for gifts and personal luxury.',
+    specifications: {
+      'Quality': 'Premium Grade',
+      'Packaging': 'Luxury Gift Box'
+    },
+    isNew: true,
+    deliveryDays: 2
   }
 ];
 

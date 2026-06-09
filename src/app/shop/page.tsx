@@ -68,7 +68,10 @@ function ShopContent() {
 
     // Category
     if (selectedCategory !== 'all') {
-      list = list.filter((p) => p.category.toLowerCase().replace(/ /g, '-') === selectedCategory);
+      const catObj = CATEGORIES.find(c => c.slug === selectedCategory);
+      if (catObj) {
+        list = list.filter((p) => p.category === catObj.name);
+      }
     }
 
     // Age Group
