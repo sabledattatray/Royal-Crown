@@ -38,11 +38,20 @@ export const metadata: Metadata = {
     siteName: 'Royal Crown',
     locale: 'en_IN',
     type: 'website',
+    images: [
+      {
+        url: '/og-preview.png',
+        width: 1200,
+        height: 630,
+        alt: 'Royal Crown Gifts Toys Perfumes – Badlapur\'s Favorite Premium Boutique',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Royal Crown | Badlapur\'s Favorite Premium Gift & Toy Boutique',
     description: 'Explore thousands of premium gifts, toys, perfumes, and customized items at Royal Crown Badlapur.',
+    images: ['/og-preview.png'],
   }
 };
 
