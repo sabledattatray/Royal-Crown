@@ -77,9 +77,9 @@ export default function Navbar() {
   };
 
   return (
-    <header className={`sticky top-0 z-50 w-full transition-transform duration-300 glassmorphism border-b border-[var(--border)] ${!visible ? '-translate-y-full lg:translate-y-0' : 'translate-y-0'}`}>
+    <header className="sticky top-0 z-50 w-full glassmorphism border-b border-[var(--border)]">
       {/* Top Banner: Local Store Info & Timings */}
-      <div className="w-full bg-slate-900 text-slate-100 py-1.5 sm:py-1.5 px-2 sm:px-4 text-[10px] sm:text-xs flex justify-between items-center overflow-hidden">
+      <div className={`w-full bg-slate-900 text-slate-100 px-2 sm:px-4 text-[10px] sm:text-xs flex justify-between items-center overflow-hidden transition-all duration-300 ${!visible ? 'h-0 py-0 opacity-0 lg:h-8 lg:py-1.5 lg:opacity-100' : 'h-8 py-1.5 opacity-100'}`}>
         <div className="flex items-center space-x-2 sm:space-x-4 min-w-0">
           <span className="flex items-center space-x-0.5 sm:space-x-1 whitespace-nowrap">
             <MapPin size={10} className="text-secondary flex-shrink-0 sm:w-3.5 sm:h-3.5" />
