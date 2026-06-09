@@ -149,9 +149,9 @@ export default function Footer() {
 
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-slate-800 text-center text-xs text-slate-500 flex flex-col sm:flex-row justify-between items-center gap-4">
-        <div>
-          © 2026 Toy Shopee. All Rights Reserved. | Made by{' '}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-6 sm:pt-8 border-t border-slate-800 text-center text-[9px] sm:text-xs text-slate-500 flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-4">
+        <div className="whitespace-nowrap">
+          © 2026 Toy Shopee | Made by{' '}
           <a 
             href="https://dattasble.com" 
             target="_blank" 
@@ -161,11 +161,11 @@ export default function Footer() {
             Datta Sable
           </a>
         </div>
-        <div className="flex space-x-6">
-          <Link href="/privacy" className="hover:underline hover:text-slate-400">Privacy Policy</Link>
-          <Link href="/terms" className="hover:underline hover:text-slate-400">Terms of Service</Link>
-          <Link href="/shipping" className="hover:underline hover:text-slate-400">Shipping Policy</Link>
-          <Link href="/returns" className="hover:underline hover:text-slate-400">Returns & Refunds</Link>
+        <div className="flex space-x-2 sm:space-x-6 whitespace-nowrap">
+          <Link href="/privacy" className="hover:underline hover:text-slate-400">Privacy</Link>
+          <Link href="/terms" className="hover:underline hover:text-slate-400">Terms</Link>
+          <Link href="/shipping" className="hover:underline hover:text-slate-400">Shipping</Link>
+          <Link href="/returns" className="hover:underline hover:text-slate-400">Returns</Link>
         </div>
       </div>
     </footer>
