@@ -1,7 +1,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Allow images from external domains used in product photos
   images: {
     remotePatterns: [
       {
@@ -13,13 +12,6 @@ const nextConfig: NextConfig = {
         hostname: 'source.unsplash.com',
       },
     ],
-  },
-  // Silence specific harmless warnings during build
-  typescript: {
-    ignoreBuildErrors: false,
-  },
-  eslint: {
-    ignoreDuringBuilds: false,
   },
 };
 
