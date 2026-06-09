@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Sparkles, Trophy, ShieldCheck, Heart, Calendar } from 'lucide-react';
+import { Sparkles, Trophy, ShieldCheck, Heart, Calendar, MapPin } from 'lucide-react';
 
 export default function AboutPage() {
   return (
@@ -14,10 +14,10 @@ export default function AboutPage() {
           <span>Our Story</span>
         </span>
         <h1 className="text-4xl font-poppins font-black text-[var(--foreground)] tracking-tight leading-none">
-          Bringing Joy & Learning to Badlapur Families
+          Bringing Joy, Custom Gifts & Perfumes to Badlapur
         </h1>
         <p className="text-base text-[var(--muted)] leading-relaxed">
-          Founded with a simple mission—to supply children with authentic, safe, and brain-boosting toys. Toy Shopee has grown from a local shop to Badlapur's most trusted premium toy boutique.
+          Founded with a simple mission—to supply families with authentic, premium gifts, toys, and luxury perfumes. Royal Crown has grown from a local shop to Badlapur's most trusted premium gift and toy boutique.
         </p>
       </section>
 
@@ -26,20 +26,20 @@ export default function AboutPage() {
         <div className="space-y-4">
           <h2 className="text-2xl font-poppins font-bold text-[var(--foreground)]">Our Humble Beginnings</h2>
           <p className="text-sm text-[var(--muted)] leading-relaxed">
-            Located in the heart of Badlapur East near the Municipal Corporation inside Kartik Complex, Toy Shopee started as a small brick-and-mortar storefront catering to local parents searching for quality birthday gifts. 
+            Located in the heart of Badlapur East at Gandhi Chowk (Opposite ZP Marathi School), Royal Crown started as a small brick-and-mortar storefront catering to local families searching for quality customized gifts and premium toys. 
           </p>
           <p className="text-sm text-[var(--muted)] leading-relaxed">
-            We noticed a gap in the local market for premium, developmental, and globally-branded toys. Today, we are proud to stock a diverse catalog of over 1,000+ board games, Hot Wheels tracks, remote-controlled models, and learning STEM kits from top brands like Hasbro, Fisher-Price, and LEGO.
+            We noticed a gap in the local market for customized gift solutions and premium toys. Today, we are proud to offer custom acrylic name plates, personalized wallets, photo frames, printed cups, watches, baby toys, video games, and high-quality perfumes for all occasions.
           </p>
         </div>
         <div className="grid grid-cols-1 gap-4">
           <div className="p-6 border border-[var(--border)] bg-[var(--card)] rounded-2xl">
             <h3 className="font-poppins font-bold text-sm text-[var(--foreground)] mb-1">Our Mission</h3>
-            <p className="text-xs text-[var(--muted)] leading-relaxed">To curate high-quality toys that inspire curiosity, foster motor skills, and spark screen-free learning for kids of all developmental stages.</p>
+            <p className="text-xs text-[var(--muted)] leading-relaxed">To curate high-quality gifts, toys, and perfumes that inspire curiosity, celebrate milestones, and spark joy for families at all stages.</p>
           </div>
           <div className="p-6 border border-[var(--border)] bg-[var(--card)] rounded-2xl">
             <h3 className="font-poppins font-bold text-sm text-[var(--foreground)] mb-1">Our Vision</h3>
-            <p className="text-xs text-[var(--muted)] leading-relaxed">To become the leading digital and physical eCommerce platform for child developmental accessories in Maharashtra, maintaining local community trust and premium customer care.</p>
+            <p className="text-xs text-[var(--muted)] leading-relaxed">To become the leading digital and physical eCommerce platform for custom gifts, premium toys, and perfumes in Maharashtra, maintaining local community trust and premium customer care.</p>
           </div>
         </div>
       </section>
@@ -50,8 +50,8 @@ export default function AboutPage() {
         
         <div className="max-w-xl mx-auto relative border-l border-[var(--border)] pl-6 ml-4 sm:ml-auto space-y-8">
           {[
-            { year: '2021', title: 'Grand Store Launch', desc: 'Opened our retail doors at Kartik Complex, Badlapur East with a curated list of board games.' },
-            { year: '2023', title: 'Category Expansion', desc: 'Introduced high-speed Remote Control toys, Hot Wheels collections, and educational puzzles.' },
+            { year: '2021', title: 'Grand Store Launch', desc: 'Opened our retail doors at Gandhi Chowk, Badlapur East with a curated list of premium gifts and toys.' },
+            { year: '2023', title: 'Category Expansion', desc: 'Introduced high-speed Remote Control toys, custom frames, and baby toy collections.' },
             { year: '2024', title: 'Bulk Return Gift Service', desc: 'Started customized return gift packaging for birthdays and school annual days.' },
             { year: '2026', title: 'Digital E-Commerce Launch', desc: 'Released our ultra-premium web portal to enable online catalog browsing and checkout in Badlapur.' }
           ].map((milestone, idx) => (
@@ -171,13 +171,47 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Our Branch Network Section */}
+      <section className="space-y-8 border-t border-[var(--border)] pt-12">
+        <div className="text-center max-w-xl mx-auto space-y-1">
+          <h2 className="text-2xl font-poppins font-bold text-[var(--foreground)]">Our Branch Network</h2>
+          <p className="text-xs text-[var(--muted)]">Spreading happiness and premium gifting across major regions in Maharashtra</p>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          {[
+            { city: 'Badlapur', type: 'Flagship Store', area: 'Gandhi Chowk (East)' },
+            { city: 'Mumbai', type: 'Retail Branch', area: 'Mumbai Metro Region' },
+            { city: 'Thane', type: 'Retail Branch', area: 'Thane City' },
+            { city: 'Kalyan', type: 'Retail Branch', area: 'Kalyan Region' },
+            { city: 'Dombivli', type: 'Retail Branch', area: 'Dombivli City' },
+            { city: 'Ulhasnagar', type: 'Retail Branch', area: 'Ulhasnagar Hub' },
+            { city: 'Khopoli', type: 'Retail Branch', area: 'Khopoli Region' },
+            { city: 'Karjat', type: 'Retail Branch', area: 'Karjat Area' }
+          ].map((branch, idx) => (
+            <div key={idx} className="p-5 border border-[var(--border)] bg-[var(--card)] rounded-2xl flex flex-col justify-between hover:border-primary/50 transition-all duration-300 group">
+              <div className="flex items-start space-x-2.5">
+                <MapPin className="text-primary mt-0.5 group-hover:scale-110 transition-transform" size={16} />
+                <div>
+                  <h4 className="font-poppins font-bold text-sm text-[var(--foreground)]">{branch.city}</h4>
+                  <span className="text-[9px] uppercase tracking-wider font-extrabold text-[var(--muted)]">{branch.type}</span>
+                </div>
+              </div>
+              <div className="mt-3 text-[11px] text-[var(--muted)] font-semibold border-t border-[var(--border)]/50 pt-2">
+                {branch.area}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Store Trust Grid */}
       <section className="grid grid-cols-2 md:grid-cols-4 gap-6 border-t border-[var(--border)] pt-12 text-center">
         {[
           { icon: <Trophy className="text-primary mx-auto" size={28} />, title: 'Genuine Brands', desc: '100% original Hasbro, LEGO & Mattel products' },
           { icon: <ShieldCheck className="text-secondary mx-auto" size={28} />, title: 'Eco-Tested Safe', desc: 'Strict non-toxic, child-safe standards' },
-          { icon: <Heart className="text-red-500 mx-auto" size={28} />, title: 'Happy Families', desc: 'Thousands of children served with joy' },
-          { icon: <Calendar className="text-accent mx-auto" size={28} />, title: 'Open Daily', desc: 'Mon: 10:30AM-9:30PM | Tue-Sun: 10:30AM-10PM' }
+          { icon: <Heart className="text-red-500 mx-auto" size={28} />, title: 'Active Community', desc: '14.1K+ followers on Instagram & growing Facebook community' },
+          { icon: <Calendar className="text-accent mx-auto" size={28} />, title: 'Open Daily', desc: 'Everyday: 10:00 AM – 10:00 PM' }
         ].map((item, idx) => (
           <div key={idx} className="space-y-2">
             {item.icon}

@@ -2,26 +2,20 @@
   <!-- Background circle -->
   <circle cx="32" cy="32" r="30" fill="#FFFDF9" stroke="#F1ECE4" stroke-width="2"/>
   
-  <!-- T block (red) - tilted left -->
-  <g transform="translate(8, 18) rotate(-8, 12, 12)">
+  <!-- R block (red/primary) - tilted left -->
+  <g transform="translate(10, 18) rotate(-8, 12, 12)">
     <rect width="20" height="20" rx="5" fill="#FF4D4D" />
-    <text x="10" y="15.5" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="14" fill="white">T</text>
+    <text x="10" y="15.5" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="14" fill="white">R</text>
   </g>
   
-  <!-- O block (amber) - tilted right -->
-  <g transform="translate(22, 16) rotate(6, 12, 12)">
+  <!-- C block (amber/secondary) - tilted right -->
+  <g transform="translate(26, 16) rotate(6, 12, 12)">
     <rect width="20" height="20" rx="5" fill="#FFB800" />
-    <text x="10" y="15.5" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="14" fill="#1E293B">O</text>
-  </g>
-  
-  <!-- Y block (blue) - tilted slightly -->
-  <g transform="translate(36, 18) rotate(-4, 12, 12)">
-    <rect width="20" height="20" rx="5" fill="#4A90E2" />
-    <text x="10" y="15.5" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="14" fill="white">Y</text>
+    <text x="10" y="15.5" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="14" fill="#1E293B">C</text>
   </g>
   
   <!-- Small sparkle star -->
-  <g transform="translate(50, 10)">
+  <g transform="translate(48, 12)">
     <polygon points="4,0 5,3 8,4 5,5 4,8 3,5 0,4 3,3" fill="#FFB800" />
   </g>
 </svg>

@@ -21,10 +21,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Toy Shopee | Badlapur\'s Favorite Premium Toy & Gift Store',
-  description: 'Buy premium toys, educational kits, board games, Hot Wheels, action figures, baby toys, and custom birthday return gifts in Badlapur East. Shop Online!',
-  keywords: 'Toy store Badlapur, Toy Shopee Badlapur, kids gifts, educational toys, board games, Hot Wheels Badlapur East, return gifts, baby toys, online toy shopping',
-  metadataBase: new URL('https://toyshopee.com'),
+  title: 'Royal Crown Gifts Toys Perfumes ®️ | Badlapur\'s Favorite Premium Gift & Toy Boutique',
+  description: 'Buy premium gifts, toys, perfumes, custom acrylic name plates, personalized wallets, photo frames, and baby toys at Royal Crown Gifts Toys Perfumes Badlapur. Shop Online!',
+  keywords: 'Royal Crown Badlapur, Royal Crown Gifts Toys Perfumes, gift shop Badlapur, customized name plates Badlapur, custom wallets, customized mugs, photo frames Badlapur East, premium toys Badlapur, perfumes Badlapur, online gift shopping',
+  metadataBase: new URL('https://royalcrownfgt.com'),
   icons: {
     icon: [
       { url: '/favicon.png', type: 'image/png' },
@@ -32,19 +32,20 @@ export const metadata: Metadata = {
     apple: '/favicon.png',
   },
   openGraph: {
-    title: 'Toy Shopee | Badlapur\'s Favorite Premium Toy & Gift Store',
-    description: 'Explore thousands of premium toys, games, and customized gifts at Badlapur\'s favorite toy shop.',
-    url: 'https://toyshopee.com',
-    siteName: 'Toy Shopee',
+    title: 'Royal Crown | Badlapur\'s Favorite Premium Gift & Toy Boutique',
+    description: 'Explore thousands of premium gifts, toys, perfumes, and customized items at Royal Crown Badlapur.',
+    url: 'https://royalcrownfgt.com',
+    siteName: 'Royal Crown',
     locale: 'en_IN',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Toy Shopee | Badlapur\'s Favorite Premium Toy & Gift Store',
-    description: 'Explore thousands of premium toys, games, and customized gifts at Badlapur\'s favorite toy shop.',
+    title: 'Royal Crown | Badlapur\'s Favorite Premium Gift & Toy Boutique',
+    description: 'Explore thousands of premium gifts, toys, perfumes, and customized items at Royal Crown Badlapur.',
   }
 };
+
 
 export default function RootLayout({
   children,

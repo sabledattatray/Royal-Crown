@@ -1,7 +1,8 @@
 'use client';
 
 import React, { useState } from 'react';
-import { X, Star, ShoppingCart, Heart, ShieldCheck, Truck } from 'lucide-react';
+import { X, Star, ShoppingCart, Heart } from 'lucide-react';
+import Image from 'next/image';
 import { Product } from '../data/mockData';
 import { useCartStore } from '../store/cartStore';
 
@@ -80,19 +81,27 @@ export default function QuickViewModal({ product, onClose }: QuickViewModalProps
         {/* Gallery Column */}
         <div className="w-full md:w-1/2 p-6 bg-slate-50 dark:bg-slate-950/20 flex flex-col justify-center items-center">
           <div className="w-full aspect-square relative rounded-2xl overflow-hidden bg-white dark:bg-slate-900 border border-[var(--border)] max-h-[320px]">
-            <img 
+            <Image 
               src={product.images[0]} 
               alt={product.name} 
-              className="w-full h-full object-cover"
+              fill
+              sizes="(max-width: 768px) 100vw, 320px"
+              className="object-cover"
             />
           </div>
           <div className="mt-4 flex space-x-2 w-full justify-center">
             {product.images.map((img, index) => (
               <div 
                 key={index}
-                className="w-12 h-12 rounded-lg overflow-hidden border-2 border-primary/20 bg-white cursor-pointer"
+                className="w-12 h-12 rounded-lg overflow-hidden border-2 border-primary/20 bg-white cursor-pointer relative"
               >
-                <img src={img} alt="" className="w-full h-full object-cover" />
+                <Image 
+                  src={img} 
+                  alt="" 
+                  fill
+                  sizes="48px"
+                  className="object-cover" 
+                />
               </div>
             ))}
           </div>

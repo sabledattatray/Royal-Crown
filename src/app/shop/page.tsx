@@ -18,7 +18,6 @@ import QuickViewModal from '../../components/QuickViewModal';
 function ShopContent() {
   const searchParams = useSearchParams();
   const searchQ = searchParams.get('search') || '';
-  const ageQ = searchParams.get('age') || '';
 
   // Filter & Sort States
   const [search, setSearch] = useState(searchQ);
@@ -31,11 +30,15 @@ function ShopContent() {
 
   // Sync URL search parameters if changed
   useEffect(() => {
-    setSearch(searchParams.get('search') || '');
+    const searchVal = searchParams.get('search') || '';
     const ageParam = searchParams.get('age') || '';
-    if (ageParam) {
-      setSelectedAge(ageParam);
-    }
+    const timer = setTimeout(() => {
+      setSearch(searchVal);
+      if (ageParam) {
+        setSelectedAge(ageParam);
+      }
+    }, 0);
+    return () => clearTimeout(timer);
   }, [searchParams]);
 
   // Handle resets
@@ -126,7 +129,7 @@ function ShopContent() {
           <span className="mx-2">/</span>
           <span className="text-[var(--foreground)]">Shop</span>
         </div>
-        <h1 className="text-3xl font-poppins font-black text-[var(--foreground)] tracking-tight">Shop All Toys</h1>
+        <h1 className="text-3xl font-poppins font-black text-[var(--foreground)] tracking-tight">Shop All Products</h1>
         <p className="text-xs text-[var(--muted)]">Explore premium collections and find the perfect gift</p>
       </div>
 
@@ -155,7 +158,7 @@ function ShopContent() {
             <div className="relative">
               <input
                 type="text"
-                placeholder="Search matching toys..."
+                placeholder="Search matching products..."
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
                 className="w-full py-2 pl-4 pr-10 rounded-xl border border-[var(--border)] bg-[var(--background)] text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
@@ -274,7 +277,7 @@ function ShopContent() {
                 <PackageCheck size={36} />
               </div>
               <div>
-                <h3 className="font-poppins font-bold text-lg text-[var(--foreground)]">No Toys Found</h3>
+                <h3 className="font-poppins font-bold text-lg text-[var(--foreground)]">No Products Found</h3>
                 <p className="text-sm text-[var(--muted)] mt-1 max-w-sm">No items fit the chosen filtering combinations. Try resetting filters to browse more.</p>
               </div>
               <button 

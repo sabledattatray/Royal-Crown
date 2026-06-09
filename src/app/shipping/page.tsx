@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { Truck, Clock, ShieldCheck, MapPin } from 'lucide-react';
+import { Truck, Clock } from 'lucide-react';
 
 export default function ShippingPolicyPage() {
   return (
@@ -42,7 +42,7 @@ export default function ShippingPolicyPage() {
           <section className="space-y-2">
             <h2 className="font-poppins font-bold text-base text-primary">1. Local Delivery in Badlapur</h2>
             <p>
-              As Badlapur's favorite local toy store, we operate our own direct home delivery network to serve local parents and families quickly. We deliver to all areas across Badlapur East, Badlapur West, Katrap, Belavali, Shirgaon, and Kharvai.
+              As Badlapur&apos;s favorite local boutique, we operate our own direct home delivery network to serve local families quickly. We deliver to all areas across Badlapur East, Badlapur West, Katrap, Belavali, Shirgaon, and Kharvai.
             </p>
           </section>
 
@@ -51,7 +51,7 @@ export default function ShippingPolicyPage() {
             <ul className="list-disc pl-5 space-y-1 text-xs text-[var(--muted)]">
               <li><strong>Orders Above ₹999:</strong> FREE Delivery anywhere within Badlapur limit.</li>
               <li><strong>Orders Below ₹999:</strong> A flat delivery charge of ₹50 applies.</li>
-              <li><strong>Store Pickup:</strong> Always free. You can choose "Store Self Pickup" at checkout and collect your pre-packed order in 4 hours from Kartik Complex.</li>
+              <li><strong>Store Pickup:</strong> Always free. You can choose &quot;Store Self Pickup&quot; at checkout and collect your pre-packed order in 4 hours from Gandhi Chowk (Nav Sai Krupa society).</li>
             </ul>
           </section>
 
@@ -65,7 +65,7 @@ export default function ShippingPolicyPage() {
           <section className="space-y-2">
             <h2 className="font-poppins font-bold text-base text-primary">4. Order Tracking via WhatsApp ERP</h2>
             <p>
-              Our store is integrated with a custom WhatsApp ERP system. Once your order is dispatched, you will receive automated status notifications on your registered WhatsApp number, including the delivery executive's contact details.
+              Our store is integrated with a custom WhatsApp ERP system. Once your order is dispatched, you will receive automated status notifications on your registered WhatsApp number, including the delivery executive&apos;s contact details.
             </p>
           </section>
         </div>

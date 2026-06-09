@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Heart, ShoppingCart, Eye, Star, Sparkles } from 'lucide-react';
 import { Product } from '../data/mockData';
 import { useCartStore } from '../store/cartStore';
@@ -25,7 +26,10 @@ export default function ProductCard({ product, onQuickView }: ProductCardProps) 
   const [particles, setParticles] = useState<{ id: number; tx: number; ty: number; color: string }[]>([]);
 
   React.useEffect(() => {
-    setMounted(true);
+    const timer = setTimeout(() => {
+      setMounted(true);
+    }, 0);
+    return () => clearTimeout(timer);
   }, []);
   
   const isWishlisted = mounted ? isInWishlist : false;
@@ -140,11 +144,12 @@ export default function ProductCard({ product, onQuickView }: ProductCardProps) 
 
       {/* Product Image Section */}
       <Link href={`/shop/${id}`} className="relative block aspect-square w-full overflow-hidden bg-slate-100 dark:bg-slate-800">
-        <img
+        <Image
           src={hovered && images[1] ? images[1] : images[0]}
           alt={name}
-          className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-          loading="lazy"
+          fill
+          sizes="(max-width: 768px) 50vw, 33vw"
+          className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
         />
         
         {/* Quick View Button overlay on Desktop */}

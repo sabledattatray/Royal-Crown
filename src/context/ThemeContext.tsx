@@ -21,7 +21,6 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     
     const initialTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
-    setTheme(initialTheme);
     
     if (initialTheme === 'dark') {
       document.documentElement.classList.add('dark');
@@ -29,7 +28,11 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       document.documentElement.classList.remove('dark');
     }
     
-    setMounted(true);
+    const timer = setTimeout(() => {
+      setTheme(initialTheme);
+      setMounted(true);
+    }, 0);
+    return () => clearTimeout(timer);
   }, []);
 
   const toggleTheme = () => {

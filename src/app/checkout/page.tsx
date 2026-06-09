@@ -2,13 +2,11 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
 import { 
   CheckCircle2, 
   CreditCard, 
   MapPin, 
   Truck, 
-  ShoppingBag, 
   ArrowRight, 
   ArrowLeft,
   Loader2,
@@ -19,12 +17,14 @@ import {
 import { useCartStore } from '../../store/cartStore';
 
 export default function CheckoutPage() {
-  const router = useRouter();
   const { cart, clearCart } = useCartStore();
   const [mounted, setMounted] = useState(false);
 
   React.useEffect(() => {
-    setMounted(true);
+    const timer = setTimeout(() => {
+      setMounted(true);
+    }, 0);
+    return () => clearTimeout(timer);
   }, []);
 
 
@@ -49,7 +49,7 @@ export default function CheckoutPage() {
   const wrapCost = cart.reduce((acc, item) => acc + (item.giftWrap ? 30 * item.quantity : 0), 0);
   const shippingCost = shippingMethod === 'pickup' || subtotal > 999 ? 0 : 50;
   const grandTotal = subtotal + wrapCost + shippingCost;
-  const orderId = 'TS-' + Math.floor(100000 + Math.random() * 900000);
+  const [orderId] = useState(() => 'TS-' + Math.floor(100000 + Math.random() * 900000));
 
   if (!mounted) {
     return (
@@ -118,7 +118,7 @@ export default function CheckoutPage() {
           <div>
             <h1 className="text-3xl font-poppins font-black text-success tracking-tight">Order Confirmed!</h1>
             <p className="text-sm text-[var(--muted)] mt-2">
-              Thank you for shopping local with Toy Shopee Badlapur. Your order has been placed successfully.
+              Thank you for shopping local with Royal Crown Badlapur. Your order has been placed successfully.
             </p>
           </div>
 
@@ -157,7 +157,7 @@ export default function CheckoutPage() {
               Continue Shopping
             </Link>
             <a 
-              href={`https://wa.me/919730044342?text=Hi%20Toy%20Shopee!%20I%20just%20placed%20order%20${orderId}%20online%20for%20delivery%20in%20Badlapur.%20Please%20verify.`}
+              href={`https://wa.me/919112270222?text=Hi%20Royal%20Crown!%20I%20just%20placed%20order%20${orderId}%20online%20for%20delivery%20in%20Badlapur.%20Please%20verify.`}
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 border border-success text-success hover:bg-green-50 dark:hover:bg-green-950/20 rounded-xl font-bold transition-all flex items-center justify-center space-x-1.5"
@@ -263,14 +263,14 @@ export default function CheckoutPage() {
                   <h2 className="text-xl font-poppins font-bold text-[var(--foreground)] border-b border-[var(--border)] pb-2">Select Shipping Method</h2>
                   
                   <div className="space-y-3">
-                    {[
+                    {([
                       { id: 'home', title: 'Local Home Delivery (Badlapur)', desc: 'Deliver directly to your doorstep in 24-48 hours. Free for orders above ₹999.', cost: subtotal > 999 ? 'FREE' : '₹50' },
-                      { id: 'pickup', title: 'Store Self Pickup', desc: 'Pick up your items from Shop No. 11/12, Kartik Complex, Badlapur East. Ready in 4 hours.', cost: 'FREE' }
-                    ].map((method) => (
+                      { id: 'pickup', title: 'Store Self Pickup', desc: 'Pick up your items from Shop No 05 - Nav Sai Krupa society, Gandhi Chowk, Badlapur East. Ready in 4 hours.', cost: 'FREE' }
+                    ] as const).map((method) => (
                       <button
                         key={method.id}
                         type="button"
-                        onClick={() => setShippingMethod(method.id as any)}
+                        onClick={() => setShippingMethod(method.id)}
                         className={`w-full text-left p-5 rounded-2xl border text-sm font-semibold transition-all duration-200 cursor-pointer flex justify-between items-center ${
                           shippingMethod === method.id 
                             ? 'border-primary bg-primary/5 shadow-sm' 
@@ -294,14 +294,14 @@ export default function CheckoutPage() {
                   <h2 className="text-xl font-poppins font-bold text-[var(--foreground)] border-b border-[var(--border)] pb-2">Select Payment Method</h2>
                   
                   <div className="space-y-3">
-                    {[
+                    {([
                       { id: 'razorpay', title: 'UPI / Cards / Net Banking (Razorpay)', desc: 'Pay instantly and securely using Razorpay gateway. Supports GooglePay, PhonePe, Paytm, and Cards.', badge: 'Secure' },
                       { id: 'cod', title: 'Cash / Pay on Delivery (COD)', desc: 'Pay at your doorstep with Cash or scan QR code on delivery.', badge: 'Convenient' }
-                    ].map((method) => (
+                    ] as const).map((method) => (
                       <button
                         key={method.id}
                         type="button"
-                        onClick={() => setPaymentMethod(method.id as any)}
+                        onClick={() => setPaymentMethod(method.id)}
                         className={`w-full text-left p-5 rounded-2xl border text-sm font-semibold transition-all duration-200 cursor-pointer flex justify-between items-center ${
                           paymentMethod === method.id 
                             ? 'border-primary bg-primary/5 shadow-sm' 
@@ -418,7 +418,7 @@ export default function CheckoutPage() {
                 {/* Order Summary */}
                 <div className="bg-slate-950 p-4 rounded-2xl flex justify-between items-center">
                   <div>
-                    <div className="text-[10px] text-slate-500 font-bold uppercase">Pay To: Toy Shopee</div>
+                    <div className="text-[10px] text-slate-500 font-bold uppercase">Pay To: Royal Crown</div>
                     <div className="text-xs text-slate-300 font-semibold">{phone}</div>
                   </div>
                   <div className="text-right">

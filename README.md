@@ -1,8 +1,8 @@
-# Toy Shopee 🧸
+# Royal Crown Gifts Toys Perfumes 👑
 
-**Badlapur's Premium Online Toy Store** — A fully-featured Next.js 16 e-commerce website built for Toy Shopee, Badlapur East, Maharashtra.
+**Badlapur's Premium Online Gift, Toy & Perfume Store** — A fully-featured Next.js 16 e-commerce website built for Royal Crown Gifts Toys Perfumes ®️, Badlapur East, Maharashtra.
 
-> 🚀 **Live Demo:** [toyshopee.vercel.app](https://toyshopee.vercel.app) *(deploy to see)*
+> 🚀 **Live Demo:** [royalcrown.vercel.app](https://royalcrown.vercel.app) *(deploy to see)*
 
 ---
 
@@ -19,7 +19,7 @@
 - 3-step checkout (Address → Shipping → Payment)
 - **Simulated Razorpay** gateway with QR code scan
 - Cash on Delivery (COD) option
-- Coupon code system (`TOY10`, `KIDS20`)
+- Coupon code system (`DIWALI15`, `XMAS20`)
 - Local home delivery + store pickup options
 - **GST Invoice generation** (printable, GSTIN, CGST/SGST breakdown)
 
@@ -53,7 +53,7 @@
 
 ### 🎨 Design
 - Premium warm cream / dark slate dual theme
-- Animated toy-block logo (T·O·Y building blocks)
+- Animated block logo (R·C building blocks)
 - Micro-animations: particle bursts, floating sparkles, card glow effects
 - Fully responsive (mobile-first)
 
@@ -77,8 +77,8 @@
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/YOUR_USERNAME/toy-shopee.git
-cd toy-shopee
+git clone https://github.com/YOUR_USERNAME/royal-crown.git
+cd royal-crown
 
 # 2. Install dependencies
 npm install
@@ -93,7 +93,7 @@ Open [http://localhost:3000](http://localhost:3000)
 
 ## 📦 Deploy to Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/YOUR_USERNAME/toy-shopee)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/YOUR_USERNAME/royal-crown)
 
 Or manually:
 ```bash
@@ -130,29 +130,29 @@ src/
 ├── store/                # Zustand stores
 │   ├── cartStore.ts      # Cart, wishlist, loyalty points
 │   └── trackingStore.ts  # Order tracking
+│   └── timingsStore.ts   # Store timings override
 ├── data/
 │   └── mockData.ts       # Product catalog data
 ├── context/
 │   └── ThemeContext.tsx  # Dark/light mode
 └── utils/
-    └── timings.ts        # Store hours logic
+│   └── timings.ts        # Store hours logic
 ```
 
 ---
 
 ## 🏪 Store Information
 
-**Toy Shopee**  
-Shop No. 11/12, Kartik Complex, Near Municipal Corporation,  
-Badlapur East, Maharashtra 421503  
-📞 +91 97300 44342  
-📧 toyshopeebadlapur@gmail.com
+**Royal Crown Gifts Toys Perfumes ®️**  
+Shop No 05 - Nav Sai Krupa society Opposite ZP Marathi school Gandhi Chowk, East, Badlapur, Maharashtra 421503  
+📞 +91 91122 70222  
+📧 royalcrowngiftsbadlapur@gmail.com  
 
 ---
 
 ## 📄 License
 
-This project is a custom-built commercial website for **Toy Shopee, Badlapur**.  
-© 2026 Toy Shopee. All rights reserved.
+This project is a custom-built commercial website for **Royal Crown Gifts Toys Perfumes ®️**.  
+© 2026 Royal Crown. All rights reserved.
 
 Built with ❤️ by [Datta Sable](https://dattasble.com)

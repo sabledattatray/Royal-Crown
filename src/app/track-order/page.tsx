@@ -65,10 +65,13 @@ function OrderResult({ order }: { order: TrackedOrder }) {
   const [copied, setCopied] = useState(false);
   const [mounted, setMounted] = useState(false);
 
-  useEffect(() => setMounted(true), []);
+  useEffect(() => {
+    const timer = setTimeout(() => setMounted(true), 0);
+    return () => clearTimeout(timer);
+  }, []);
 
   const whatsappMsg = encodeURIComponent(
-    `Hi Toy Shopee! I want to enquire about my order *${order.orderId}*. Customer: ${order.customerName}. Please share the latest update. 🙏`
+    `Hi Royal Crown! I want to enquire about my order *${order.orderId}*. Customer: ${order.customerName}. Please share the latest update. 🙏`
   );
 
   const handleCopy = () => {
@@ -204,17 +207,17 @@ function OrderResult({ order }: { order: TrackedOrder }) {
       {/* Action Buttons */}
       <div className="flex flex-col sm:flex-row gap-3">
         <a
-          href={`https://wa.me/919730044342?text=${whatsappMsg}`}
+          href={`https://wa.me/919112270222?text=${whatsappMsg}`}
           target="_blank"
           rel="noopener noreferrer"
           className="flex-1 flex items-center justify-center gap-2 py-3 bg-green-600 hover:bg-green-700 text-white rounded-2xl font-bold text-sm transition-all shadow-md hover:scale-[1.02]"
         >
           <MessageCircle size={16} />
-          WhatsApp Toy Shopee
+          WhatsApp Royal Crown
         </a>
         {order.currentStatus === 'delivered' && (
           <a
-            href="https://g.page/r/toyshopee-badlapur/review"
+            href="https://www.google.com/search?q=Royal+Crown+Gifts+Toys+Perfumes+Badlapur+East+reviews"
             target="_blank"
             rel="noopener noreferrer"
             className="flex-1 flex items-center justify-center gap-2 py-3 bg-amber-500 hover:bg-amber-600 text-white rounded-2xl font-bold text-sm transition-all shadow-md hover:scale-[1.02]"
@@ -276,7 +279,7 @@ export default function TrackOrderPage() {
           Track Your Order
         </h1>
         <p className="text-sm text-[var(--muted)] max-w-md mx-auto">
-          Enter your Order ID to get real-time delivery status, timeline, and updates from Toy Shopee Badlapur.
+          Enter your Order ID to get real-time delivery status, timeline, and updates from Royal Crown Badlapur.
         </p>
       </div>
 
@@ -337,7 +340,7 @@ export default function TrackOrderPage() {
           <div className="text-4xl">🔍</div>
           <h3 className="font-poppins font-bold text-lg text-[var(--foreground)]">Order Not Found</h3>
           <p className="text-sm text-[var(--muted)] max-w-sm mx-auto">
-            We couldn't find order <strong className="text-[var(--foreground)]">{searched}</strong>. Double-check your Order ID from the confirmation message or email.
+            We couldn&apos;t find order <strong className="text-[var(--foreground)]">{searched}</strong>. Double-check your Order ID from the confirmation message or email.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <button
@@ -347,7 +350,7 @@ export default function TrackOrderPage() {
               Try Again
             </button>
             <a
-              href="https://wa.me/919730044342?text=Hi%20Toy%20Shopee!%20I%20need%20help%20tracking%20my%20order."
+              href="https://wa.me/919112270222?text=Hi%20Royal%20Crown!%20I%20need%20help%20tracking%20my%20order."
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-2.5 border border-green-500 text-green-600 dark:text-green-400 rounded-xl font-bold text-sm hover:bg-green-50 dark:hover:bg-green-950/20 transition-all"
@@ -365,7 +368,7 @@ export default function TrackOrderPage() {
         <div className="text-center space-y-3 pt-4">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-left">
             {[
-              { icon: '📧', title: 'Check Your Email', desc: 'Your Order ID is in your order confirmation email from Toy Shopee.' },
+              { icon: '📧', title: 'Check Your Email', desc: 'Your Order ID is in your order confirmation email from Royal Crown.' },
               { icon: '💬', title: 'WhatsApp Confirmation', desc: 'We send your Order ID via WhatsApp after checkout.' },
               { icon: '👤', title: 'My Account', desc: 'Logged-in users can find all orders under My Account → Order History.' },
             ].map((tip, i) => (

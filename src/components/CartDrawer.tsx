@@ -2,7 +2,8 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { X, ShoppingBag, Trash2, Heart, Gift, MessageSquareCode, ArrowRight, Sparkles } from 'lucide-react';
+import Image from 'next/image';
+import { X, ShoppingBag, Trash2, ArrowRight } from 'lucide-react';
 import { useCartStore } from '../store/cartStore';
 
 interface CartDrawerProps {
@@ -17,7 +18,10 @@ export default function CartDrawer({ isOpen, onClose }: CartDrawerProps) {
   const [showCardBuilder, setShowCardBuilder] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
+    const timer = setTimeout(() => {
+      setMounted(true);
+    }, 0);
+    return () => clearTimeout(timer);
   }, []);
 
   if (!mounted) return null;
@@ -78,10 +82,12 @@ export default function CartDrawer({ isOpen, onClose }: CartDrawerProps) {
                 >
                   {/* Thumbnail */}
                   <div className="relative w-16 h-16 rounded-2xl overflow-hidden bg-slate-100 dark:bg-slate-800 flex-shrink-0 border border-[var(--border)]">
-                    <img 
+                    <Image 
                       src={item.product.images[0]} 
                       alt={item.product.name}
-                      className="w-full h-full object-cover"
+                      fill
+                      sizes="64px"
+                      className="object-cover"
                     />
                   </div>
 
@@ -177,7 +183,7 @@ export default function CartDrawer({ isOpen, onClose }: CartDrawerProps) {
                           Greeting Card Preview
                         </div>
                         <p className="font-serif italic font-extrabold text-primary-playful text-sm min-h-[30px] leading-relaxed break-words px-2 pt-1 text-center">
-                          "{globalCardMsg || 'Happy Birthday! Wishing you fun & learning!'}"
+                          &ldquo;{globalCardMsg || 'Happy Birthday! Wishing you fun & learning!'}&rdquo;
                         </p>
                       </div>
                     </div>

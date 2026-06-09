@@ -2,26 +2,20 @@
   <!-- Apple touch icon - solid background -->
   <rect width="180" height="180" rx="40" fill="#FF4D4D"/>
   
-  <!-- T block -->
-  <g transform="translate(14, 48) rotate(-8, 22, 22)">
+  <!-- R block -->
+  <g transform="translate(38, 46) rotate(-8, 22, 22)">
     <rect width="44" height="44" rx="10" fill="white" opacity="0.95"/>
-    <text x="22" y="33" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="30" fill="#FF4D4D">T</text>
+    <text x="22" y="33" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="30" fill="#FF4D4D">R</text>
   </g>
   
-  <!-- O block -->
-  <g transform="translate(66, 44) rotate(6, 22, 22)">
+  <!-- C block -->
+  <g transform="translate(92, 44) rotate(6, 22, 22)">
     <rect width="44" height="44" rx="10" fill="#FFB800"/>
-    <text x="22" y="33" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="30" fill="#1E293B">O</text>
+    <text x="22" y="33" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="30" fill="#1E293B">C</text>
   </g>
   
-  <!-- Y block -->
-  <g transform="translate(118, 48) rotate(-4, 22, 22)">
-    <rect width="44" height="44" rx="10" fill="#4A90E2"/>
-    <text x="22" y="33" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="30" fill="white">Y</text>
-  </g>
-  
-  <!-- SHOPEE text -->
-  <text x="90" y="130" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="24" fill="white" letter-spacing="3">SHOPEE</text>
+  <!-- ROYAL CROWN text -->
+  <text x="90" y="130" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="18" fill="white" letter-spacing="2">ROYAL CROWN</text>
   
   <!-- Sparkle -->
   <g transform="translate(148, 30)">

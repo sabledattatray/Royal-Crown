@@ -2,6 +2,7 @@
 
 import React, { useState, use } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { 
   Star, 
@@ -9,15 +10,12 @@ import {
   Heart, 
   ShieldCheck, 
   Truck, 
-  Calendar, 
-  ArrowLeft,
   Share2,
   Play,
-  CheckCircle,
   MessageCircle,
   ChevronRight
 } from 'lucide-react';
-import { PRODUCTS, Product } from '../../../data/mockData';
+import { PRODUCTS } from '../../../data/mockData';
 import { useCartStore } from '../../../store/cartStore';
 import ProductCard from '../../../components/ProductCard';
 
@@ -38,7 +36,10 @@ export default function ProductDetailPage({ params }: PageProps) {
   const [mounted, setMounted] = useState(false);
 
   React.useEffect(() => {
-    setMounted(true);
+    const timer = setTimeout(() => {
+      setMounted(true);
+    }, 0);
+    return () => clearTimeout(timer);
   }, []);
 
   const isWishlisted = mounted ? isInWishlist : false;
@@ -93,8 +94,8 @@ export default function ProductDetailPage({ params }: PageProps) {
   };
 
   const handleWhatsAppEnquiry = () => {
-    const message = encodeURIComponent(`Hello Toy Shopee! I would like to inquire about this toy: "${product.name}" (ID: ${product.id}). Is it available for delivery in Badlapur? Link: ${window.location.href}`);
-    window.open(`https://wa.me/919730044342?text=${message}`, '_blank');
+    const message = encodeURIComponent(`Hello Royal Crown! I would like to inquire about this item: "${product.name}" (ID: ${product.id}). Is it available for delivery in Badlapur? Link: ${window.location.href}`);
+    window.open(`https://wa.me/919112270222?text=${message}`, '_blank');
   };
 
   // Find related products (same category, excluding current product)
@@ -136,10 +137,12 @@ export default function ProductDetailPage({ params }: PageProps) {
                 </button>
               </div>
             ) : (
-              <img 
+              <Image 
                 src={product.images[activeImageIndex]} 
                 alt={product.name}
-                className="w-full h-full object-cover transition-all duration-300"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover transition-all duration-300"
               />
             )}
             
@@ -163,13 +166,19 @@ export default function ProductDetailPage({ params }: PageProps) {
                   setActiveImageIndex(index);
                   setShowVideo(false);
                 }}
-                className={`w-16 h-16 rounded-2xl overflow-hidden bg-slate-50 border-2 transition-all cursor-pointer ${
+                className={`w-16 h-16 rounded-2xl overflow-hidden bg-slate-50 border-2 transition-all cursor-pointer relative ${
                   activeImageIndex === index && !showVideo
                     ? 'border-primary scale-105 shadow-sm'
                     : 'border-[var(--border)] opacity-70 hover:opacity-100'
                 }`}
               >
-                <img src={img} alt="" className="w-full h-full object-cover" />
+                <Image 
+                  src={img} 
+                  alt="" 
+                  fill
+                  sizes="64px"
+                  className="object-cover" 
+                />
               </button>
             ))}
           </div>

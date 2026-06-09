@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { 
@@ -14,7 +14,8 @@ import {
   ChevronDown, 
   MapPin, 
   Phone,
-  Sparkles
+  Sparkles,
+  Crown
 } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 import { useCartStore } from '../store/cartStore';
@@ -34,7 +35,10 @@ export default function Navbar() {
   const [mounted, setMounted] = useState(false);
 
   React.useEffect(() => {
-    setMounted(true);
+    const timer = setTimeout(() => {
+      setMounted(true);
+    }, 0);
+    return () => clearTimeout(timer);
   }, []);
 
   
@@ -60,10 +64,10 @@ export default function Navbar() {
             <span className="hidden sm:inline">Badlapur East, MH</span>
             <span className="sm:hidden">Badlapur</span>
           </span>
-          <a href="tel:+919730044342" className="flex items-center space-x-0.5 sm:space-x-1 hover:text-secondary transition-colors cursor-pointer whitespace-nowrap">
+          <a href="tel:09112270222" className="flex items-center space-x-0.5 sm:space-x-1 hover:text-secondary transition-colors cursor-pointer whitespace-nowrap">
             <Phone size={9} className="text-secondary flex-shrink-0 sm:w-3 sm:h-3" />
-            <span className="hidden sm:inline">+91 97300 44342</span>
-            <span className="sm:hidden">97300 44342</span>
+            <span className="hidden sm:inline">09112270222</span>
+            <span className="sm:hidden">09112270222</span>
           </a>
         </div>
         <div className="flex items-center space-x-0.5 sm:space-x-2 whitespace-nowrap flex-shrink-0">
@@ -82,21 +86,18 @@ export default function Navbar() {
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="flex items-center space-x-2 group">
               <div className="flex items-center space-x-0.5 sm:space-x-1">
-                {/* T block */}
-                <span className="inline-flex items-center justify-center w-6 h-6 sm:w-8 sm:h-8 rounded-lg sm:rounded-xl bg-primary text-white shadow font-poppins font-black text-sm sm:text-lg transform -rotate-6 group-hover:rotate-12 group-hover:scale-110 transition-all duration-300">
-                  T
+                {/* R block with crown */}
+                <span className="relative inline-flex items-center justify-center w-6 h-6 sm:w-8 sm:h-8 rounded-lg sm:rounded-xl bg-primary text-white shadow font-poppins font-black text-sm sm:text-lg transform -rotate-6 group-hover:rotate-12 group-hover:scale-110 transition-all duration-300">
+                  <Crown size={11} className="absolute -top-2 sm:-top-2.5 left-1/2 -translate-x-1/2 text-yellow-400 rotate-12 drop-shadow-md sm:w-4 sm:h-4" fill="currentColor" />
+                  R
                 </span>
-                {/* O block */}
+                {/* C block */}
                 <span className="inline-flex items-center justify-center w-6 h-6 sm:w-8 sm:h-8 rounded-lg sm:rounded-xl bg-secondary text-slate-900 shadow font-poppins font-black text-sm sm:text-lg transform rotate-6 group-hover:-rotate-12 group-hover:scale-110 transition-all duration-300">
-                  O
-                </span>
-                {/* Y block */}
-                <span className="inline-flex items-center justify-center w-6 h-6 sm:w-8 sm:h-8 rounded-lg sm:rounded-xl bg-accent text-white shadow font-poppins font-black text-sm sm:text-lg transform -rotate-3 group-hover:rotate-6 group-hover:scale-110 transition-all duration-300">
-                  Y
+                  C
                 </span>
                 <span className="font-poppins font-black text-base sm:text-2xl tracking-tight text-[var(--foreground)] ml-1 group-hover:text-primary transition-colors flex items-center">
-                  <span className="hidden xs:inline">SHOPEE</span>
-                  <span className="inline xs:hidden">SHOPEE</span>
+                  <span className="hidden xs:inline flex items-center">ROYAL CROWN<span className="text-[12px] sm:text-[18px] font-extrabold ml-1 align-super text-secondary">®</span></span>
+                  <span className="inline xs:hidden flex items-center">ROYAL CROWN<span className="text-[12px] sm:text-[18px] font-extrabold ml-1 align-super text-secondary">®</span></span>
                   <Sparkles size={12} className="text-secondary ml-1 animate-spin-slow sm:w-4 sm:h-4" />
                 </span>
               </div>
@@ -108,7 +109,7 @@ export default function Navbar() {
             <form onSubmit={handleSearchSubmit} className="relative w-full">
               <input
                 type="text"
-                placeholder="Search premium toys, brands, age groups..."
+                placeholder="Search gifts, premium toys, perfumes, custom items..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="w-full py-2.5 pl-4 pr-10 rounded-full border border-[var(--border)] bg-[var(--background)] text-[var(--foreground)] placeholder:text-[var(--muted)] text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300"
@@ -144,17 +145,17 @@ export default function Navbar() {
                   {/* Left Column - 2-Column Categories Grid (8 cols) */}
                   <div className="col-span-8 space-y-4">
                     <div className="flex items-center justify-between border-b border-[var(--border)] pb-2 px-2">
-                      <span className="font-poppins text-xs font-black text-[var(--muted)] uppercase tracking-wider">Browse Toy Collections</span>
+                      <span className="font-poppins text-xs font-black text-[var(--muted)] uppercase tracking-wider">Browse Our Collections</span>
                       <Link 
                         href="/shop" 
                         className="text-[11px] font-bold text-primary hover:underline"
                         onClick={() => setCategoriesOpen(false)}
                       >
-                        All Toys
+                        All Products
                       </Link>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-x-4 gap-y-2">
+                    <div className="grid grid-cols-3 gap-x-4 gap-y-2">
                       {CATEGORIES.map((cat) => (
                         <Link 
                           key={cat.id} 
@@ -293,7 +294,7 @@ export default function Navbar() {
           <form onSubmit={handleSearchSubmit} className="relative w-full mb-4">
             <input
               type="text"
-              placeholder="Search toys, board games..."
+              placeholder="Search gifts, toys, perfumes..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full py-2 pl-4 pr-10 rounded-full border border-[var(--border)] bg-[var(--background)] text-[var(--foreground)] text-sm focus:outline-none"
@@ -317,7 +318,7 @@ export default function Navbar() {
               onClick={() => setMobileMenuOpen(false)}
               className="p-2 rounded-lg hover:bg-[var(--card)]"
             >
-              Shop All Toys
+              Shop All Products
             </Link>
             <Link 
               href="/offers" 

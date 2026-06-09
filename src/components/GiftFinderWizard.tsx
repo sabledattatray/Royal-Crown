@@ -48,6 +48,12 @@ export default function GiftFinderWizard({ isOpen, onClose }: GiftFinderWizardPr
             interestMatch = product.category === 'Soft Toys';
           } else if (interest === 'cars') {
             interestMatch = product.category === 'Hot Wheels' || product.category === 'Remote Control Toys';
+          } else if (interest === 'perf') {
+            interestMatch = product.category === "Men's Perfumes" || 
+                            product.category === "Women's Perfumes" || 
+                            product.category === "Attars & Oils";
+          } else if (interest === 'gift') {
+            interestMatch = product.category === 'Birthday Gifts' || product.category === 'Return Gifts';
           }
         }
 
@@ -181,19 +187,21 @@ export default function GiftFinderWizard({ isOpen, onClose }: GiftFinderWizardPr
                   { label: 'Coding & Science', value: 'edu', icon: '🧪' },
                   { label: 'RC Cars & Helicopters', value: 'rc', icon: '🎮' },
                   { label: 'Soft Cuddly Toys', value: 'soft', icon: '🧸' },
-                  { label: 'Racing & Hot Wheels', value: 'cars', icon: '🏎️' }
+                  { label: 'Racing & Hot Wheels', value: 'cars', icon: '🏎️' },
+                  { label: 'Perfumes & Scents', value: 'perf', icon: '🌸' },
+                  { label: 'Customized Gifts', value: 'gift', icon: '🎁' }
                 ].map((item) => (
                   <button
                     key={item.value}
                     onClick={() => setInterest(item.value)}
-                    className={`p-5 rounded-2xl border text-center transition-all duration-200 cursor-pointer flex flex-col items-center space-y-2 hover:scale-[1.02] hover:animate-wobble-hover group ${
+                    className={`p-4 rounded-2xl border text-center transition-all duration-200 cursor-pointer flex flex-col items-center space-y-2 hover:scale-[1.02] hover:animate-wobble-hover group ${
                       interest === item.value 
                         ? 'border-primary bg-primary/5 text-primary scale-[1.03] shadow-md font-bold' 
                         : 'border-[var(--border)] hover:bg-[var(--card)] text-[var(--foreground)]'
                     }`}
                   >
-                    <span className="text-3xl group-hover:scale-110 group-hover:animate-wiggle transition-all">{item.icon}</span>
-                    <span className="text-xs font-semibold">{item.label}</span>
+                    <span className="text-3.5xl group-hover:scale-110 group-hover:animate-wiggle transition-all">{item.icon}</span>
+                    <span className="text-[11px] font-semibold">{item.label}</span>
                   </button>
                 ))}
               </div>
@@ -241,10 +249,12 @@ export default function GiftFinderWizard({ isOpen, onClose }: GiftFinderWizardPr
                       className="flex items-center space-x-4 p-3 border border-[var(--border)] rounded-2xl hover:bg-[var(--card)] hover:border-primary/50 hover:scale-[1.01] transition-all duration-200"
                     >
                       <div className="relative w-16 h-16 rounded-xl overflow-hidden bg-slate-100 flex-shrink-0">
-                        <img 
+                        <Image 
                           src={product.images[0]} 
                           alt={product.name}
-                          className="w-full h-full object-cover"
+                          fill
+                          sizes="64px"
+                          className="object-cover"
                         />
                       </div>
                       <div className="flex-grow min-w-0">

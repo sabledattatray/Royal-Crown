@@ -2,7 +2,7 @@
 
 import React, { use } from 'react';
 import Link from 'next/link';
-import { ArrowLeft, ChevronRight, PackageOpen } from 'lucide-react';
+import { ChevronRight, PackageOpen } from 'lucide-react';
 import { CATEGORIES, PRODUCTS } from '../../../data/mockData';
 import ProductCard from '../../../components/ProductCard';
 
@@ -80,7 +80,7 @@ export default function CategoryPage({ params }: PageProps) {
             <p className="text-xs text-[var(--muted)] mt-1 max-w-xs">We are currently stocking up our online inventory for {categoryData.name}. In the meantime, message us on WhatsApp to check store inventory!</p>
           </div>
           <a 
-            href={`https://wa.me/919730044342?text=Hi%20Toy%20Shopee,%20do%20you%20have%20stock%20for%20items%20in%20the%20${encodeURIComponent(categoryData.name)}%20category?`}
+            href={`https://wa.me/919112270222?text=Hi%20Royal%20Crown,%20do%20you%20have%20stock%20for%20items%20in%20the%20${encodeURIComponent(categoryData.name)}%20category?`}
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-2.5 bg-success hover:bg-green-600 text-white rounded-xl text-xs font-bold transition-all shadow"

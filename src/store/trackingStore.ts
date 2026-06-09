@@ -62,28 +62,28 @@ function buildEvents(
     {
       status: 'confirmed',
       label: 'Order Confirmed',
-      description: 'Toy Shopee has confirmed your order and assigned it for packing.',
+      description: 'Royal Crown has confirmed your order and assigned it for packing.',
     },
     {
       status: 'packed',
       label: 'Packed & Ready',
       description: shippingMethod === 'pickup'
-        ? 'Your order is packed. Ready for self-pickup at Kartik Complex, Badlapur East.'
+        ? 'Your order is packed. Ready for self-pickup at Gandhi Chowk, Badlapur East.'
         : 'Your order is securely packed and ready to be dispatched for delivery.',
     },
     {
       status: 'out_for_delivery',
       label: shippingMethod === 'pickup' ? 'Ready for Pickup' : 'Out for Delivery',
       description: shippingMethod === 'pickup'
-        ? 'Your order is ready at the store. Visit us at Shop 11/12, Kartik Complex.'
+        ? 'Your order is ready at the store. Visit us at Shop No 05 - Nav Sai Krupa society, Gandhi Chowk.'
         : 'Our delivery partner is on the way to your address in Badlapur.',
     },
     {
       status: 'delivered',
       label: shippingMethod === 'pickup' ? 'Picked Up' : 'Delivered',
       description: shippingMethod === 'pickup'
-        ? 'Order successfully picked up. Thank you for visiting Toy Shopee!'
-        : 'Order delivered successfully! Thank you for shopping with Toy Shopee 🧸',
+        ? 'Order successfully picked up. Thank you for visiting Royal Crown!'
+        : 'Order delivered successfully! Thank you for shopping with Royal Crown! 👑',
     },
   ];
 
@@ -129,7 +129,7 @@ const RAW_ORDERS = [
     orderId: 'TS-504938',
     customerName: 'Sneha Patil',
     customerPhone: '9011234567',
-    customerAddress: 'Shop 4, Kartik Complex, Near Municipal Corp, Badlapur East, MH 421503',
+    customerAddress: 'Shop No 05 - Nav Sai Krupa society, Gandhi Chowk, Badlapur East, MH 421503',
     items: [{ name: 'Smart Coding Robot Kit', qty: 1, price: 3499 }],
     grandTotal: 3499,
     paymentMethod: 'razorpay' as const,
@@ -180,6 +180,6 @@ export const useTrackingStore = create<TrackingStore>()(
         return get().orders.find(o => o.orderId === orderId);
       },
     }),
-    { name: 'toy-shopee-tracking' }
+    { name: 'royal-crown-tracking' }
   )
 );

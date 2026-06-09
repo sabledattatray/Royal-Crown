@@ -33,8 +33,6 @@ export default function GSTInvoice({
     day: '2-digit', month: 'long', year: 'numeric',
   });
 
-  // Calculate GST: prices are inclusive of GST
-  const subtotal = items.reduce((acc, item) => acc + item.product.price * item.quantity, 0);
   const totalBeforeGst = Math.round((grandTotal / (1 + GST_RATE / 100)) * 100) / 100;
   const cgst = Math.round(((grandTotal - totalBeforeGst) / 2) * 100) / 100;
   const sgst = cgst;
@@ -72,15 +70,15 @@ export default function GSTInvoice({
           {/* Header */}
           <div className="flex justify-between items-start border-b-2 border-slate-900 pb-6">
             <div className="space-y-1">
-              <div className="text-2xl font-poppins font-black tracking-tight">
-                TOY<span className="text-amber-500">SHOPEE</span>
+              <div className="text-2xl font-poppins font-black tracking-tight text-slate-900">
+                ROYAL <span className="text-primary">CROWN</span>
               </div>
               <div className="text-xs text-slate-500 leading-relaxed">
-                Shop No. 11/12, Kartik Complex,<br />
-                Near Municipal Corporation,<br />
-                Badlapur East, Maharashtra 421503<br />
-                Ph: +91 97300 44342<br />
-                Email: toyshopeebadlapur@gmail.com
+                Shop No 05 - Nav Sai Krupa society,<br />
+                Opposite ZP Marathi school, Gandhi Chowk,<br />
+                East, Badlapur, Maharashtra 421503<br />
+                Ph: 09112270222<br />
+                Email: royalcrown.fgt@gmail.com
               </div>
               <div className="text-xs font-bold text-slate-700 mt-2">GSTIN: {STORE_GSTIN}</div>
             </div>
@@ -181,10 +179,10 @@ export default function GSTInvoice({
           <div className="border-t border-slate-200 pt-4 space-y-2">
             <div className="text-[10px] text-slate-500 leading-relaxed">
               <strong>Note:</strong> This is a computer-generated invoice. Prices are inclusive of GST (18%). HSN Code 9503 applies to toys and games.
-              For any queries, contact us at toyshopeebadlapur@gmail.com or WhatsApp +91 97300 44342.
+              For any queries, contact us at royalcrown.fgt@gmail.com or WhatsApp +91 91122 70222.
             </div>
             <div className="text-center text-[10px] font-semibold text-slate-400">
-              Thank you for shopping at Toy Shopee, Badlapur! 🧸
+              Thank you for shopping at Royal Crown, Badlapur! 👑
             </div>
           </div>
 

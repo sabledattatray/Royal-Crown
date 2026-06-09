@@ -30,7 +30,7 @@ const FESTIVALS = [
     name: 'Christmas',
     tagline: 'Santa\'s Toy Workshop',
     emoji: '🎄',
-    desc: 'Surprise the little ones with Christmas magic from Toy Shopee! Premium toys, gift-wrapped and delivered express in Badlapur.',
+    desc: 'Surprise the little ones with Christmas magic from Royal Crown! Premium toys, gift-wrapped and delivered express in Badlapur.',
     gradient: 'from-green-500 via-emerald-500 to-teal-600',
     bgLight: 'bg-green-50',
     bgDark: 'dark:bg-green-950/20',

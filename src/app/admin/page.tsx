@@ -98,7 +98,7 @@ export default function AdminPage() {
 
   const handleWhatsAppNotify = (order: typeof orders[0]) => {
     const msg = encodeURIComponent(
-      `🎁 *Toy Shopee Order Update*\n\nHi ${order.customer}! Your order *${order.id}* is now *${order.status}*.\n\nItems: ${order.items}\nTotal: ₹${order.total}\n\nFor queries call: +91 97300 44342\nThank you for shopping with Toy Shopee, Badlapur! 🧸`
+      `🎁 *Royal Crown Order Update*\n\nHi ${order.customer}! Your order *${order.id}* is now *${order.status}*.\n\nItems: ${order.items}\nTotal: ₹${order.total}\n\nFor queries call: 09112270222\nThank you for shopping with Royal Crown, Badlapur! 👑`
     );
     window.open(`https://wa.me/91${order.phone}?text=${msg}`, '_blank');
   };

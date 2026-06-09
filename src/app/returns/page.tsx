@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { RotateCcw, ShieldCheck, HeartHandshake, CheckCircle } from 'lucide-react';
+import { RotateCcw, ShieldCheck } from 'lucide-react';
 
 export default function ReturnsRefundsPage() {
   return (
@@ -64,7 +64,7 @@ export default function ReturnsRefundsPage() {
               You can return items in two convenient ways:
             </p>
             <ul className="list-disc pl-5 space-y-1 text-xs text-[var(--muted)]">
-              <li><strong>In-Store Drop:</strong> Bring the item directly to our store (Shop No. 11/12, Kartik Complex, Badlapur East) along with the bill. This is the fastest method, and exchanges can be processed instantly.</li>
+              <li><strong>In-Store Drop:</strong> Bring the item directly to our store (Shop No 05 - Nav Sai Krupa society, Gandhi Chowk, Badlapur East) along with the bill. This is the fastest method, and exchanges can be processed instantly.</li>
               <li><strong>Local Pickup:</strong> Request a local courier pickup through WhatsApp. A pickup charge of ₹50 may apply.</li>
             </ul>
           </section>

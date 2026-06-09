@@ -54,7 +54,17 @@ export const CATEGORIES = [
   { id: 'soft-toys', name: 'Soft Toys', slug: 'soft-toys', image: '🧸', count: 14, desc: 'Plush teddies, Disney characters, and cute huggable buddies.' },
   { id: 'outdoor-toys', name: 'Outdoor Toys', slug: 'outdoor-toys', image: '🛝', count: 9, desc: 'Bicycles, swings, slides, and active sports toys for outdoor play.' },
   { id: 'birthday-gifts', name: 'Birthday Gifts', slug: 'birthday-gifts', image: '🎁', count: 30, desc: 'Special custom gifts, premium wrapping, and party favorites.' },
-  { id: 'return-gifts', name: 'Return Gifts', slug: 'return-gifts', image: '🎈', count: 40, desc: 'Affordable bulk toys, packs, and favors for party return gifts.' }
+  { id: 'return-gifts', name: 'Return Gifts', slug: 'return-gifts', image: '🎈', count: 40, desc: 'Affordable bulk toys, packs, and favors for party return gifts.' },
+  { id: 'mens-perfumes', name: "Men's Perfumes", slug: 'mens-perfumes', image: '👔', count: 8, desc: 'Bold, sporty, and sophisticated masculine fragrances.' },
+  { id: 'womens-perfumes', name: "Women's Perfumes", slug: 'womens-perfumes', image: '👗', count: 8, desc: 'Elegant, floral, sweet, and mesmerizing feminine scents.' },
+  { id: 'attar-oils', name: 'Attars & Oils', slug: 'attar-oils', image: '✨', count: 6, desc: 'Traditional alcohol-free pure oils, long-lasting and intense.' },
+  { id: 'jewellery', name: 'Jewellery', slug: 'jewellery', image: '💍', count: 6, desc: 'Elegant custom and fashion jewellery for special occasions.' },
+  { id: 'watches-clocks', name: 'Watch & Clocks', slug: 'watches-clocks', image: '🕰️', count: 6, desc: 'Premium wristwatches and designer wall clocks for home decor.' },
+  { id: 'wallets', name: 'Wallets', slug: 'wallets', image: '💼', count: 6, desc: 'Premium leather wallets, customized card holders, and accessories.' },
+  { id: 'greetings', name: 'Greetings', slug: 'greetings', image: '✉️', count: 6, desc: 'Artistic greetings, pop-up cards, and customized messages for milestones.' },
+  { id: 'name-plates', name: 'Name Plates', slug: 'name-plates', image: '🚪', count: 6, desc: 'Exquisite custom acrylic name plates and designer home entry signs.' },
+  { id: 'corporate-gifting', name: 'Corporate Gifting', slug: 'corporate-gifting', image: '🏢', count: 6, desc: 'Custom corporate hampers, executive pen sets, and premium office giftware.' },
+  { id: 'photo-frames', name: 'Photo Frames', slug: 'photo-frames', image: '🖼️', count: 6, desc: 'Premium customized photo frames, LED frames, and anniversary gifts.' }
 ];
 
 export const PRODUCTS: Product[] = [
@@ -324,7 +334,7 @@ export const PRODUCTS: Product[] = [
     rating: 4.8,
     reviewsCount: 89,
     ageGroup: '3-5 Years',
-    brand: 'PartyShopee',
+    brand: 'PartyCrown',
     images: [
       'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80'
     ],
@@ -349,7 +359,7 @@ export const PRODUCTS: Product[] = [
     rating: 4.9,
     reviewsCount: 43,
     ageGroup: '6-8 Years',
-    brand: 'Toy Shopee Special',
+    brand: 'Royal Crown Special',
     images: [
       'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
     ],
@@ -1088,7 +1098,7 @@ export const PRODUCTS: Product[] = [
     rating: 4.7,
     reviewsCount: 38,
     ageGroup: '6-8 Years',
-    brand: 'Toy Shopee Special',
+    brand: 'Royal Crown Special',
     images: [
       'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
     ],
@@ -1111,7 +1121,7 @@ export const PRODUCTS: Product[] = [
     rating: 4.9,
     reviewsCount: 54,
     ageGroup: 'All Ages',
-    brand: 'Toy Shopee Special',
+    brand: 'Royal Crown Special',
     images: [
       'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80'
     ],
@@ -1159,7 +1169,7 @@ export const PRODUCTS: Product[] = [
     rating: 4.8,
     reviewsCount: 42,
     ageGroup: '3-5 Years',
-    brand: 'PartyShopee',
+    brand: 'PartyCrown',
     images: [
       'https://images.unsplash.com/photo-1607457561901-e6ec3a6d16cf?auto=format&fit=crop&w=600&q=80'
     ],
@@ -1183,7 +1193,7 @@ export const PRODUCTS: Product[] = [
     rating: 4.7,
     reviewsCount: 75,
     ageGroup: '3-5 Years',
-    brand: 'PartyShopee',
+    brand: 'PartyCrown',
     images: [
       'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80'
     ],
@@ -1207,7 +1217,7 @@ export const PRODUCTS: Product[] = [
     rating: 4.5,
     reviewsCount: 62,
     ageGroup: '3-5 Years',
-    brand: 'PartyShopee',
+    brand: 'PartyCrown',
     images: [
       'https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?auto=format&fit=crop&w=600&q=80'
     ],
@@ -1230,7 +1240,7 @@ export const PRODUCTS: Product[] = [
     rating: 4.8,
     reviewsCount: 95,
     ageGroup: '3-5 Years',
-    brand: 'PartyShopee',
+    brand: 'PartyCrown',
     images: [
       'https://images.unsplash.com/photo-1560421683-6856ea585c78?auto=format&fit=crop&w=600&q=80'
     ],
@@ -1254,7 +1264,7 @@ export const PRODUCTS: Product[] = [
     rating: 4.6,
     reviewsCount: 43,
     ageGroup: '6-8 Years',
-    brand: 'PartyShopee',
+    brand: 'PartyCrown',
     images: [
       'https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?auto=format&fit=crop&w=600&q=80'
     ],
@@ -1268,63 +1278,663 @@ export const PRODUCTS: Product[] = [
     },
     isNew: true,
     deliveryDays: 2
+  },
+  {
+    id: 'prod-perf-1',
+    name: 'Royal Crown Luxury Oud Perfume (100ml)',
+    category: "Men's Perfumes",
+    price: 1499,
+    originalPrice: 1999,
+    rating: 4.9,
+    reviewsCount: 38,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown',
+    images: [
+      'https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'An exquisite, long-lasting rich Arabian Oud perfume with woody, spicy, and amber notes. Hand-crafted for royalty and designed to turn heads.',
+    specifications: {
+      'Volume': '100 ml',
+      'Type': 'Eau De Parfum (EDP)',
+      'Fragrance Family': 'Woody Oriental / Amber',
+      'Notes': 'Top: Rose, Saffron; Heart: Patchouli, Oud; Base: Sandalwood, Amber'
+    },
+    isNew: true,
+    isBestSeller: true,
+    deliveryDays: 1
+  },
+  {
+    id: 'prod-perf-2',
+    name: 'Royal Crown French Rose Perfume (100ml)',
+    category: "Women's Perfumes",
+    price: 999,
+    originalPrice: 1299,
+    rating: 4.8,
+    reviewsCount: 29,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown',
+    images: [
+      'https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 12,
+    description: 'Sweet and fresh floral notes of fresh French roses combined with a hint of vanilla and white musk. Very elegant, light, and perfect for daytime wear.',
+    specifications: {
+      'Volume': '100 ml',
+      'Type': 'Eau De Toilette (EDT)',
+      'Fragrance Family': 'Fresh Floral',
+      'Notes': 'Top: Rosebud, Citrus; Heart: Peony, Jasmine; Base: White Musk, Vanilla'
+    },
+    isTrending: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-perf-3',
+    name: 'Royal Crown Blue Ocean Eau De Parfum (100ml)',
+    category: "Men's Perfumes",
+    price: 1199,
+    originalPrice: 1499,
+    rating: 4.7,
+    reviewsCount: 42,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown',
+    images: [
+      'https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 20,
+    description: 'A refreshing marine fragrance with citrusy top notes, lavender heart notes, and a deep woody base. Perfect for daily active wear and long-lasting freshness.',
+    specifications: {
+      'Volume': '100 ml',
+      'Type': 'Eau De Parfum (EDP)',
+      'Fragrance Family': 'Marine & Woody',
+      'Notes': 'Top: Bergamot, Grapefruit; Heart: Sea Notes, Lavender; Base: Patchouli, Cedarwood'
+    },
+    isOffer: true,
+    deliveryDays: 1
+  },
+  {
+    id: 'prod-perf-4',
+    name: 'Royal Crown Royal Velvet Perfume Gift Set',
+    category: "Women's Perfumes",
+    price: 1999,
+    originalPrice: 2499,
+    rating: 4.9,
+    reviewsCount: 15,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown',
+    images: [
+      'https://images.unsplash.com/photo-1547887537-6158d64c35b3?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 10,
+    description: 'Premium double-fragrance gift pack including Royal Crown Gold and Royal Crown Midnight perfumes, elegantly wrapped. The perfect luxury anniversary or birthday present.',
+    specifications: {
+      'Includes': '2 x 50ml Perfume Bottles',
+      'Packaging': 'Velvet lined luxury box with custom ribbon',
+      'Fragrances': 'Royal Crown Gold (Warm Amber) & Midnight (Spicy Musk)'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-perf-5',
+    name: 'Royal Crown Sandalwood Pure Attar (12ml)',
+    category: "Attars & Oils",
+    price: 699,
+    originalPrice: 899,
+    rating: 4.9,
+    reviewsCount: 54,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown',
+    images: [
+      'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 18,
+    description: 'Traditional non-alcoholic pure Sandalwood concentrate perfume oil (Attar). Rich, warm, soothing, and highly persistent with just a single drop.',
+    specifications: {
+      'Volume': '12 ml',
+      'Type': 'Pure Perfume Oil (Attar)',
+      'Alcohol Free': 'Yes',
+      'Container': 'Ornate traditional glass bottle with roll-on'
+    },
+    isBestSeller: true,
+    deliveryDays: 1
+  },
+  {
+    id: 'prod-perf-6',
+    name: 'Royal Crown Gold Amber Perfume (100ml)',
+    category: "Men's Perfumes",
+    price: 1299,
+    originalPrice: 1699,
+    rating: 4.8,
+    reviewsCount: 22,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown',
+    images: [
+      'https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'A rich, warm oriental blend of amber, spices, and cedarwood. Ideal for formal evenings and designed for long-lasting projection.',
+    specifications: {
+      'Volume': '100 ml',
+      'Type': 'Eau De Parfum (EDP)',
+      'Notes': 'Top: Cardamom, Pepper; Heart: Amber, Cedar; Base: Vetiver, Vanilla'
+    },
+    deliveryDays: 1
+  },
+  {
+    id: 'prod-perf-7',
+    name: 'Royal Crown Jasmine Blossom Perfume (100ml)',
+    category: "Women's Perfumes",
+    price: 1099,
+    originalPrice: 1399,
+    rating: 4.9,
+    reviewsCount: 18,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown',
+    images: [
+      'https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 12,
+    description: 'The fresh scent of wild blooming jasmine blended with white lilies and warm musk. Light, delicate, and charmingly feminine.',
+    specifications: {
+      'Volume': '100 ml',
+      'Type': 'Eau De Toilette (EDT)',
+      'Notes': 'Top: Mandarin, Jasmine; Heart: Lily, Peony; Base: White Musk'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-perf-8',
+    name: 'Royal Crown Sweet Vanilla EDP (100ml)',
+    category: "Women's Perfumes",
+    price: 999,
+    originalPrice: 1299,
+    rating: 4.7,
+    reviewsCount: 31,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown',
+    images: [
+      'https://images.unsplash.com/photo-1547887537-6158d64c35b3?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 20,
+    description: 'A delicious gourmand fragrance featuring warm Madagascar vanilla, caramel, and soft sandalwood notes. Extremely cozy and sweet.',
+    specifications: {
+      'Volume': '100 ml',
+      'Type': 'Eau De Parfum (EDP)',
+      'Notes': 'Top: Pear, Coconut; Heart: Madagascar Vanilla; Base: Sandalwood, Caramel'
+    },
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-perf-9',
+    name: 'Royal Crown Pure Musk Attar (12ml)',
+    category: "Attars & Oils",
+    price: 599,
+    originalPrice: 799,
+    rating: 4.9,
+    reviewsCount: 45,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown',
+    images: [
+      'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 25,
+    description: 'Non-alcoholic white musk attar. Highly clean, powdery, and long-lasting scent. A traditional favorite that lingers beautifully.',
+    specifications: {
+      'Volume': '12 ml',
+      'Type': 'Pure Perfume Oil (Attar)',
+      'Alcohol Free': 'Yes',
+      'Notes': 'White Musk, Powdery Accords, Light Florals'
+    },
+    isTrending: true,
+    deliveryDays: 1
+  },
+  {
+    id: 'prod-perf-10',
+    name: 'Royal Crown Saffron Rose Attar (12ml)',
+    category: "Attars & Oils",
+    price: 799,
+    originalPrice: 999,
+    rating: 4.8,
+    reviewsCount: 26,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown',
+    images: [
+      'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 18,
+    description: 'Premium concentrated perfume oil with saffron, Damascus rose, and light amber. A rich, traditional, and warm scent.',
+    specifications: {
+      'Volume': '12 ml',
+      'Type': 'Pure Perfume Oil (Attar)',
+      'Alcohol Free': 'Yes',
+      'Notes': 'Top: Saffron; Heart: Damascus Rose; Base: Amber, Musk'
+    },
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-perf-11',
+    name: 'Royal Crown Active Sport Intense (100ml)',
+    category: "Men's Perfumes",
+    price: 899,
+    originalPrice: 1199,
+    rating: 4.6,
+    reviewsCount: 35,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown',
+    images: [
+      'https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'An energetic sport cologne with notes of fresh mint, green apple, and clean vetiver. Great for everyday freshness and active wear.',
+    specifications: {
+      'Volume': '100 ml',
+      'Type': 'Eau De Toilette (EDT)',
+      'Notes': 'Top: Mint, Apple; Heart: Lavender; Base: Vetiver, Patchouli'
+    },
+    deliveryDays: 1
+  },
+  {
+    id: 'prod-jewel-1',
+    name: 'Royal Crown Gold Plated Pendant Set',
+    category: 'Jewellery',
+    price: 799,
+    originalPrice: 1099,
+    rating: 4.8,
+    reviewsCount: 24,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown',
+    images: [
+      'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'Beautifully crafted gold plated pendant with sparkling crystal elements, ideal for party wear and festive gifting.',
+    specifications: {
+      'Material': 'Gold Plated Alloy',
+      'Stone Type': 'Cubic Zirconia',
+      'Includes': '1 Pendant with chain, 1 Pair of earrings'
+    },
+    isTrending: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-jewel-2',
+    name: 'Royal Crown Custom Name Bracelet',
+    category: 'Jewellery',
+    price: 499,
+    originalPrice: 699,
+    rating: 4.9,
+    reviewsCount: 36,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown',
+    images: [
+      'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 50,
+    description: 'Personalized custom name bracelet made of high-quality stainless steel, available in silver and gold. Perfect personalized gift!',
+    specifications: {
+      'Material': 'Anti-tarnish Stainless Steel',
+      'Plating': '18k Gold Plated / Silver Polished',
+      'Customization': 'Name up to 10 letters'
+    },
+    isNew: true,
+    deliveryDays: 1
+  },
+  {
+    id: 'prod-watch-1',
+    name: 'Royal Crown Designer Silent Wall Clock',
+    category: 'Watch & Clocks',
+    price: 1299,
+    originalPrice: 1799,
+    rating: 4.8,
+    reviewsCount: 15,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown',
+    images: [
+      'https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 10,
+    description: 'Elegant silent-movement wall clock with modern golden design, perfect for home entry, living room or a warming housewarming gift.',
+    specifications: {
+      'Diameter': '30 cm / 12 inches',
+      'Movement': 'Silent Quartz Sweep Movement',
+      'Power Source': '1 x AA Battery (Not Included)'
+    },
+    isBestSeller: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-watch-2',
+    name: "Royal Crown Classic Men's Leather Watch",
+    category: 'Watch & Clocks',
+    price: 1899,
+    originalPrice: 2499,
+    rating: 4.7,
+    reviewsCount: 28,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown',
+    images: [
+      'https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 8,
+    description: 'Sophisticated analog wristwatch with genuine brown leather strap and black dial. Suitable for casual and formal wear.',
+    specifications: {
+      'Strap Material': 'Genuine Leather',
+      'Water Resistance': '3 ATM (Splashproof)',
+      'Movement': 'Japanese Quartz Analog'
+    },
+    deliveryDays: 1
+  },
+  {
+    id: 'prod-wallet-1',
+    name: 'Royal Crown Customized Leather Wallet & Pen Gift Set',
+    category: 'Wallets',
+    price: 999,
+    originalPrice: 1299,
+    rating: 4.9,
+    reviewsCount: 52,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown',
+    images: [
+      'https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 20,
+    description: 'Customized wallet with name tag and executive metallic pen, a perfect premium gift set for birthdays, anniversaries, or corporate clients.',
+    specifications: {
+      'Wallet Material': 'Synthetic Vegan Leather',
+      'Pen': 'Metal ballpoint with blue ink',
+      'Customization': 'Name tag on wallet + charm'
+    },
+    isBestSeller: true,
+    deliveryDays: 1
+  },
+  {
+    id: 'prod-wallet-2',
+    name: 'Royal Crown Slim RFID Card Holder Wallet',
+    category: 'Wallets',
+    price: 499,
+    originalPrice: 699,
+    rating: 4.8,
+    reviewsCount: 19,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown',
+    images: [
+      'https://images.unsplash.com/photo-1612023395494-1c4050b68647?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'Minimalist aluminum RFID blocking wallet with ejector mechanism for quick card access. Sleek, secure, and modern.',
+    specifications: {
+      'Material': 'Aluminum & PU Leather sleeve',
+      'Card Capacity': 'Up to 6-8 cards',
+      'RFID Protection': 'Yes'
+    },
+    isTrending: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-greet-1',
+    name: 'Royal Crown Premium 3D Pop-Up Birthday Card',
+    category: 'Greetings',
+    price: 299,
+    originalPrice: 399,
+    rating: 4.9,
+    reviewsCount: 34,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown',
+    images: [
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 40,
+    description: 'Delicate laser-cut 3D pop-up card displaying a birthday cake, greeting message, and led light effect. A memorable way to send your wishes.',
+    specifications: {
+      'Material': 'Premium cardstock',
+      'Size': '15 x 15 cm folded',
+      'Includes': 'Envelope + message insert'
+    },
+    isNew: true,
+    deliveryDays: 1
+  },
+  {
+    id: 'prod-greet-2',
+    name: 'Royal Crown Customized Wooden Scroll Message',
+    category: 'Greetings',
+    price: 699,
+    originalPrice: 899,
+    rating: 4.8,
+    reviewsCount: 14,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown',
+    images: [
+      'https://images.unsplash.com/photo-1516962215378-7fa2e137ae93?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'Custom messages printed on an antique-style canvas scroll with polished wooden rollers. A royal way to send a message of love.',
+    specifications: {
+      'Scroll Size': '30 x 18 cm',
+      'Material': 'Canvas cloth & Teak wood rollers',
+      'Gift Packaging': 'Antique cardboard tube'
+    },
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-plate-1',
+    name: 'Royal Crown Customized Acrylic LED Name Plate',
+    category: 'Name Plates',
+    price: 2499,
+    originalPrice: 3499,
+    rating: 5.0,
+    reviewsCount: 48,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown',
+    images: [
+      'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 10,
+    description: 'Waterproof, premium acrylic name plate with warm LED backlight, custom marathi/english letters. Perfect for your home entrance.',
+    specifications: {
+      'Material': 'High-density weatherproof Acrylic',
+      'LED Backlight': 'Warm White (Adapter included)',
+      'Dimensions': '40 x 25 cm (customizable)'
+    },
+    isBestSeller: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-plate-2',
+    name: 'Royal Crown Wooden Carved Entry Name Plate',
+    category: 'Name Plates',
+    price: 1499,
+    originalPrice: 1999,
+    rating: 4.9,
+    reviewsCount: 30,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown',
+    images: [
+      'https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 12,
+    description: 'Traditional polished teakwood name plate with high relief carving, perfect for flat entrance. Brings elegant vibes to your door.',
+    specifications: {
+      'Material': 'Premium Teakwood',
+      'Finish': 'Polished walnut lacquer',
+      'Dimensions': '35 x 18 cm'
+    },
+    isOffer: true,
+    deliveryDays: 3
+  },
+  {
+    id: 'prod-corp-1',
+    name: 'Royal Crown Executive Gift Combo (Set of 3)',
+    category: 'Corporate Gifting',
+    price: 1199,
+    originalPrice: 1599,
+    rating: 4.9,
+    reviewsCount: 15,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 25,
+    description: 'Housed in a luxury gift box, includes customized thermal bottle, diary/notebook, and metallic pen. Perfect corporate client favor.',
+    specifications: {
+      'Bottle': '500ml Vacuum Insulated Flask',
+      'Notebook': 'A5 Leatherette lined pages',
+      'Pen': 'Custom engraved matte black ballpoint'
+    },
+    isBestSeller: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-corp-2',
+    name: 'Royal Crown Ceramic Mug & Keychain Gift Pack',
+    category: 'Corporate Gifting',
+    price: 599,
+    originalPrice: 799,
+    rating: 4.8,
+    reviewsCount: 22,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown',
+    images: [
+      'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 50,
+    description: 'Office corporate gift combo featuring personalized logo ceramic mug and premium metal keychain. Elegant and custom branded.',
+    specifications: {
+      'Mug': '330ml Microwave safe Ceramic',
+      'Keychain': 'Premium metal and leather loop',
+      'Branding': 'High-definition color printing'
+    },
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-frame-1',
+    name: 'Royal Crown Customized Anniversary Photo Frame',
+    category: 'Photo Frames',
+    price: 899,
+    originalPrice: 1299,
+    rating: 4.9,
+    reviewsCount: 16,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown',
+    images: [
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'Elegant custom wooden photo frame. Tailor-made for anniversaries, birthdays, and special milestones. High quality printing.',
+    specifications: {
+      'Material': 'Polished Wood & Acrylic cover',
+      'Sizes': '8x10 or 12x15 inches',
+      'Customization': 'Name & Date engraving available'
+    },
+    isBestSeller: true,
+    deliveryDays: 3
+  },
+  {
+    id: 'prod-frame-2',
+    name: 'Royal Crown Customized LED Spotify Acrylic Frame',
+    category: 'Photo Frames',
+    price: 1299,
+    originalPrice: 1799,
+    rating: 4.8,
+    reviewsCount: 20,
+    ageGroup: 'All Ages',
+    brand: 'Royal Crown',
+    images: [
+      'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 10,
+    description: 'Unique custom transparent acrylic frame with LED wooden base, featuring your favorite song track and custom photo printed.',
+    specifications: {
+      'Base': 'Premium beechwood base with Warm LED lights',
+      'Material': '4mm Transparent Cast Acrylic panel',
+      'Interface': 'USB Cable powered'
+    },
+    isNew: true,
+    deliveryDays: 3
   }
 ];
 
 export const REVIEWS: Review[] = [
   {
     id: 'rev-1',
-    author: 'Om Refrigeration Ac Solutions',
+    author: 'Nilesh Rathod',
     avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&q=80',
-    rating: 4,
-    date: '4 years ago',
-    text: 'Very high rates but overall fine because all types of age toys available here , near railway bridge badlapur east, baught a remote car on my friends birthday from here . There are no guarantee warranty of products please check and purchase carefully. Thanks',
-    response: 'Thank you for shopping at Toy Shopee! We carry toys for all ages and test all electronic/RC items at the counter prior to checkout to ensure everything is working perfectly for you. We look forward to seeing you again!'
+    rating: 5,
+    date: '4 months ago',
+    text: 'I just picked up my custom acrylic Name plate from Royal crowns gifts toys and i\'m obsessed. I wanted a specific mix of colour and marathi letters to match my entrance, and they got it perfect. The owner communicated promptly via WhatsApp.',
+    response: 'Thank you so much for your valuable feedback 😊'
   },
   {
     id: 'rev-2',
-    author: 'Trushna Doke',
-    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80',
-    rating: 4,
-    date: '9 years ago',
-    text: 'It is a nice shop for toys and other playing stuff. They also keep board games and many more variety with them. I often buy Hot wheels from here. Only the issue is they don\'t keep large variety in it,they just order same toys and hotwheels to sell.',
-    response: 'Hi Trushna! Thanks for the review. Over the years, we have significantly expanded our catalogs. We now offer dozens of new board games, puzzle sets, and hot wheels additions. Drop by to check out our fresh stock!'
+    author: 'MULTIMEDIA INSTITUTE',
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80',
+    rating: 5,
+    date: '5 months ago',
+    text: 'I ordered a customized wallet, pen, and goggles case from Royal Crown Grown online. It is a trustworthy brand. They provided amazing service, and the product quality is fantastic. I am totally satisfied with their service.',
+    response: 'Thank you so much for your valuable feedback 😊'
   },
   {
     id: 'rev-3',
-    author: 'Sameer Bhosale',
+    author: 'jabardasth collections',
     avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80',
-    rating: 2,
-    date: '2 years ago',
-    text: 'Rates of toys are very high. Worker in shop are nonsens. Dont have sens of how to talk with customer. Other than this there are many shops with reasonable rates in badlapur. Poor experience. Worst shop ever.',
-    response: 'Hi Sameer, we sincerely apologize for the poor experience. We have taken your feedback seriously and trained our team to provide polite and helpful service. We also now offer special discounts on many toys. We would love the opportunity to welcome you back and make things right!'
+    rating: 5,
+    date: '5 months ago',
+    text: 'I recently ordered a wallet, goggles, and pen from Royal crown Gifts Toys perfumes and I’m really satisfied. The quality of all the products is excellent and the service is very smooth. Fast delivery and good packaging. Totally worth buying from here 😊',
+    response: 'Thank you so much for your valuable feedback 😊'
   },
   {
     id: 'rev-4',
-    author: 'Akash Chaudhari',
+    author: 'Suryaprakash Yadav',
     avatar: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80',
-    rating: 4,
-    date: '4 years ago',
-    text: 'Store arrangements are good. All type of toys available here. Nearby railway stn. But prices are little costly.',
-    response: 'Thank you Akash! We are glad you enjoyed our store arrangement and convenient location near the railway station. We aim to keep all varieties of toys in stock for our customers.'
+    rating: 5,
+    date: '4 months ago',
+    text: 'Good service and delivery before time..acurate and creatively design requested name in Acrylic..thanks for quick service. I would suggest to buy from here..good adviser and genuine suggestion and service',
+    response: 'Thank you so much for your valuable feedback 😊'
   },
   {
     id: 'rev-5',
-    author: 'Nilesh Kedare',
-    avatar: 'https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=150&q=80',
-    rating: 4,
-    date: '6 years ago',
-    text: 'It is the only good toy shop. But rates are compartively high but considering a variety of available products makes it a good toy shop in badlapur.',
-    response: 'Thank you Nilesh! We strive to be the best toy shop in Badlapur by keeping the widest variety of quality products available under one roof. We appreciate your support!'
+    author: 'Deepali Jadhav',
+    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80',
+    rating: 5,
+    date: '6 months ago',
+    text: 'I have ordered name plate from this site through Instagram. I m very happy after receiving my product. Very nice work. Trustworthy site.',
+    response: 'Thank you so much for your valuable feedback 😊'
   },
   {
     id: 'rev-6',
-    author: 'nikhil deshmukh',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80',
+    author: 'Faizan Karoo',
+    avatar: 'https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=150&q=80',
     rating: 5,
-    date: '3 years ago',
-    text: 'One of the better shops in Badlapur to shop gifts for kids. Variety of toys available in all budgets.',
-    response: 'Thank you Nikhil! We are glad we could help you find perfect gifts within your budget. Your recommendation means a lot to us!'
+    date: '2 years ago',
+    text: 'Nice and helpful, owner of the shop helped me purchase online toy for my niece 1st birthday and got the same delivered on time, Genuine and hardworking people.',
+    response: 'Thank you so much for your valuable feedback 🙂'
   }
 ];
 
@@ -1337,7 +1947,7 @@ export const BLOGS: BlogPost[] = [
     excerpt: 'Discover which toys can help your child improve spatial thinking, logical deduction, and motor skills while having fun.',
     content: `Choosing the right toys for your children can feel like a daunting task, especially with the digital screen distraction surrounding them. However, educational toys (STEM) play an irreplaceable role in sensory and cognitive development.
     
-    In this guide, we break down our top 5 picks available at Toy Shopee, Badlapur:
+    In this guide, we break down our top 5 picks available at Royal Crown, Badlapur:
     
     1. **Smart Coding Robots**: Tutors child-friendly programming logic without screen exhaustion.
     2. **Jigsaw Puzzles**: Boosts spatial coordination and pattern matching.
@@ -1365,7 +1975,7 @@ export const BLOGS: BlogPost[] = [
     * **Theme Packs**: Cartoon/Superhero sets (badges, pencils, and keychains).
     * **Interactive Games**: Small card decks or travel chess.
     
-    At Toy Shopee Badlapur, we provide wholesale pricing on bulk bookings starting from just 10 pieces. Check our return gift catalog to explore pre-packed gift bags!`,
+    At Royal Crown Badlapur, we provide wholesale pricing on bulk bookings starting from just 10 pieces. Check our return gift catalog to explore pre-packed gift bags!`,
     image: 'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=800&q=80',
     date: 'May 20, 2026',
     readTime: '5 min read',

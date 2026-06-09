@@ -6,10 +6,10 @@ import { MessageSquareText } from 'lucide-react';
 
 export default function FloatingWhatsApp() {
   const pathname = usePathname();
-  const phoneNumber = '919730044342';
+  const phoneNumber = '919112270222';
 
   const getPrefilledMessage = () => {
-    const baseMsg = 'Hello Toy Shopee Badlapur! ';
+    const baseMsg = 'Hello Royal Crown Badlapur! ';
     
     if (pathname.includes('/shop/')) {
       return encodeURIComponent(baseMsg + 'I am interested in inquiring about this product: ' + window.location.href);

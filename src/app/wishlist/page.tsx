@@ -2,19 +2,24 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { Heart, ShoppingCart, Trash2, ArrowRight } from 'lucide-react';
+import Image from 'next/image';
+import { Heart, ShoppingCart, Trash2 } from 'lucide-react';
 import { useCartStore } from '../../store/cartStore';
+import { Product } from '../../data/mockData';
 
 export default function WishlistPage() {
   const { wishlist, toggleWishlist, addToCart } = useCartStore();
   const [mounted, setMounted] = React.useState(false);
 
   React.useEffect(() => {
-    setMounted(true);
+    const timer = setTimeout(() => {
+      setMounted(true);
+    }, 0);
+    return () => clearTimeout(timer);
   }, []);
 
 
-  const handleMoveToCart = (product: any) => {
+  const handleMoveToCart = (product: Product) => {
     addToCart(product, 1);
     toggleWishlist(product); // Remove from wishlist
   };
@@ -59,10 +64,12 @@ export default function WishlistPage() {
           >
             {/* Image Link */}
             <Link href={`/shop/${product.id}`} className="relative block aspect-square w-full overflow-hidden bg-slate-100">
-              <img
+              <Image
                 src={product.images[0]}
                 alt={product.name}
-                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                fill
+                sizes="(max-width: 768px) 100vw, 25vw"
+                className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
               />
               <button
                 onClick={(e) => { e.preventDefault(); toggleWishlist(product); }}

@@ -2,9 +2,9 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { 
   Sparkles, 
-  Clock, 
   MapPin, 
   Truck, 
   Gift, 
@@ -13,7 +13,6 @@ import {
   PhoneCall, 
   ShieldCheck, 
   Award, 
-  ChevronRight, 
   MessageCircle,
   Map,
   ArrowRight
@@ -27,27 +26,47 @@ import GiftFinderWizard from '../components/GiftFinderWizard';
 const getCategoryStyle = (slug: string) => {
   switch (slug) {
     case 'educational-toys':
-      return 'bg-blue-50/40 hover:bg-blue-50/80 dark:bg-blue-950/10 dark:hover:bg-blue-950/20 border-blue-200 dark:border-blue-900/30 text-blue-600 dark:text-blue-400';
+      return 'border-blue-100 dark:border-blue-900/30 hover:border-blue-400 dark:hover:border-blue-700 bg-gradient-to-b from-blue-50/20 to-blue-50/5 hover:from-blue-50/40 hover:to-blue-50/10 dark:from-blue-950/5 dark:to-transparent dark:hover:from-blue-950/15 text-blue-600 dark:text-blue-400 hover:shadow-blue-500/10 dark:hover:shadow-blue-500/5';
     case 'baby-toys':
-      return 'bg-pink-50/40 hover:bg-pink-50/80 dark:bg-pink-950/10 dark:hover:bg-pink-950/20 border-pink-200 dark:border-pink-900/30 text-pink-600 dark:text-pink-400';
+      return 'border-pink-100 dark:border-pink-900/30 hover:border-pink-400 dark:hover:border-pink-700 bg-gradient-to-b from-pink-50/20 to-pink-50/5 hover:from-pink-50/40 hover:to-pink-50/10 dark:from-pink-950/5 dark:to-transparent dark:hover:from-pink-950/15 text-pink-600 dark:text-pink-400 hover:shadow-pink-500/10 dark:hover:shadow-pink-500/5';
     case 'remote-control-toys':
-      return 'bg-emerald-50/40 hover:bg-emerald-50/80 dark:bg-emerald-950/10 dark:hover:bg-emerald-950/20 border-emerald-200 dark:border-emerald-900/30 text-emerald-600 dark:text-emerald-400';
+      return 'border-emerald-100 dark:border-emerald-900/30 hover:border-emerald-400 dark:hover:border-emerald-700 bg-gradient-to-b from-emerald-50/20 to-emerald-50/5 hover:from-emerald-50/40 hover:to-emerald-50/10 dark:from-emerald-950/5 dark:to-transparent dark:hover:from-emerald-950/15 text-emerald-600 dark:text-emerald-400 hover:shadow-emerald-500/10 dark:hover:shadow-emerald-500/5';
     case 'board-games':
-      return 'bg-purple-50/40 hover:bg-purple-50/80 dark:bg-purple-950/10 dark:hover:bg-purple-950/20 border-purple-200 dark:border-purple-900/30 text-purple-600 dark:text-purple-400';
+      return 'border-purple-100 dark:border-purple-900/30 hover:border-purple-400 dark:hover:border-purple-700 bg-gradient-to-b from-purple-50/20 to-purple-50/5 hover:from-purple-50/40 hover:to-purple-50/10 dark:from-purple-950/5 dark:to-transparent dark:hover:from-purple-950/15 text-purple-600 dark:text-purple-400 hover:shadow-purple-500/10 dark:hover:shadow-purple-500/5';
     case 'hot-wheels':
-      return 'bg-amber-50/40 hover:bg-amber-50/80 dark:bg-amber-950/10 dark:hover:bg-amber-950/20 border-amber-200 dark:border-amber-900/30 text-amber-600 dark:text-amber-400';
+      return 'border-amber-100 dark:border-amber-900/30 hover:border-amber-400 dark:hover:border-amber-700 bg-gradient-to-b from-amber-50/20 to-amber-50/5 hover:from-amber-50/40 hover:to-amber-50/10 dark:from-amber-950/5 dark:to-transparent dark:hover:from-amber-950/15 text-amber-600 dark:text-amber-400 hover:shadow-amber-500/10 dark:hover:shadow-amber-500/5';
     case 'action-figures':
-      return 'bg-rose-50/40 hover:bg-rose-50/80 dark:bg-rose-950/10 dark:hover:bg-rose-950/20 border-rose-200 dark:border-rose-900/30 text-rose-600 dark:text-rose-400';
+      return 'border-rose-100 dark:border-rose-900/30 hover:border-rose-400 dark:hover:border-rose-700 bg-gradient-to-b from-rose-50/20 to-rose-50/5 hover:from-rose-50/40 hover:to-rose-50/10 dark:from-rose-950/5 dark:to-transparent dark:hover:from-rose-950/15 text-rose-600 dark:text-rose-400 hover:shadow-rose-500/10 dark:hover:shadow-rose-500/5';
     case 'soft-toys':
-      return 'bg-teal-50/40 hover:bg-teal-50/80 dark:bg-teal-950/10 dark:hover:bg-teal-950/20 border-teal-200 dark:border-teal-900/30 text-teal-600 dark:text-teal-400';
+      return 'border-teal-100 dark:border-teal-900/30 hover:border-teal-400 dark:hover:border-teal-700 bg-gradient-to-b from-teal-50/20 to-teal-50/5 hover:from-teal-50/40 hover:to-teal-50/10 dark:from-teal-950/5 dark:to-transparent dark:hover:from-teal-950/15 text-teal-600 dark:text-teal-400 hover:shadow-teal-500/10 dark:hover:shadow-teal-500/5';
     case 'outdoor-toys':
-      return 'bg-sky-50/40 hover:bg-sky-50/80 dark:bg-sky-950/10 dark:hover:bg-sky-950/20 border-sky-200 dark:border-sky-900/30 text-sky-600 dark:text-sky-400';
+      return 'border-sky-100 dark:border-sky-900/30 hover:border-sky-400 dark:hover:border-sky-700 bg-gradient-to-b from-sky-50/20 to-sky-50/5 hover:from-sky-50/40 hover:to-sky-50/10 dark:from-sky-950/5 dark:to-transparent dark:hover:from-sky-950/15 text-sky-600 dark:text-sky-400 hover:shadow-sky-500/10 dark:hover:shadow-sky-500/5';
     case 'birthday-gifts':
-      return 'bg-indigo-50/40 hover:bg-indigo-50/80 dark:bg-indigo-950/10 dark:hover:bg-indigo-950/20 border-indigo-200 dark:border-indigo-900/30 text-indigo-600 dark:text-indigo-400';
+      return 'border-indigo-100 dark:border-indigo-900/30 hover:border-indigo-400 dark:hover:border-indigo-700 bg-gradient-to-b from-indigo-50/20 to-indigo-50/5 hover:from-indigo-50/40 hover:to-indigo-50/10 dark:from-indigo-950/5 dark:to-transparent dark:hover:from-indigo-950/15 text-indigo-600 dark:text-indigo-400 hover:shadow-indigo-500/10 dark:hover:shadow-indigo-500/5';
     case 'return-gifts':
-      return 'bg-fuchsia-50/40 hover:bg-fuchsia-50/80 dark:bg-fuchsia-950/10 dark:hover:bg-fuchsia-950/20 border-fuchsia-200 dark:border-fuchsia-900/30 text-fuchsia-600 dark:text-fuchsia-400';
+      return 'border-fuchsia-100 dark:border-fuchsia-900/30 hover:border-fuchsia-400 dark:hover:border-fuchsia-700 bg-gradient-to-b from-fuchsia-50/20 to-fuchsia-50/5 hover:from-fuchsia-50/40 hover:to-fuchsia-50/10 dark:from-fuchsia-950/5 dark:to-transparent dark:hover:from-fuchsia-950/15 text-fuchsia-600 dark:text-fuchsia-400 hover:shadow-fuchsia-500/10 dark:hover:shadow-fuchsia-500/5';
+    case 'mens-perfumes':
+      return 'border-blue-100 dark:border-blue-900/30 hover:border-blue-400 dark:hover:border-blue-700 bg-gradient-to-b from-blue-50/20 to-blue-50/5 hover:from-blue-50/40 hover:to-blue-50/10 dark:from-blue-950/5 dark:to-transparent dark:hover:from-blue-950/15 text-blue-600 dark:text-blue-400 hover:shadow-blue-500/10 dark:hover:shadow-blue-500/5';
+    case 'womens-perfumes':
+      return 'border-pink-100 dark:border-pink-900/30 hover:border-pink-400 dark:hover:border-pink-700 bg-gradient-to-b from-pink-50/20 to-pink-50/5 hover:from-pink-50/40 hover:to-pink-50/10 dark:from-pink-950/5 dark:to-transparent dark:hover:from-pink-950/15 text-pink-600 dark:text-pink-400 hover:shadow-pink-500/10 dark:hover:shadow-pink-500/5';
+    case 'attar-oils':
+      return 'border-amber-100 dark:border-amber-900/30 hover:border-amber-400 dark:hover:border-amber-700 bg-gradient-to-b from-amber-50/20 to-amber-50/5 hover:from-amber-50/40 hover:to-amber-50/10 dark:from-amber-950/5 dark:to-transparent dark:hover:from-amber-950/15 text-amber-600 dark:text-amber-400 hover:shadow-amber-500/10 dark:hover:shadow-amber-500/5';
+    case 'jewellery':
+      return 'border-rose-100 dark:border-rose-900/30 hover:border-rose-400 dark:hover:border-rose-700 bg-gradient-to-b from-rose-50/20 to-rose-50/5 hover:from-rose-50/40 hover:to-rose-50/10 dark:from-rose-950/5 dark:to-transparent dark:hover:from-rose-950/15 text-rose-600 dark:text-rose-400 hover:shadow-rose-500/10 dark:hover:shadow-rose-500/5';
+    case 'watches-clocks':
+      return 'border-indigo-100 dark:border-indigo-900/30 hover:border-indigo-400 dark:hover:border-indigo-700 bg-gradient-to-b from-indigo-50/20 to-indigo-50/5 hover:from-indigo-50/40 hover:to-indigo-50/10 dark:from-indigo-950/5 dark:to-transparent dark:hover:from-indigo-950/15 text-indigo-600 dark:text-indigo-400 hover:shadow-indigo-500/10 dark:hover:shadow-indigo-500/5';
+    case 'wallets':
+      return 'border-teal-100 dark:border-teal-900/30 hover:border-teal-400 dark:hover:border-teal-700 bg-gradient-to-b from-teal-50/20 to-teal-50/5 hover:from-teal-50/40 hover:to-teal-50/10 dark:from-teal-950/5 dark:to-transparent dark:hover:from-teal-950/15 text-teal-600 dark:text-teal-400 hover:shadow-teal-500/10 dark:hover:shadow-teal-500/5';
+    case 'greetings':
+      return 'border-emerald-100 dark:border-emerald-900/30 hover:border-emerald-400 dark:hover:border-emerald-700 bg-gradient-to-b from-emerald-50/20 to-emerald-50/5 hover:from-emerald-50/40 hover:to-emerald-50/10 dark:from-emerald-950/5 dark:to-transparent dark:hover:from-emerald-950/15 text-emerald-600 dark:text-emerald-400 hover:shadow-emerald-500/10 dark:hover:shadow-emerald-500/5';
+    case 'name-plates':
+      return 'border-violet-100 dark:border-violet-900/30 hover:border-violet-400 dark:hover:border-violet-700 bg-gradient-to-b from-violet-50/20 to-violet-50/5 hover:from-violet-50/40 hover:to-violet-50/10 dark:from-violet-950/5 dark:to-transparent dark:hover:from-violet-950/15 text-violet-600 dark:text-violet-400 hover:shadow-violet-500/10 dark:hover:shadow-violet-500/5';
+    case 'corporate-gifting':
+      return 'border-amber-100 dark:border-amber-900/30 hover:border-amber-400 dark:hover:border-amber-700 bg-gradient-to-b from-amber-50/20 to-amber-50/5 hover:from-amber-50/40 hover:to-amber-50/10 dark:from-amber-950/5 dark:to-transparent dark:hover:from-amber-950/15 text-amber-600 dark:text-amber-400 hover:shadow-amber-500/10 dark:hover:shadow-amber-500/5';
+    case 'photo-frames':
+      return 'border-fuchsia-100 dark:border-fuchsia-900/30 hover:border-fuchsia-400 dark:hover:border-fuchsia-700 bg-gradient-to-b from-fuchsia-50/20 to-fuchsia-50/5 hover:from-fuchsia-50/40 hover:to-fuchsia-50/10 dark:from-fuchsia-950/5 dark:to-transparent dark:hover:from-fuchsia-950/15 text-fuchsia-600 dark:text-fuchsia-400 hover:shadow-fuchsia-500/10 dark:hover:shadow-fuchsia-500/5';
     default:
-      return 'bg-[var(--card)] hover:bg-[var(--accent-light)] border-[var(--border)] text-primary';
+      return 'border-[var(--border)] hover:border-primary/45 bg-[var(--card)] text-primary hover:shadow-lg';
   }
 };
 
@@ -58,11 +77,16 @@ export default function Home() {
   const [wizardOpen, setWizardOpen] = useState(false);
 
   useEffect(() => {
-    setStoreStatus(getStoreStatus());
+    const timer = setTimeout(() => {
+      setStoreStatus(getStoreStatus());
+    }, 0);
     const interval = setInterval(() => {
       setStoreStatus(getStoreStatus());
     }, 30000);
-    return () => clearInterval(interval);
+    return () => {
+      clearTimeout(timer);
+      clearInterval(interval);
+    };
   }, []);
 
   const getFilteredProducts = () => {
@@ -81,7 +105,7 @@ export default function Home() {
   };
 
   const handleDirections = () => {
-    window.open('https://maps.google.com/?q=Toy+Shopee+Kartik+Complex+Badlapur+East', '_blank');
+    window.open('https://maps.google.com/?q=Royal+Crown+Gifts+Toys+Perfumes+Gandhi+Chowk+Badlapur+East', '_blank');
   };
 
   return (
@@ -110,17 +134,19 @@ export default function Home() {
               {/* Premium Welcome Badge */}
               <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 bg-primary/10 border border-primary/20 rounded-full text-xs font-bold text-primary animate-pulse-soft">
                 <Sparkles size={14} className="animate-spin-slow text-secondary" />
-                <span>Premium Kids Toy Boutique</span>
+                <span>Premium Gifts, Toys & Perfumes Boutique</span>
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-poppins font-black tracking-tight leading-none text-slate-900 dark:text-white">
-                <span className="text-slate-800 dark:text-white">Badlapur's Favorite</span><br />
-                <span className="text-primary-playful drop-shadow-sm inline-block hover:scale-105 hover:rotate-3 transition-transform">Toy</span>{' '}
-                <span className="text-secondary-playful drop-shadow-sm">Store</span>
+                <span className="text-slate-800 dark:text-white">Badlapur&apos;s Favorite</span><br />
+                <span className="text-primary-playful drop-shadow-sm inline-block hover:scale-105 hover:rotate-3 transition-transform">Gift</span>{' '}
+                <span className="text-slate-800 dark:text-white">&</span>{' '}
+                <span className="text-secondary-playful drop-shadow-sm">Toy</span>{' '}
+                <span className="text-slate-800 dark:text-white">Boutique</span>
               </h1>
               
               <p className="text-base sm:text-lg text-[var(--muted)] max-w-xl leading-relaxed mx-auto lg:mx-0">
-                Thousands of premium toys, strategic board games, interactive educational kits, action figures, Hot Wheels, and custom birthday return gifts. Built to inspire minds and ignite laughter!
+                Thousands of premium gifts, custom acrylic name plates, personalized wallets, photo frames, games, toys, and luxury perfumes. Curated for your special moments!
               </p>
 
               {/* CTAs */}
@@ -158,18 +184,20 @@ export default function Home() {
             {/* Right Hero Image Card Grid */}
             <div className="lg:col-span-5 relative flex justify-center">
               <div className="relative w-full max-w-[440px] aspect-[4/5] rounded-[40px] overflow-hidden shadow-2xl border-4 border-white dark:border-slate-800 card-shadow bg-slate-200">
-                <img
-                  src="https://images.unsplash.com/photo-1566577134770-3d85bb3a9cc4?auto=format&fit=crop&w=800&q=80"
-                  alt="Premium toys selection"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                <Image
+                  src="https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=800&q=80"
+                  alt="Premium gifts selection"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 440px"
+                  className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent flex items-end p-6">
                   <div className="text-white">
                     <div className="text-xs font-bold text-secondary flex items-center space-x-1">
                       <Star size={12} fill="currentColor" />
-                      <span>4.8 / 5 Google Rating</span>
+                      <span>4.9 / 5 Google Rating</span>
                     </div>
-                    <h2 className="font-poppins font-bold text-base leading-tight">Visit Shop Near Municipal Corporation, Badlapur East</h2>
+                    <h2 className="font-poppins font-bold text-base leading-tight">Visit Shop at Gandhi Chowk, Badlapur East</h2>
                   </div>
                 </div>
               </div>
@@ -202,33 +230,33 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SHOP BY AGE BUBBLE GRID */}
+      {/* SHOP BY RECIPIENT & OCCASION GRID */}
       <section className="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
         <div className="space-y-2">
           <span className="inline-flex items-center space-x-1.5 px-3 py-1 bg-secondary/15 border border-secondary/20 rounded-full text-xs font-bold text-secondary-hover animate-pulse-soft">
             <Sparkles size={12} className="text-secondary" />
-            <span>Curated Collections</span>
+            <span>Curated Gifting</span>
           </span>
-          <h2 className="text-3xl font-poppins font-black text-[var(--foreground)] tracking-tight">Shop by Age Group</h2>
-          <p className="text-sm text-[var(--muted)] max-w-lg mx-auto">Find the perfect toys tailored for every development milestone</p>
+          <h2 className="text-3xl font-poppins font-black text-[var(--foreground)] tracking-tight">Gifting for Everyone</h2>
+          <p className="text-sm text-[var(--muted)] max-w-lg mx-auto">Find the perfect products and toys tailored for every milestone, age group, or special recipient</p>
         </div>
 
         <div className="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto">
           {[
-            { age: '0-12', label: '0-12 Months', icon: '👶', bg: 'bg-rose-100 hover:bg-rose-200 text-rose-700 border-rose-200 dark:bg-rose-950/25 dark:text-rose-400' },
-            { age: '1-3', label: '1-3 Years', icon: '🧸', bg: 'bg-amber-100 hover:bg-amber-200 text-amber-700 border-amber-200 dark:bg-amber-950/25 dark:text-amber-400' },
-            { age: '3-5', label: '3-5 Years', icon: '🧩', bg: 'bg-emerald-100 hover:bg-emerald-200 text-emerald-700 border-emerald-200 dark:bg-emerald-950/25 dark:text-emerald-400' },
-            { age: '6-8', label: '6-8 Years', icon: '🎮', bg: 'bg-blue-100 hover:bg-blue-200 text-blue-700 border-blue-200 dark:bg-blue-950/25 dark:text-blue-400' },
-            { age: '8-12', label: '8-12 Years', icon: '🚀', bg: 'bg-purple-100 hover:bg-purple-200 text-purple-700 border-purple-200 dark:bg-purple-950/25 dark:text-purple-400' },
-            { age: '12+', label: '12+ Years', icon: '👾', bg: 'bg-indigo-100 hover:bg-indigo-200 text-indigo-700 border-indigo-200 dark:bg-indigo-950/25 dark:text-indigo-400' },
+            { href: '/categories/baby-toys', label: 'Infants (0-3 Y)', icon: '👶', bg: 'bg-rose-50 hover:bg-rose-100 text-rose-700 border-rose-200 dark:bg-rose-950/20 dark:text-rose-400 dark:border-rose-900/30 hover:shadow-lg hover:shadow-rose-500/5' },
+            { href: '/categories/educational-toys', label: 'Kids Playtime', icon: '🧸', bg: 'bg-amber-50 hover:bg-amber-100 text-amber-700 border-amber-200 dark:bg-amber-950/20 dark:text-amber-400 dark:border-amber-900/30 hover:shadow-lg hover:shadow-amber-500/5' },
+            { href: '/categories/remote-control-toys', label: 'RC & Gaming', icon: '🎮', bg: 'bg-indigo-50 hover:bg-indigo-100 text-indigo-700 border-indigo-200 dark:bg-indigo-950/20 dark:text-indigo-400 dark:border-indigo-900/30 hover:shadow-lg hover:shadow-indigo-500/5' },
+            { href: '/categories/womens-perfumes', label: 'Gifts for Her', icon: '👗', bg: 'bg-pink-50 hover:bg-pink-100 text-pink-700 border-pink-200 dark:bg-pink-950/20 dark:text-pink-400 dark:border-pink-900/30 hover:shadow-lg hover:shadow-pink-500/5' },
+            { href: '/categories/mens-perfumes', label: 'Gifts for Him', icon: '👔', bg: 'bg-blue-50 hover:bg-blue-100 text-blue-700 border-blue-200 dark:bg-blue-950/20 dark:text-blue-400 dark:border-blue-900/30 hover:shadow-lg hover:shadow-blue-500/5' },
+            { href: '/categories/corporate-gifting', label: 'Office & Home', icon: '🏢', bg: 'bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border-emerald-200 dark:bg-emerald-950/20 dark:text-emerald-400 dark:border-emerald-900/30 hover:shadow-lg hover:shadow-emerald-500/5' },
           ].map((item, idx) => (
             <Link 
               key={idx}
-              href={`/shop?age=${encodeURIComponent(item.age)}`}
-              className={`flex flex-col items-center justify-center w-24 h-24 rounded-full border shadow-sm transition-all duration-300 hover:scale-110 active:scale-95 hover:rotate-3 cursor-pointer ${item.bg}`}
+              href={item.href}
+              className={`flex flex-col items-center justify-center w-28 h-28 rounded-full border shadow-sm transition-all duration-500 hover:scale-110 active:scale-95 hover:rotate-3 cursor-pointer ${item.bg}`}
             >
               <span className="text-3.5xl animate-bounce-soft" style={{ animationDelay: `${idx * 0.15}s` }}>{item.icon}</span>
-              <span className="text-[10px] font-extrabold mt-1 text-center leading-tight">{item.label}</span>
+              <span className="text-[10.5px] font-black mt-1.5 text-center leading-tight tracking-wide uppercase px-2">{item.label}</span>
             </Link>
           ))}
         </div>
@@ -238,29 +266,51 @@ export default function Home() {
       <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-2 mb-12">
           <h2 className="text-3xl font-poppins font-extrabold text-[var(--foreground)] tracking-tight">Explore Categories</h2>
-          <p className="text-sm text-[var(--muted)] max-w-lg mx-auto">Browse toys specifically curated by category interests to support development and play</p>
+          <p className="text-sm text-[var(--muted)] max-w-lg mx-auto">Browse products specifically curated by category interests, gifts, toys, and luxury perfumes</p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-5">
-          {CATEGORIES.map((cat) => (
-            <Link 
-              key={cat.id} 
-              href={`/categories/${cat.slug}`}
-              className={`group border rounded-[32px] p-6 flex flex-col items-center text-center space-y-4 cursor-pointer card-shadow transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:rotate-1 hover:border-primary/20 ${getCategoryStyle(cat.slug)}`}
-            >
-              <span className="text-4xl p-4 bg-[var(--background)] rounded-2xl shadow-sm group-hover:scale-110 group-hover:rotate-6 group-hover:animate-wiggle transition-all duration-300">
-                {cat.image}
-              </span>
-              <div>
-                <h3 className="font-poppins font-bold text-sm group-hover:text-primary transition-colors">
-                  {cat.name}
-                </h3>
-                <span className="text-[11px] font-semibold opacity-80">
-                  {PRODUCTS.filter((p) => p.category.toLowerCase() === cat.name.toLowerCase()).length} Products
-                </span>
-              </div>
-            </Link>
-          ))}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
+          {CATEGORIES.map((cat) => {
+            const productCount = PRODUCTS.filter((p) => p.category.toLowerCase() === cat.name.toLowerCase()).length;
+            return (
+              <Link 
+                key={cat.id} 
+                href={`/categories/${cat.slug}`}
+                className={`group relative border rounded-[32px] p-6 flex flex-col items-center justify-between text-center overflow-hidden cursor-pointer card-shadow transition-all duration-500 hover:scale-105 hover:-translate-y-1.5 hover:rotate-1 hover:shadow-xl ${getCategoryStyle(cat.slug)}`}
+              >
+                {/* Background Shimmer/Glow */}
+                <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-white/10 dark:to-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+                
+                <div className="flex flex-col items-center space-y-4 w-full">
+                  <div className="relative">
+                    {/* Glowing aura background on hover */}
+                    <div className="absolute inset-0 rounded-3xl bg-current opacity-0 group-hover:opacity-10 blur-md transition-opacity duration-300" />
+                    
+                    <span className="text-4xl p-5 bg-gradient-to-br from-white to-slate-50 dark:from-slate-900 dark:to-black rounded-3xl shadow-sm border border-slate-200/50 dark:border-white/5 relative flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                      {cat.image}
+                    </span>
+                  </div>
+                  
+                  <div>
+                    <h3 className="font-poppins font-bold text-sm text-[var(--foreground)] group-hover:text-current transition-colors line-clamp-1">
+                      {cat.name}
+                    </h3>
+                  </div>
+                </div>
+
+                <div className="flex flex-col items-center w-full mt-3">
+                  <span className="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-black/5 dark:bg-white/5 border border-black/5 dark:border-white/5 text-[var(--muted)] group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all duration-300">
+                    {productCount} {productCount === 1 ? 'Product' : 'Products'}
+                  </span>
+                  
+                  <div className="flex items-center justify-center space-x-1 mt-2 text-[9px] font-black uppercase tracking-wider text-primary dark:text-secondary opacity-0 -translate-y-1.5 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                    <span>Explore</span>
+                    <span>→</span>
+                  </div>
+                </div>
+              </Link>
+            );
+          })}
         </div>
       </section>
 
@@ -282,15 +332,15 @@ export default function Home() {
             
             {/* Tab Toggles */}
             <div className="flex flex-wrap justify-center gap-2.5 p-1.5 bg-[var(--card)] border border-[var(--border)] rounded-2xl self-center md:self-auto">
-              {[
+              {([
                 { id: 'best', label: 'Best Sellers' },
                 { id: 'new', label: 'New Arrivals' },
                 { id: 'trend', label: 'Trending' },
                 { id: 'offer', label: 'Special Offers' }
-              ].map((tab) => (
+              ] as const).map((tab) => (
                 <button
                   key={tab.id}
-                  onClick={() => setActiveTab(tab.id as any)}
+                  onClick={() => setActiveTab(tab.id)}
                   className={`px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${
                     activeTab === tab.id 
                       ? 'bg-primary text-white shadow-md' 
@@ -350,24 +400,24 @@ export default function Home() {
                 We Curate Return Gifts!
               </h2>
               
-              <p className="text-white/85 text-sm sm:text-base leading-relaxed max-w-lg">
-                Make your child’s celebration memorable. We offer custom-wrapped birthday gift baskets, bulk toy packs, party packages, and school events items with competitive pricing and express delivery in Badlapur.
+              <p className="text-sm text-white/90 max-w-xl mx-auto lg:mx-0">
+                Looking for customized return gifts? We curate perfect gift bundles for kids and adults at exclusive bulk pricing. Talk to our gift specialists today.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link
-                  href="/categories/return-gifts"
-                  className="px-6 py-3.5 bg-white hover:bg-slate-50 text-slate-900 rounded-xl font-bold shadow-md text-center hover:scale-105 active:scale-95 transition-all"
+                  href="/contact"
+                  className="px-8 py-3.5 bg-secondary hover:bg-secondary-hover text-slate-900 font-extrabold rounded-2xl text-sm transition-transform hover:scale-105 active:scale-95 text-center shadow-lg shadow-black/10"
                 >
-                  Explore Return Gifts
+                  Book Bulk Inquiry
                 </Link>
                 <a
-                  href="https://wa.me/919730044342?text=Hi%20Toy%20Shopee,%20I%20want%20to%20enquire%20about%20birthday%20return%20gifts%20bulk%20orders."
+                  href="https://wa.me/919112270222?text=Hi%20Royal%20Crown!%20I%20am%20interested%20in%20customized%20birthday%20return%20gifts."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-6 py-3.5 bg-success hover:bg-green-600 text-white rounded-xl font-bold flex items-center justify-center space-x-2 text-center hover:scale-105 active:scale-95 transition-all shadow-md"
+                  className="px-8 py-3.5 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold rounded-2xl text-sm transition-transform hover:scale-105 active:scale-95 flex items-center justify-center space-x-2 shadow-lg shadow-black/10"
                 >
-                  <MessageCircle size={18} />
+                  <MessageCircle size={16} />
                   <span>WhatsApp Inquiry</span>
                 </a>
               </div>
@@ -375,10 +425,12 @@ export default function Home() {
 
             <div className="lg:col-span-5 flex justify-center">
               <div className="relative w-64 h-64 sm:w-80 sm:h-80 overflow-hidden bg-white/10 rounded-3xl border border-white/20">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80"
                   alt="Custom gift box"
-                  className="w-full h-full object-cover"
+                  fill
+                  sizes="(max-width: 768px) 256px, 320px"
+                  className="object-cover"
                 />
               </div>
             </div>
@@ -396,15 +448,15 @@ export default function Home() {
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center space-y-2 mb-12">
-            <h2 className="text-3xl font-poppins font-extrabold text-[var(--foreground)] tracking-tight">Why Choose Toy Shopee</h2>
-            <p className="text-sm text-[var(--muted)]">Serving happiness, learning, and quality since inception</p>
+            <h2 className="text-3xl font-poppins font-extrabold text-[var(--foreground)] tracking-tight">Why Choose Royal Crown</h2>
+            <p className="text-sm text-[var(--muted)]">Serving happiness, creativity, and premium quality since inception</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
             {[
-              { icon: '⭐', title: 'Huge Collection', desc: 'From infant rattles to advanced STEM coding robots and rare Hot Wheels tracks, we source the finest toys globally.' },
+              { icon: '⭐', title: 'Huge Collection', desc: 'From custom acrylic name plates and premium leather wallets to imported toys, games, and rich perfumes.' },
               { icon: '💰', title: 'Affordable Options', desc: 'Get competitive local retail pricing, seasonal discounts, festival campaigns, and customized budget return gift sets.' },
-              { icon: '📍', title: 'Trusted Local Business', desc: 'Shop with confidence. Support a local brick-and-mortar business near Kartik Complex in Badlapur East.' }
+              { icon: '📍', title: 'Trusted Local Business', desc: 'Shop with confidence. Support a local brick-and-mortar business near ZP Marathi School at Gandhi Chowk, Badlapur East.' }
             ].map((item, idx) => (
               <div key={idx} className="p-8 border border-[var(--border)] bg-[var(--card)] rounded-3xl card-shadow">
                 <span className="text-4xl block mb-4">{item.icon}</span>
@@ -427,7 +479,7 @@ export default function Home() {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
           <div className="space-y-2 text-center md:text-left">
             <h2 className="text-3xl font-poppins font-extrabold text-[var(--foreground)] tracking-tight">Customer Reviews</h2>
-            <p className="text-sm text-[var(--muted)]">Real opinions from families who shop at Toy Shopee Badlapur</p>
+            <p className="text-sm text-[var(--muted)]">Real opinions from customers who shop at Royal Crown Badlapur</p>
           </div>
           <div className="flex flex-col items-center md:items-end flex-shrink-0">
             <div className="flex items-center space-x-1 text-amber-500 mb-1">
@@ -469,7 +521,7 @@ export default function Home() {
                   </div>
                 </div>
                 <p className="text-sm text-[var(--muted)] leading-relaxed italic">
-                  "{rev.text}"
+                  &ldquo;{rev.text}&rdquo;
                 </p>
               </div>
 
@@ -492,19 +544,19 @@ export default function Home() {
           <div className="lg:col-span-5 flex flex-col justify-center space-y-6">
             <h2 className="text-3xl font-poppins font-extrabold text-[var(--foreground)] tracking-tight">Visit Our Store</h2>
             <p className="text-sm text-[var(--muted)] leading-relaxed">
-              We are conveniently located in Kartik Complex near the Badlapur Municipal Corporation in Badlapur East. Come with your kids to touch, feel, and try out our products before making a choice!
+              We are conveniently located at Gandhi Chowk in Badlapur East, opposite ZP Marathi School. Come visit us to explore custom gifts, touch and feel premium quality toys, and sample our premium perfumes!
             </p>
             
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
                 <MapPin size={20} className="text-primary mt-1 flex-shrink-0" />
                 <span className="text-sm">
-                  Shop No. 11/12, Kartik Complex, Near Municipal Corporation, Badlapur East, Maharashtra 421503
+                  Shop No 05 - Nav Sai Krupa society, Opposite ZP Marathi school, Gandhi Chowk, East, Badlapur, Maharashtra 421503
                 </span>
               </div>
               <div className="flex items-center space-x-3">
                 <PhoneCall size={18} className="text-secondary flex-shrink-0" />
-                <a href="tel:+919730044342" className="text-sm font-semibold hover:text-primary transition-colors cursor-pointer">+91 97300 44342</a>
+                <a href="tel:09112270222" className="text-sm font-semibold hover:text-primary transition-colors cursor-pointer">09112270222</a>
               </div>
             </div>
 
@@ -520,8 +572,8 @@ export default function Home() {
           {/* Map iframe */}
           <div className="lg:col-span-7 h-[350px] lg:h-auto min-h-[350px] border border-[var(--border)] rounded-[32px] overflow-hidden shadow-lg relative bg-slate-100 dark:bg-slate-900">
             <iframe
-              title="Toy Shopee Location Map"
-              src="https://maps.google.com/maps?q=Toy%20Shopee%20Kartik%20Complex%20Badlapur%20East&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              title="Royal Crown Location Map"
+              src="https://maps.google.com/maps?q=Royal%20Crown%20Gifts%20Toys%20Perfumes%20Gandhi%20Chowk%20Badlapur%20East&t=&z=16&ie=UTF8&iwloc=&output=embed"
               className="w-full h-full min-h-[350px] border-0 dark:invert-[90%] dark:hue-rotate-[180deg] dark:brightness-[90%] dark:contrast-[110%] transition-all duration-500"
               allowFullScreen={true}
               loading="lazy"

@@ -108,14 +108,14 @@
 }
 
 .dark {
-  --background: #0F172A;
+  --background: #000000;
   --foreground: #F8FAFC;
-  --card: #1E293B;
+  --card: #0A0A0A;
   --card-foreground: #F1F5F9;
-  --border: #334155;
+  --border: #1F1F1F;
   --muted: #94A3B8;
   --muted-foreground: #64748B;
-  --accent-light: #1E293B;
+  --accent-light: #0A0A0A;
   --premium-gradient: linear-gradient(135deg, #FF4D4D 0%, #FFB800 100%);
   --premium-gradient-hover: linear-gradient(135deg, #E63939 0%, #E6A600 100%);
 }
@@ -156,7 +156,7 @@
 }
 
 .dark .glassmorphism {
-  background: rgba(15, 23, 42, 0.75);
+  background: rgba(0, 0, 0, 0.85);
   border: 1px solid rgba(255, 255, 255, 0.05);
 }
 

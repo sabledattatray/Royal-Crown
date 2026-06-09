@@ -1,7 +1,8 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Star, MessageSquareCode, CheckCircle, PenTool } from 'lucide-react';
+import { Star, CheckCircle, PenTool } from 'lucide-react';
+import Image from 'next/image';
 import { REVIEWS as initialReviews, Review } from '../../data/mockData';
 
 export default function ReviewsPage() {
@@ -39,7 +40,7 @@ export default function ReviewsPage() {
   };
 
   // Calculations for rating breakdown
-  const ratingBreakdown = {
+  const ratingBreakdown: Record<number, number> = {
     5: reviews.filter(r => r.rating === 5).length,
     4: reviews.filter(r => r.rating === 4).length,
     3: reviews.filter(r => r.rating === 3).length,
@@ -58,7 +59,7 @@ export default function ReviewsPage() {
       {/* Title */}
       <div className="space-y-1 text-center">
         <h1 className="text-3xl font-poppins font-black text-[var(--foreground)] tracking-tight">Customer Reviews</h1>
-        <p className="text-xs text-[var(--muted)]">See what local Badlapur parents say about Toy Shopee</p>
+        <p className="text-xs text-[var(--muted)]">See what local Badlapur families say about Royal Crown</p>
       </div>
 
       {/* Ratings Dashboard breakdown */}
@@ -91,7 +92,7 @@ export default function ReviewsPage() {
         {/* Rating Bar Chart breakdown */}
         <div className="md:col-span-8 space-y-2.5 text-xs font-semibold text-[var(--foreground)] px-4">
           {[5, 4, 3, 2, 1].map((stars) => {
-            const count = (ratingBreakdown as any)[stars] || 0;
+            const count = ratingBreakdown[stars] || 0;
             const percentage = totalRatingCount > 0 ? (count / totalRatingCount) * 100 : 0;
             return (
               <div key={stars} className="flex items-center space-x-3">
@@ -159,7 +160,7 @@ export default function ReviewsPage() {
                 <textarea
                   required
                   rows={3}
-                  placeholder="Tell others about your experience at Toy Shopee..."
+                  placeholder="Tell others about your experience at Royal Crown..."
                   value={text}
                   onChange={(e) => setText(e.target.value)}
                   className="w-full py-2 px-3 rounded-xl border border-[var(--border)] bg-[var(--background)] text-sm focus:outline-none focus:ring-2 focus:ring-primary"
@@ -185,11 +186,15 @@ export default function ReviewsPage() {
             <div>
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center space-x-3">
-                  <img 
-                    src={rev.avatar} 
-                    alt={rev.author} 
-                    className="w-10 h-10 rounded-full object-cover border border-[var(--border)]"
-                  />
+                  <div className="w-10 h-10 rounded-full overflow-hidden border border-[var(--border)] relative flex-shrink-0">
+                    <Image 
+                      src={rev.avatar} 
+                      alt={rev.author} 
+                      fill
+                      sizes="40px"
+                      className="object-cover"
+                    />
+                  </div>
                   <div>
                     <h4 className="font-bold text-sm text-[var(--foreground)]">{rev.author}</h4>
                     <span className="text-[10px] text-[var(--muted)] font-semibold">{rev.date}</span>
@@ -207,7 +212,7 @@ export default function ReviewsPage() {
                 </div>
               </div>
               <p className="text-sm text-[var(--muted)] leading-relaxed italic">
-                "{rev.text}"
+                &ldquo;{rev.text}&rdquo;
               </p>
             </div>
 
