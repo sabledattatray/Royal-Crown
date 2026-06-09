@@ -80,7 +80,7 @@ export default function ProductCard({ product, onQuickView }: ProductCardProps) 
 
   return (
     <div 
-      className="group relative border border-slate-200/60 dark:border-slate-700/50 rounded-2xl overflow-hidden bg-white dark:bg-gradient-to-br dark:from-slate-800/90 dark:to-slate-900/90 backdrop-blur-xl transition-all duration-500 hover:scale-[1.02] hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10 flex flex-col h-full card-glow"
+      className="group relative border border-[var(--border)] rounded-2xl overflow-hidden bg-[var(--card)] dark:bg-gradient-to-br dark:from-slate-800/90 dark:to-slate-900/90 backdrop-blur-xl transition-all duration-500 hover:scale-[1.02] hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10 flex flex-col h-full card-glow"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
@@ -170,7 +170,7 @@ export default function ProductCard({ product, onQuickView }: ProductCardProps) 
       </Link>
 
       {/* Info Container */}
-      <div className="p-5 flex-grow flex flex-col justify-between relative z-20 bg-white dark:bg-transparent">
+      <div className="p-5 flex-grow flex flex-col justify-between relative z-20 bg-transparent">
         
         {/* Category & Title */}
         <div className="space-y-1.5">
