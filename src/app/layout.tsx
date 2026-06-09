@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   title: 'Royal Crown Gifts Toys Perfumes ®️ | Badlapur\'s Favorite Premium Gift & Toy Boutique',
   description: 'Buy premium gifts, toys, perfumes, custom acrylic name plates, personalized wallets, photo frames, and baby toys at Royal Crown Gifts Toys Perfumes Badlapur. Shop Online!',
   keywords: 'Royal Crown Badlapur, Royal Crown Gifts Toys Perfumes, gift shop Badlapur, customized name plates Badlapur, custom wallets, customized mugs, photo frames Badlapur East, premium toys Badlapur, perfumes Badlapur, online gift shopping',
-  metadataBase: new URL('https://royalcrownfgt.com'),
+  metadataBase: new URL('https://royalcrown-two.vercel.app'),
   icons: {
     icon: [
       { url: '/favicon.png', type: 'image/png' },
@@ -34,13 +34,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Royal Crown | Badlapur\'s Favorite Premium Gift & Toy Boutique',
     description: 'Explore thousands of premium gifts, toys, perfumes, and customized items at Royal Crown Badlapur.',
-    url: 'https://royalcrownfgt.com',
+    url: 'https://royalcrown-two.vercel.app',
     siteName: 'Royal Crown',
     locale: 'en_IN',
     type: 'website',
     images: [
       {
-        url: '/og-preview.png',
+        url: 'https://royalcrown-two.vercel.app/og-preview.png',
         width: 1200,
         height: 630,
         alt: 'Royal Crown Gifts Toys Perfumes – Badlapur\'s Favorite Premium Boutique',
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Royal Crown | Badlapur\'s Favorite Premium Gift & Toy Boutique',
     description: 'Explore thousands of premium gifts, toys, perfumes, and customized items at Royal Crown Badlapur.',
-    images: ['/og-preview.png'],
+    images: ['https://royalcrown-two.vercel.app/og-preview.png'],
   }
 };
 
