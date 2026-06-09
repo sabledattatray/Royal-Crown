@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import React from 'react';
 import Link from 'next/link';
 import { Calendar, Clock, ArrowRight, User } from 'lucide-react';
@@ -25,11 +26,7 @@ export default function BlogPage() {
             
             {/* Image */}
             <Link href={`/blog/${blog.slug}`} className="relative block aspect-[16/9] w-full overflow-hidden bg-slate-100">
-              <img 
-                src={blog.image} 
-                alt={blog.title}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              />
+              <Image src={blog.image} alt={blog.title} width={600} height={600} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               <span className="absolute top-4 left-4 px-3 py-1 bg-slate-900/80 backdrop-blur-md text-white text-[10px] font-bold rounded-full uppercase">
                 {blog.category}
               </span>

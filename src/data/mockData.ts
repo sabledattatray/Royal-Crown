@@ -68,10 +68,11 @@ export const CATEGORIES = [
 ];
 
 export const PRODUCTS: Product[] = [
+  
   {
     id: 'prod-1',
-    name: 'Smart Coding Robot Kit',
-    category: 'Educational Toys',
+    name: "Smart Coding Robot Kit",
+    category: "Educational Toys",
     price: 3499,
     originalPrice: 4299,
     rating: 4.8,
@@ -98,8 +99,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-2',
-    name: 'Super High-Speed RC Rally Car',
-    category: 'Remote Control Toys',
+    name: "Super High-Speed RC Rally Car",
+    category: "Remote Control Toys",
     price: 2499,
     originalPrice: 2999,
     rating: 4.6,
@@ -125,8 +126,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-3',
-    name: 'Hot Wheels 10-Car Pack',
-    category: 'Hot Wheels',
+    name: "Hot Wheels 10-Car Pack",
+    category: "Hot Wheels",
     price: 999,
     originalPrice: 1200,
     rating: 4.9,
@@ -150,8 +151,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-4',
-    name: 'Interactive Baby Sensory Gym',
-    category: 'Baby Toys',
+    name: "Interactive Baby Sensory Gym",
+    category: "Baby Toys",
     price: 1899,
     originalPrice: 2499,
     rating: 4.7,
@@ -176,8 +177,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-5',
-    name: 'Marvel Iron Man Action Figure (30cm)',
-    category: 'Action Figures',
+    name: "Marvel Iron Man Action Figure (30cm)",
+    category: "Action Figures",
     price: 1599,
     originalPrice: 1999,
     rating: 4.8,
@@ -202,8 +203,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-6',
-    name: 'Woodland Animal Giant Jigsaw Puzzle',
-    category: 'Educational Toys',
+    name: "Woodland Animal Giant Jigsaw Puzzle",
+    category: "Educational Toys",
     price: 699,
     originalPrice: 899,
     rating: 4.5,
@@ -227,8 +228,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-7',
-    name: 'Giant Teddy Bear (100cm)',
-    category: 'Soft Toys',
+    name: "Giant Teddy Bear (100cm)",
+    category: "Soft Toys",
     price: 1299,
     originalPrice: 1799,
     rating: 4.7,
@@ -252,8 +253,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-8',
-    name: 'Strategy Block Tower Game',
-    category: 'Board Games',
+    name: "Strategy Block Tower Game",
+    category: "Board Games",
     price: 499,
     originalPrice: 599,
     rating: 4.4,
@@ -277,8 +278,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-9',
-    name: 'RC Drone with HD Camera',
-    category: 'Remote Control Toys',
+    name: "RC Drone with HD Camera",
+    category: "Remote Control Toys",
     price: 4599,
     originalPrice: 5999,
     rating: 4.6,
@@ -302,8 +303,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-10',
-    name: 'Kids Outdoor Adjustable Basketball Hoop',
-    category: 'Outdoor Toys',
+    name: "Kids Outdoor Adjustable Basketball Hoop",
+    category: "Outdoor Toys",
     price: 3999,
     originalPrice: 4999,
     rating: 4.5,
@@ -327,8 +328,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-11',
-    name: 'Premium Return Gift Combo (Set of 10)',
-    category: 'Return Gifts',
+    name: "Premium Return Gift Combo (Set of 10)",
+    category: "Return Gifts",
     price: 999,
     originalPrice: 1500,
     rating: 4.8,
@@ -352,8 +353,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-12',
-    name: 'Custom Birthday Celebration Gift Basket',
-    category: 'Birthday Gifts',
+    name: "Custom Birthday Celebration Gift Basket",
+    category: "Birthday Gifts",
     price: 1999,
     originalPrice: 2499,
     rating: 4.9,
@@ -377,8 +378,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-ed-3',
-    name: 'Wooden Geometric Shape Sorter',
-    category: 'Educational Toys',
+    name: "Wooden Geometric Shape Sorter",
+    category: "Educational Toys",
     price: 499,
     originalPrice: 699,
     rating: 4.7,
@@ -401,8 +402,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-ed-4',
-    name: 'DIY Volcano Science Experiment Kit',
-    category: 'Educational Toys',
+    name: "DIY Volcano Science Experiment Kit",
+    category: "Educational Toys",
     price: 899,
     originalPrice: 1199,
     rating: 4.6,
@@ -425,8 +426,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-ed-5',
-    name: 'Magnetic Building Tiles (60pcs)',
-    category: 'Educational Toys',
+    name: "Magnetic Building Tiles (60pcs)",
+    category: "Educational Toys",
     price: 1599,
     originalPrice: 1999,
     rating: 4.8,
@@ -449,8 +450,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-rc-3',
-    name: 'RC Amphibious Waterproof Stunt Car',
-    category: 'Remote Control Toys',
+    name: "RC Amphibious Waterproof Stunt Car",
+    category: "Remote Control Toys",
     price: 2999,
     originalPrice: 3599,
     rating: 4.7,
@@ -474,8 +475,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-rc-4',
-    name: 'Combat RC Helicopter with Gyro',
-    category: 'Remote Control Toys',
+    name: "Combat RC Helicopter with Gyro",
+    category: "Remote Control Toys",
     price: 1999,
     originalPrice: 2499,
     rating: 4.4,
@@ -498,8 +499,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-rc-5',
-    name: 'High-Speed RC Racing Boat',
-    category: 'Remote Control Toys',
+    name: "High-Speed RC Racing Boat",
+    category: "Remote Control Toys",
     price: 2299,
     originalPrice: 2799,
     rating: 4.5,
@@ -523,8 +524,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-hw-2',
-    name: 'Hot Wheels City Robo T-Rex Attack Playset',
-    category: 'Hot Wheels',
+    name: "Hot Wheels City Robo T-Rex Attack Playset",
+    category: "Hot Wheels",
     price: 2799,
     originalPrice: 3499,
     rating: 4.8,
@@ -547,8 +548,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-hw-3',
-    name: 'Hot Wheels Track Builder Multi-Loop Kit',
-    category: 'Hot Wheels',
+    name: "Hot Wheels Track Builder Multi-Loop Kit",
+    category: "Hot Wheels",
     price: 1899,
     originalPrice: 2299,
     rating: 4.7,
@@ -571,8 +572,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-hw-4',
-    name: 'Hot Wheels Monster Truck 4-Pack (1:64)',
-    category: 'Hot Wheels',
+    name: "Hot Wheels Monster Truck 4-Pack (1:64)",
+    category: "Hot Wheels",
     price: 1299,
     originalPrice: 1599,
     rating: 4.9,
@@ -595,8 +596,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-hw-5',
-    name: 'Hot Wheels Speed Wind-Up Launcher Set',
-    category: 'Hot Wheels',
+    name: "Hot Wheels Speed Wind-Up Launcher Set",
+    category: "Hot Wheels",
     price: 799,
     originalPrice: 999,
     rating: 4.6,
@@ -618,8 +619,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-baby-2',
-    name: 'Soft Organic Cotton Baby Rattle Set (3pcs)',
-    category: 'Baby Toys',
+    name: "Soft Organic Cotton Baby Rattle Set (3pcs)",
+    category: "Baby Toys",
     price: 399,
     originalPrice: 599,
     rating: 4.8,
@@ -642,8 +643,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-baby-3',
-    name: 'Musical Stack-Up Duck Ring Tower',
-    category: 'Baby Toys',
+    name: "Musical Stack-Up Duck Ring Tower",
+    category: "Baby Toys",
     price: 599,
     originalPrice: 799,
     rating: 4.6,
@@ -666,8 +667,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-baby-4',
-    name: 'Baby Wooden Activity Walker',
-    category: 'Baby Toys',
+    name: "Baby Wooden Activity Walker",
+    category: "Baby Toys",
     price: 2199,
     originalPrice: 2999,
     rating: 4.7,
@@ -690,8 +691,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-baby-5',
-    name: 'Plush Elephant Sleep Soother',
-    category: 'Baby Toys',
+    name: "Plush Elephant Sleep Soother",
+    category: "Baby Toys",
     price: 1199,
     originalPrice: 1599,
     rating: 4.9,
@@ -713,8 +714,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-bg-2',
-    name: 'Junior Detective Board Game',
-    category: 'Board Games',
+    name: "Junior Detective Board Game",
+    category: "Board Games",
     price: 799,
     originalPrice: 999,
     rating: 4.6,
@@ -736,8 +737,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-bg-3',
-    name: 'Deluxe Wooden Chess & Checkers Set (2-in-1)',
-    category: 'Board Games',
+    name: "Deluxe Wooden Chess & Checkers Set (2-in-1)",
+    category: "Board Games",
     price: 1499,
     originalPrice: 1999,
     rating: 4.8,
@@ -760,8 +761,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-bg-4',
-    name: 'Fast-Paced Card Matching Family Game',
-    category: 'Board Games',
+    name: "Fast-Paced Card Matching Family Game",
+    category: "Board Games",
     price: 399,
     originalPrice: 499,
     rating: 4.5,
@@ -784,8 +785,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-bg-5',
-    name: 'Kids 3D Snake & Ladders Adventure Game',
-    category: 'Board Games',
+    name: "Kids 3D Snake & Ladders Adventure Game",
+    category: "Board Games",
     price: 699,
     originalPrice: 899,
     rating: 4.4,
@@ -807,8 +808,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-af-2',
-    name: 'Spider-Man Web Shooter Action Figure',
-    category: 'Action Figures',
+    name: "Spider-Man Web Shooter Action Figure",
+    category: "Action Figures",
     price: 1499,
     originalPrice: 1799,
     rating: 4.7,
@@ -831,8 +832,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-af-3',
-    name: 'Batman Dark Knight Deluxe Figure',
-    category: 'Action Figures',
+    name: "Batman Dark Knight Deluxe Figure",
+    category: "Action Figures",
     price: 1799,
     originalPrice: 2199,
     rating: 4.8,
@@ -855,8 +856,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-af-4',
-    name: 'Transformers Optimus Prime Converting Toy',
-    category: 'Action Figures',
+    name: "Transformers Optimus Prime Converting Toy",
+    category: "Action Figures",
     price: 2499,
     originalPrice: 2999,
     rating: 4.9,
@@ -879,8 +880,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-af-5',
-    name: 'Naruto Shippuden Anime Hero Figure',
-    category: 'Action Figures',
+    name: "Naruto Shippuden Anime Hero Figure",
+    category: "Action Figures",
     price: 1199,
     originalPrice: 1499,
     rating: 4.6,
@@ -902,8 +903,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-st-2',
-    name: 'Cute Soft Pink Unicorn Plush',
-    category: 'Soft Toys',
+    name: "Cute Soft Pink Unicorn Plush",
+    category: "Soft Toys",
     price: 599,
     originalPrice: 799,
     rating: 4.8,
@@ -926,8 +927,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-st-3',
-    name: 'Green Huggable Dino Soft Toy',
-    category: 'Soft Toys',
+    name: "Green Huggable Dino Soft Toy",
+    category: "Soft Toys",
     price: 499,
     originalPrice: 699,
     rating: 4.7,
@@ -949,8 +950,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-st-4',
-    name: 'Disney Mickey Mouse Plush Toy',
-    category: 'Soft Toys',
+    name: "Disney Mickey Mouse Plush Toy",
+    category: "Soft Toys",
     price: 799,
     originalPrice: 999,
     rating: 4.8,
@@ -973,8 +974,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-st-5',
-    name: 'Cute White Bunny Plush Toy',
-    category: 'Soft Toys',
+    name: "Cute White Bunny Plush Toy",
+    category: "Soft Toys",
     price: 449,
     originalPrice: 599,
     rating: 4.9,
@@ -996,8 +997,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-ot-2',
-    name: 'Colorful Kids Garden Swing Seat',
-    category: 'Outdoor Toys',
+    name: "Colorful Kids Garden Swing Seat",
+    category: "Outdoor Toys",
     price: 1299,
     originalPrice: 1699,
     rating: 4.6,
@@ -1019,8 +1020,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-ot-3',
-    name: 'Premium Kids Kick Scooter (3-Wheel)',
-    category: 'Outdoor Toys',
+    name: "Premium Kids Kick Scooter (3-Wheel)",
+    category: "Outdoor Toys",
     price: 2499,
     originalPrice: 2999,
     rating: 4.7,
@@ -1043,8 +1044,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-ot-4',
-    name: 'Kids First Training Bicycle (14-Inch)',
-    category: 'Outdoor Toys',
+    name: "Kids First Training Bicycle (14-Inch)",
+    category: "Outdoor Toys",
     price: 4999,
     originalPrice: 5999,
     rating: 4.8,
@@ -1067,8 +1068,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-ot-5',
-    name: 'Sand & Water Adventure Play Table',
-    category: 'Outdoor Toys',
+    name: "Sand & Water Adventure Play Table",
+    category: "Outdoor Toys",
     price: 1899,
     originalPrice: 2499,
     rating: 4.5,
@@ -1091,8 +1092,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-bgf-2',
-    name: 'Deluxe Disney Frozen Stationery Gift Set',
-    category: 'Birthday Gifts',
+    name: "Deluxe Disney Frozen Stationery Gift Set",
+    category: "Birthday Gifts",
     price: 599,
     originalPrice: 799,
     rating: 4.7,
@@ -1114,8 +1115,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-bgf-3',
-    name: 'Premium Chocolate & Toy Birthday Hamper',
-    category: 'Birthday Gifts',
+    name: "Premium Chocolate & Toy Birthday Hamper",
+    category: "Birthday Gifts",
     price: 1199,
     originalPrice: 1499,
     rating: 4.9,
@@ -1138,8 +1139,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-bgf-4',
-    name: 'DIY Scrapbook Craft Gift Kit',
-    category: 'Birthday Gifts',
+    name: "DIY Scrapbook Craft Gift Kit",
+    category: "Birthday Gifts",
     price: 699,
     originalPrice: 899,
     rating: 4.6,
@@ -1162,8 +1163,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-bgf-5',
-    name: 'Princess Pretend Play Makeup Vanity Set',
-    category: 'Birthday Gifts',
+    name: "Princess Pretend Play Makeup Vanity Set",
+    category: "Birthday Gifts",
     price: 1499,
     originalPrice: 1999,
     rating: 4.8,
@@ -1186,8 +1187,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-rg-2',
-    name: 'Magic Water Painting Books (Set of 10)',
-    category: 'Return Gifts',
+    name: "Magic Water Painting Books (Set of 10)",
+    category: "Return Gifts",
     price: 599,
     originalPrice: 899,
     rating: 4.7,
@@ -1210,8 +1211,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-rg-3',
-    name: 'Pull-back Racing Cars Pack (Set of 12)',
-    category: 'Return Gifts',
+    name: "Pull-back Racing Cars Pack (Set of 12)",
+    category: "Return Gifts",
     price: 499,
     originalPrice: 699,
     rating: 4.5,
@@ -1233,8 +1234,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-rg-4',
-    name: 'Modeling Clay Play-Doh Party Packs (Set of 15)',
-    category: 'Return Gifts',
+    name: "Modeling Clay Play-Doh Party Packs (Set of 15)",
+    category: "Return Gifts",
     price: 699,
     originalPrice: 999,
     rating: 4.8,
@@ -1257,8 +1258,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-rg-5',
-    name: 'Mini Board Game Assortment (Set of 10)',
-    category: 'Return Gifts',
+    name: "Mini Board Game Assortment (Set of 10)",
+    category: "Return Gifts",
     price: 899,
     originalPrice: 1200,
     rating: 4.6,
@@ -1281,7 +1282,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-perf-1',
-    name: 'Royal Crown Luxury Oud Perfume (100ml)',
+    name: "Royal Crown Luxury Oud Perfume (100ml)",
     category: "Men's Perfumes",
     price: 1499,
     originalPrice: 1999,
@@ -1290,7 +1291,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown',
     images: [
-      'https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -1307,7 +1309,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-perf-2',
-    name: 'Royal Crown French Rose Perfume (100ml)',
+    name: "Royal Crown French Rose Perfume (100ml)",
     category: "Women's Perfumes",
     price: 999,
     originalPrice: 1299,
@@ -1316,7 +1318,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown',
     images: [
-      'https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 12,
@@ -1332,7 +1335,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-perf-3',
-    name: 'Royal Crown Blue Ocean Eau De Parfum (100ml)',
+    name: "Royal Crown Blue Ocean Eau De Parfum (100ml)",
     category: "Men's Perfumes",
     price: 1199,
     originalPrice: 1499,
@@ -1341,7 +1344,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown',
     images: [
-      'https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 20,
@@ -1357,7 +1361,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-perf-4',
-    name: 'Royal Crown Royal Velvet Perfume Gift Set',
+    name: "Royal Crown Royal Velvet Perfume Gift Set",
     category: "Women's Perfumes",
     price: 1999,
     originalPrice: 2499,
@@ -1366,7 +1370,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown',
     images: [
-      'https://images.unsplash.com/photo-1547887537-6158d64c35b3?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1547887537-6158d64c35b3?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 10,
@@ -1381,7 +1386,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-perf-5',
-    name: 'Royal Crown Sandalwood Pure Attar (12ml)',
+    name: "Royal Crown Sandalwood Pure Attar (12ml)",
     category: "Attars & Oils",
     price: 699,
     originalPrice: 899,
@@ -1390,7 +1395,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown',
     images: [
-      'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 18,
@@ -1406,7 +1412,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-perf-6',
-    name: 'Royal Crown Gold Amber Perfume (100ml)',
+    name: "Royal Crown Gold Amber Perfume (100ml)",
     category: "Men's Perfumes",
     price: 1299,
     originalPrice: 1699,
@@ -1415,7 +1421,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown',
     images: [
-      'https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -1429,7 +1436,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-perf-7',
-    name: 'Royal Crown Jasmine Blossom Perfume (100ml)',
+    name: "Royal Crown Jasmine Blossom Perfume (100ml)",
     category: "Women's Perfumes",
     price: 1099,
     originalPrice: 1399,
@@ -1438,7 +1445,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown',
     images: [
-      'https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 12,
@@ -1453,7 +1461,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-perf-8',
-    name: 'Royal Crown Sweet Vanilla EDP (100ml)',
+    name: "Royal Crown Sweet Vanilla EDP (100ml)",
     category: "Women's Perfumes",
     price: 999,
     originalPrice: 1299,
@@ -1462,7 +1470,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown',
     images: [
-      'https://images.unsplash.com/photo-1547887537-6158d64c35b3?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1547887537-6158d64c35b3?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 20,
@@ -1476,7 +1485,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-perf-9',
-    name: 'Royal Crown Pure Musk Attar (12ml)',
+    name: "Royal Crown Pure Musk Attar (12ml)",
     category: "Attars & Oils",
     price: 599,
     originalPrice: 799,
@@ -1485,7 +1494,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown',
     images: [
-      'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 25,
@@ -1501,7 +1511,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-perf-10',
-    name: 'Royal Crown Saffron Rose Attar (12ml)',
+    name: "Royal Crown Saffron Rose Attar (12ml)",
     category: "Attars & Oils",
     price: 799,
     originalPrice: 999,
@@ -1510,7 +1520,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown',
     images: [
-      'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 18,
@@ -1525,7 +1536,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-perf-11',
-    name: 'Royal Crown Active Sport Intense (100ml)',
+    name: "Royal Crown Active Sport Intense (100ml)",
     category: "Men's Perfumes",
     price: 899,
     originalPrice: 1199,
@@ -1534,7 +1545,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown',
     images: [
-      'https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -1548,8 +1560,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-jewel-1',
-    name: 'Royal Crown Gold Plated Pendant Set',
-    category: 'Jewellery',
+    name: "Royal Crown Gold Plated Pendant Set",
+    category: "Jewellery",
     price: 799,
     originalPrice: 1099,
     rating: 4.8,
@@ -1557,7 +1569,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown',
     images: [
-      'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -1572,8 +1585,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-jewel-2',
-    name: 'Royal Crown Custom Name Bracelet',
-    category: 'Jewellery',
+    name: "Royal Crown Custom Name Bracelet",
+    category: "Jewellery",
     price: 499,
     originalPrice: 699,
     rating: 4.9,
@@ -1581,7 +1594,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown',
     images: [
-      'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 50,
@@ -1596,8 +1610,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-watch-1',
-    name: 'Royal Crown Designer Silent Wall Clock',
-    category: 'Watch & Clocks',
+    name: "Royal Crown Designer Silent Wall Clock",
+    category: "Watch & Clocks",
     price: 1299,
     originalPrice: 1799,
     rating: 4.8,
@@ -1605,7 +1619,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown',
     images: [
-      'https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 10,
@@ -1621,7 +1636,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'prod-watch-2',
     name: "Royal Crown Classic Men's Leather Watch",
-    category: 'Watch & Clocks',
+    category: "Watch & Clocks",
     price: 1899,
     originalPrice: 2499,
     rating: 4.7,
@@ -1629,7 +1644,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown',
     images: [
-      'https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 8,
@@ -1643,8 +1659,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-wallet-1',
-    name: 'Royal Crown Customized Leather Wallet & Pen Gift Set',
-    category: 'Wallets',
+    name: "Royal Crown Customized Leather Wallet & Pen Gift Set",
+    category: "Wallets",
     price: 999,
     originalPrice: 1299,
     rating: 4.9,
@@ -1652,7 +1668,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown',
     images: [
-      'https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1588444839799-eb6cd27e38b2?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 20,
@@ -1667,8 +1684,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-wallet-2',
-    name: 'Royal Crown Slim RFID Card Holder Wallet',
-    category: 'Wallets',
+    name: "Royal Crown Slim RFID Card Holder Wallet",
+    category: "Wallets",
     price: 499,
     originalPrice: 699,
     rating: 4.8,
@@ -1676,7 +1693,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown',
     images: [
-      'https://images.unsplash.com/photo-1612023395494-1c4050b68647?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1627124765138-b79d20c5d01c?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -1691,8 +1709,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-greet-1',
-    name: 'Royal Crown Premium 3D Pop-Up Birthday Card',
-    category: 'Greetings',
+    name: "Royal Crown Premium 3D Pop-Up Birthday Card",
+    category: "Greetings",
     price: 299,
     originalPrice: 399,
     rating: 4.9,
@@ -1700,7 +1718,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown',
     images: [
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1512909006721-3d6018887383?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 40,
@@ -1715,8 +1734,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-greet-2',
-    name: 'Royal Crown Customized Wooden Scroll Message',
-    category: 'Greetings',
+    name: "Royal Crown Customized Wooden Scroll Message",
+    category: "Greetings",
     price: 699,
     originalPrice: 899,
     rating: 4.8,
@@ -1724,7 +1743,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown',
     images: [
-      'https://images.unsplash.com/photo-1516962215378-7fa2e137ae93?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1512909006721-3d6018887383?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -1738,8 +1758,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-plate-1',
-    name: 'Royal Crown Customized Acrylic LED Name Plate',
-    category: 'Name Plates',
+    name: "Royal Crown Customized Acrylic LED Name Plate",
+    category: "Name Plates",
     price: 2499,
     originalPrice: 3499,
     rating: 5.0,
@@ -1747,7 +1767,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown',
     images: [
-      'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1507208773393-40090c1b318f?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 10,
@@ -1762,8 +1783,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-plate-2',
-    name: 'Royal Crown Wooden Carved Entry Name Plate',
-    category: 'Name Plates',
+    name: "Royal Crown Wooden Carved Entry Name Plate",
+    category: "Name Plates",
     price: 1499,
     originalPrice: 1999,
     rating: 4.9,
@@ -1771,7 +1792,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown',
     images: [
-      'https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1507208773393-40090c1b318f?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 12,
@@ -1786,8 +1808,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-corp-1',
-    name: 'Royal Crown Executive Gift Combo (Set of 3)',
-    category: 'Corporate Gifting',
+    name: "Royal Crown Executive Gift Combo (Set of 3)",
+    category: "Corporate Gifting",
     price: 1199,
     originalPrice: 1599,
     rating: 4.9,
@@ -1795,7 +1817,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown',
     images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1531346878377-a5be20888e57?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 25,
@@ -1810,8 +1833,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-corp-2',
-    name: 'Royal Crown Ceramic Mug & Keychain Gift Pack',
-    category: 'Corporate Gifting',
+    name: "Royal Crown Ceramic Mug & Keychain Gift Pack",
+    category: "Corporate Gifting",
     price: 599,
     originalPrice: 799,
     rating: 4.8,
@@ -1819,7 +1842,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown',
     images: [
-      'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1531346878377-a5be20888e57?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 50,
@@ -1833,8 +1857,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-frame-1',
-    name: 'Royal Crown Customized Anniversary Photo Frame',
-    category: 'Photo Frames',
+    name: "Royal Crown Customized Anniversary Photo Frame",
+    category: "Photo Frames",
     price: 899,
     originalPrice: 1299,
     rating: 4.9,
@@ -1842,7 +1866,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown',
     images: [
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -1857,8 +1882,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-frame-2',
-    name: 'Royal Crown Customized LED Spotify Acrylic Frame',
-    category: 'Photo Frames',
+    name: "Royal Crown Customized LED Spotify Acrylic Frame",
+    category: "Photo Frames",
     price: 1299,
     originalPrice: 1799,
     rating: 4.8,
@@ -1866,7 +1891,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown',
     images: [
-      'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 10,
@@ -1881,8 +1907,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1001',
-    name: 'Premium Educational Toys Collection 1',
-    category: 'Educational Toys',
+    name: "Premium Educational Toys Collection 1",
+    category: "Educational Toys",
     price: 2332,
     originalPrice: 5202,
     rating: 4.2,
@@ -1905,8 +1931,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1002',
-    name: 'Premium Baby Toys Collection 1',
-    category: 'Baby Toys',
+    name: "Premium Baby Toys Collection 1",
+    category: "Baby Toys",
     price: 1737,
     originalPrice: 3810,
     rating: 4.5,
@@ -1929,8 +1955,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1003',
-    name: 'Premium Remote Control Toys Collection 1',
-    category: 'Remote Control Toys',
+    name: "Premium Remote Control Toys Collection 1",
+    category: "Remote Control Toys",
     price: 1544,
     originalPrice: 5410,
     rating: 4.3,
@@ -1953,8 +1979,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1004',
-    name: 'Premium Board Games Collection 1',
-    category: 'Board Games',
+    name: "Premium Board Games Collection 1",
+    category: "Board Games",
     price: 1377,
     originalPrice: 2930,
     rating: 4.3,
@@ -1977,8 +2003,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1005',
-    name: 'Premium Hot Wheels Collection 1',
-    category: 'Hot Wheels',
+    name: "Premium Hot Wheels Collection 1",
+    category: "Hot Wheels",
     price: 952,
     originalPrice: 5381,
     rating: 4.1,
@@ -2001,8 +2027,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1006',
-    name: 'Premium Action Figures Collection 1',
-    category: 'Action Figures',
+    name: "Premium Action Figures Collection 1",
+    category: "Action Figures",
     price: 1858,
     originalPrice: 4270,
     rating: 4.2,
@@ -2025,8 +2051,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1007',
-    name: 'Premium Soft Toys Collection 1',
-    category: 'Soft Toys',
+    name: "Premium Soft Toys Collection 1",
+    category: "Soft Toys",
     price: 521,
     originalPrice: 2556,
     rating: 5.0,
@@ -2049,8 +2075,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1008',
-    name: 'Premium Outdoor Toys Collection 1',
-    category: 'Outdoor Toys',
+    name: "Premium Outdoor Toys Collection 1",
+    category: "Outdoor Toys",
     price: 812,
     originalPrice: 5252,
     rating: 4.7,
@@ -2073,8 +2099,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1009',
-    name: 'Premium Birthday Gifts Collection 1',
-    category: 'Birthday Gifts',
+    name: "Premium Birthday Gifts Collection 1",
+    category: "Birthday Gifts",
     price: 1061,
     originalPrice: 4323,
     rating: 4.6,
@@ -2097,8 +2123,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1010',
-    name: 'Premium Return Gifts Collection 1',
-    category: 'Return Gifts',
+    name: "Premium Return Gifts Collection 1",
+    category: "Return Gifts",
     price: 1149,
     originalPrice: 2931,
     rating: 4.4,
@@ -2121,8 +2147,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1011',
-    name: 'Premium Men\'s Perfumes Collection 1',
-    category: 'Men\'s Perfumes',
+    name: "Premium Men's Perfumes's Perfumes Collection 1",
+    category: "Men's Perfumes",
     price: 1256,
     originalPrice: 3230,
     rating: 4.2,
@@ -2130,8 +2156,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown Luxury',
     images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -2145,8 +2171,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1012',
-    name: 'Premium Men\'s Perfumes Collection 2',
-    category: 'Men\'s Perfumes',
+    name: "Premium Men's Perfumes's Perfumes Collection 2",
+    category: "Men's Perfumes",
     price: 660,
     originalPrice: 4896,
     rating: 4.2,
@@ -2154,104 +2180,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown Luxury',
     images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
-    ],
-    inStock: true,
-    stockCount: 15,
-    description: 'A premium, highly sought-after product in the Men\'s Perfumes category. Perfectly designed for gifts and personal luxury.',
-    specifications: {
-      'Quality': 'Premium Grade',
-      'Packaging': 'Luxury Gift Box'
-    },
-    isNew: true,
-    deliveryDays: 2
-  },
-  {
-    id: 'prod-gen-1013',
-    name: 'Premium Men\'s Perfumes Collection 3',
-    category: 'Men\'s Perfumes',
-    price: 1228,
-    originalPrice: 4667,
-    rating: 4.0,
-    reviewsCount: 56,
-    ageGroup: 'All Ages',
-    brand: 'Royal Crown Luxury',
-    images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
-    ],
-    inStock: true,
-    stockCount: 15,
-    description: 'A premium, highly sought-after product in the Men\'s Perfumes category. Perfectly designed for gifts and personal luxury.',
-    specifications: {
-      'Quality': 'Premium Grade',
-      'Packaging': 'Luxury Gift Box'
-    },
-    isNew: true,
-    deliveryDays: 2
-  },
-  {
-    id: 'prod-gen-1014',
-    name: 'Premium Men\'s Perfumes Collection 4',
-    category: 'Men\'s Perfumes',
-    price: 551,
-    originalPrice: 4855,
-    rating: 4.4,
-    reviewsCount: 92,
-    ageGroup: 'All Ages',
-    brand: 'Royal Crown Luxury',
-    images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
-    ],
-    inStock: true,
-    stockCount: 15,
-    description: 'A premium, highly sought-after product in the Men\'s Perfumes category. Perfectly designed for gifts and personal luxury.',
-    specifications: {
-      'Quality': 'Premium Grade',
-      'Packaging': 'Luxury Gift Box'
-    },
-    isNew: true,
-    deliveryDays: 2
-  },
-  {
-    id: 'prod-gen-1015',
-    name: 'Premium Men\'s Perfumes Collection 5',
-    category: 'Men\'s Perfumes',
-    price: 2416,
-    originalPrice: 3915,
-    rating: 4.8,
-    reviewsCount: 36,
-    ageGroup: 'All Ages',
-    brand: 'Royal Crown Luxury',
-    images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
-    ],
-    inStock: true,
-    stockCount: 15,
-    description: 'A premium, highly sought-after product in the Men\'s Perfumes category. Perfectly designed for gifts and personal luxury.',
-    specifications: {
-      'Quality': 'Premium Grade',
-      'Packaging': 'Luxury Gift Box'
-    },
-    isNew: true,
-    deliveryDays: 2
-  },
-  {
-    id: 'prod-gen-1016',
-    name: 'Premium Men\'s Perfumes Collection 6',
-    category: 'Men\'s Perfumes',
-    price: 700,
-    originalPrice: 5152,
-    rating: 4.8,
-    reviewsCount: 84,
-    ageGroup: 'All Ages',
-    brand: 'Royal Crown Luxury',
-    images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -2265,8 +2195,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1017',
-    name: 'Premium Women\'s Perfumes Collection 1',
-    category: 'Women\'s Perfumes',
+    name: "Premium Women's Perfumes's Perfumes Collection 1",
+    category: "Women's Perfumes",
     price: 1388,
     originalPrice: 3318,
     rating: 4.6,
@@ -2274,8 +2204,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown Luxury',
     images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -2289,8 +2219,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1018',
-    name: 'Premium Women\'s Perfumes Collection 2',
-    category: 'Women\'s Perfumes',
+    name: "Premium Women's Perfumes's Perfumes Collection 2",
+    category: "Women's Perfumes",
     price: 1050,
     originalPrice: 5490,
     rating: 4.7,
@@ -2298,104 +2228,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown Luxury',
     images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
-    ],
-    inStock: true,
-    stockCount: 15,
-    description: 'A premium, highly sought-after product in the Women\'s Perfumes category. Perfectly designed for gifts and personal luxury.',
-    specifications: {
-      'Quality': 'Premium Grade',
-      'Packaging': 'Luxury Gift Box'
-    },
-    isNew: true,
-    deliveryDays: 2
-  },
-  {
-    id: 'prod-gen-1019',
-    name: 'Premium Women\'s Perfumes Collection 3',
-    category: 'Women\'s Perfumes',
-    price: 1501,
-    originalPrice: 4784,
-    rating: 4.9,
-    reviewsCount: 64,
-    ageGroup: 'All Ages',
-    brand: 'Royal Crown Luxury',
-    images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
-    ],
-    inStock: true,
-    stockCount: 15,
-    description: 'A premium, highly sought-after product in the Women\'s Perfumes category. Perfectly designed for gifts and personal luxury.',
-    specifications: {
-      'Quality': 'Premium Grade',
-      'Packaging': 'Luxury Gift Box'
-    },
-    isNew: true,
-    deliveryDays: 2
-  },
-  {
-    id: 'prod-gen-1020',
-    name: 'Premium Women\'s Perfumes Collection 4',
-    category: 'Women\'s Perfumes',
-    price: 1075,
-    originalPrice: 2829,
-    rating: 4.2,
-    reviewsCount: 85,
-    ageGroup: 'All Ages',
-    brand: 'Royal Crown Luxury',
-    images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
-    ],
-    inStock: true,
-    stockCount: 15,
-    description: 'A premium, highly sought-after product in the Women\'s Perfumes category. Perfectly designed for gifts and personal luxury.',
-    specifications: {
-      'Quality': 'Premium Grade',
-      'Packaging': 'Luxury Gift Box'
-    },
-    isNew: true,
-    deliveryDays: 2
-  },
-  {
-    id: 'prod-gen-1021',
-    name: 'Premium Women\'s Perfumes Collection 5',
-    category: 'Women\'s Perfumes',
-    price: 2262,
-    originalPrice: 3616,
-    rating: 4.1,
-    reviewsCount: 88,
-    ageGroup: 'All Ages',
-    brand: 'Royal Crown Luxury',
-    images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
-    ],
-    inStock: true,
-    stockCount: 15,
-    description: 'A premium, highly sought-after product in the Women\'s Perfumes category. Perfectly designed for gifts and personal luxury.',
-    specifications: {
-      'Quality': 'Premium Grade',
-      'Packaging': 'Luxury Gift Box'
-    },
-    isNew: true,
-    deliveryDays: 2
-  },
-  {
-    id: 'prod-gen-1022',
-    name: 'Premium Women\'s Perfumes Collection 6',
-    category: 'Women\'s Perfumes',
-    price: 1522,
-    originalPrice: 2815,
-    rating: 4.8,
-    reviewsCount: 89,
-    ageGroup: 'All Ages',
-    brand: 'Royal Crown Luxury',
-    images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1547887537-6158d64c35b3?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -2409,8 +2243,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1023',
-    name: 'Premium Attars & Oils Collection 1',
-    category: 'Attars & Oils',
+    name: "Premium Attars & Oils Collection 1",
+    category: "Attars & Oils",
     price: 1522,
     originalPrice: 3194,
     rating: 4.3,
@@ -2418,8 +2252,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown Luxury',
     images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -2433,8 +2267,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1024',
-    name: 'Premium Attars & Oils Collection 2',
-    category: 'Attars & Oils',
+    name: "Premium Attars & Oils Collection 2",
+    category: "Attars & Oils",
     price: 2085,
     originalPrice: 3932,
     rating: 4.8,
@@ -2442,8 +2276,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown Luxury',
     images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -2457,8 +2291,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1025',
-    name: 'Premium Attars & Oils Collection 3',
-    category: 'Attars & Oils',
+    name: "Premium Attars & Oils Collection 3",
+    category: "Attars & Oils",
     price: 2126,
     originalPrice: 3918,
     rating: 4.6,
@@ -2466,8 +2300,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown Luxury',
     images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -2481,8 +2315,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1026',
-    name: 'Premium Jewellery Collection 1',
-    category: 'Jewellery',
+    name: "Premium Jewellery Collection 1",
+    category: "Jewellery",
     price: 1799,
     originalPrice: 3229,
     rating: 4.3,
@@ -2490,8 +2324,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown Luxury',
     images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -2505,8 +2339,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1027',
-    name: 'Premium Jewellery Collection 2',
-    category: 'Jewellery',
+    name: "Premium Jewellery Collection 2",
+    category: "Jewellery",
     price: 2317,
     originalPrice: 4576,
     rating: 4.7,
@@ -2514,8 +2348,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown Luxury',
     images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -2529,8 +2363,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1028',
-    name: 'Premium Jewellery Collection 3',
-    category: 'Jewellery',
+    name: "Premium Jewellery Collection 3",
+    category: "Jewellery",
     price: 2302,
     originalPrice: 4692,
     rating: 4.4,
@@ -2538,8 +2372,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown Luxury',
     images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -2553,8 +2387,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1029',
-    name: 'Premium Jewellery Collection 4',
-    category: 'Jewellery',
+    name: "Premium Jewellery Collection 4",
+    category: "Jewellery",
     price: 2435,
     originalPrice: 3564,
     rating: 4.1,
@@ -2562,8 +2396,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown Luxury',
     images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -2577,8 +2411,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1030',
-    name: 'Premium Watch & Clocks Collection 1',
-    category: 'Watch & Clocks',
+    name: "Premium Watch & Clocks Collection 1",
+    category: "Watch & Clocks",
     price: 1518,
     originalPrice: 2607,
     rating: 4.6,
@@ -2586,8 +2420,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown Luxury',
     images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -2601,8 +2435,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1031',
-    name: 'Premium Watch & Clocks Collection 2',
-    category: 'Watch & Clocks',
+    name: "Premium Watch & Clocks Collection 2",
+    category: "Watch & Clocks",
     price: 809,
     originalPrice: 2778,
     rating: 4.0,
@@ -2610,8 +2444,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown Luxury',
     images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -2625,8 +2459,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1032',
-    name: 'Premium Watch & Clocks Collection 3',
-    category: 'Watch & Clocks',
+    name: "Premium Watch & Clocks Collection 3",
+    category: "Watch & Clocks",
     price: 579,
     originalPrice: 5416,
     rating: 4.7,
@@ -2634,8 +2468,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown Luxury',
     images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -2649,8 +2483,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1033',
-    name: 'Premium Watch & Clocks Collection 4',
-    category: 'Watch & Clocks',
+    name: "Premium Watch & Clocks Collection 4",
+    category: "Watch & Clocks",
     price: 956,
     originalPrice: 4533,
     rating: 4.6,
@@ -2658,8 +2492,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown Luxury',
     images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -2673,8 +2507,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1034',
-    name: 'Premium Wallets Collection 1',
-    category: 'Wallets',
+    name: "Premium Wallets Collection 1",
+    category: "Wallets",
     price: 895,
     originalPrice: 3422,
     rating: 4.7,
@@ -2682,8 +2516,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown Luxury',
     images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1627124765138-b79d20c5d01c?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -2697,8 +2531,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1035',
-    name: 'Premium Wallets Collection 2',
-    category: 'Wallets',
+    name: "Premium Wallets Collection 2",
+    category: "Wallets",
     price: 1660,
     originalPrice: 4717,
     rating: 4.3,
@@ -2706,8 +2540,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown Luxury',
     images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1627124765138-b79d20c5d01c?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1588444839799-eb6cd27e38b2?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -2721,8 +2555,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1036',
-    name: 'Premium Wallets Collection 3',
-    category: 'Wallets',
+    name: "Premium Wallets Collection 3",
+    category: "Wallets",
     price: 951,
     originalPrice: 2744,
     rating: 4.2,
@@ -2730,8 +2564,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown Luxury',
     images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1588444839799-eb6cd27e38b2?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -2745,8 +2579,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1037',
-    name: 'Premium Wallets Collection 4',
-    category: 'Wallets',
+    name: "Premium Wallets Collection 4",
+    category: "Wallets",
     price: 590,
     originalPrice: 2659,
     rating: 4.0,
@@ -2754,8 +2588,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown Luxury',
     images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1627124765138-b79d20c5d01c?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -2769,8 +2603,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1038',
-    name: 'Premium Greetings Collection 1',
-    category: 'Greetings',
+    name: "Premium Greetings Collection 1",
+    category: "Greetings",
     price: 2191,
     originalPrice: 4569,
     rating: 4.7,
@@ -2778,8 +2612,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown Luxury',
     images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1512909006721-3d6018887383?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -2793,8 +2627,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1039',
-    name: 'Premium Greetings Collection 2',
-    category: 'Greetings',
+    name: "Premium Greetings Collection 2",
+    category: "Greetings",
     price: 1979,
     originalPrice: 3908,
     rating: 4.2,
@@ -2802,8 +2636,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown Luxury',
     images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1512909006721-3d6018887383?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -2817,8 +2651,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1040',
-    name: 'Premium Greetings Collection 3',
-    category: 'Greetings',
+    name: "Premium Greetings Collection 3",
+    category: "Greetings",
     price: 2052,
     originalPrice: 3875,
     rating: 4.9,
@@ -2826,8 +2660,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown Luxury',
     images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1512909006721-3d6018887383?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -2841,8 +2675,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1041',
-    name: 'Premium Greetings Collection 4',
-    category: 'Greetings',
+    name: "Premium Greetings Collection 4",
+    category: "Greetings",
     price: 1121,
     originalPrice: 5078,
     rating: 4.4,
@@ -2850,8 +2684,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown Luxury',
     images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1512909006721-3d6018887383?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -2865,8 +2699,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1042',
-    name: 'Premium Name Plates Collection 1',
-    category: 'Name Plates',
+    name: "Premium Name Plates Collection 1",
+    category: "Name Plates",
     price: 1394,
     originalPrice: 2804,
     rating: 4.2,
@@ -2874,8 +2708,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown Luxury',
     images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1507208773393-40090c1b318f?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -2889,8 +2723,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1043',
-    name: 'Premium Name Plates Collection 2',
-    category: 'Name Plates',
+    name: "Premium Name Plates Collection 2",
+    category: "Name Plates",
     price: 2436,
     originalPrice: 4942,
     rating: 4.7,
@@ -2898,8 +2732,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown Luxury',
     images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1507208773393-40090c1b318f?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -2913,8 +2747,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1044',
-    name: 'Premium Name Plates Collection 3',
-    category: 'Name Plates',
+    name: "Premium Name Plates Collection 3",
+    category: "Name Plates",
     price: 799,
     originalPrice: 3830,
     rating: 4.4,
@@ -2922,8 +2756,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown Luxury',
     images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1507208773393-40090c1b318f?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -2937,8 +2771,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1045',
-    name: 'Premium Name Plates Collection 4',
-    category: 'Name Plates',
+    name: "Premium Name Plates Collection 4",
+    category: "Name Plates",
     price: 2393,
     originalPrice: 4430,
     rating: 4.2,
@@ -2946,8 +2780,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown Luxury',
     images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1507208773393-40090c1b318f?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -2961,8 +2795,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1046',
-    name: 'Premium Corporate Gifting Collection 1',
-    category: 'Corporate Gifting',
+    name: "Premium Corporate Gifting Collection 1",
+    category: "Corporate Gifting",
     price: 1126,
     originalPrice: 3176,
     rating: 4.3,
@@ -2970,8 +2804,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown Luxury',
     images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1531346878377-a5be20888e57?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -2985,8 +2819,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1047',
-    name: 'Premium Corporate Gifting Collection 2',
-    category: 'Corporate Gifting',
+    name: "Premium Corporate Gifting Collection 2",
+    category: "Corporate Gifting",
     price: 2404,
     originalPrice: 4386,
     rating: 4.7,
@@ -2994,8 +2828,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown Luxury',
     images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1531346878377-a5be20888e57?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -3009,8 +2843,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1048',
-    name: 'Premium Corporate Gifting Collection 3',
-    category: 'Corporate Gifting',
+    name: "Premium Corporate Gifting Collection 3",
+    category: "Corporate Gifting",
     price: 1595,
     originalPrice: 2536,
     rating: 4.5,
@@ -3018,8 +2852,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown Luxury',
     images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1531346878377-a5be20888e57?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -3033,8 +2867,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1049',
-    name: 'Premium Corporate Gifting Collection 4',
-    category: 'Corporate Gifting',
+    name: "Premium Corporate Gifting Collection 4",
+    category: "Corporate Gifting",
     price: 1594,
     originalPrice: 2679,
     rating: 4.8,
@@ -3042,8 +2876,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown Luxury',
     images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1531346878377-a5be20888e57?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -3057,8 +2891,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1050',
-    name: 'Premium Photo Frames Collection 1',
-    category: 'Photo Frames',
+    name: "Premium Photo Frames Collection 1",
+    category: "Photo Frames",
     price: 2072,
     originalPrice: 2823,
     rating: 4.7,
@@ -3066,8 +2900,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown Luxury',
     images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -3081,8 +2915,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1051',
-    name: 'Premium Photo Frames Collection 2',
-    category: 'Photo Frames',
+    name: "Premium Photo Frames Collection 2",
+    category: "Photo Frames",
     price: 1727,
     originalPrice: 3851,
     rating: 4.0,
@@ -3090,8 +2924,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown Luxury',
     images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -3105,8 +2939,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1052',
-    name: 'Premium Photo Frames Collection 3',
-    category: 'Photo Frames',
+    name: "Premium Photo Frames Collection 3",
+    category: "Photo Frames",
     price: 729,
     originalPrice: 4724,
     rating: 4.5,
@@ -3114,8 +2948,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown Luxury',
     images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -3129,8 +2963,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-gen-1053',
-    name: 'Premium Photo Frames Collection 4',
-    category: 'Photo Frames',
+    name: "Premium Photo Frames Collection 4",
+    category: "Photo Frames",
     price: 1421,
     originalPrice: 3390,
     rating: 4.3,
@@ -3138,8 +2972,8 @@ export const PRODUCTS: Product[] = [
     ageGroup: 'All Ages',
     brand: 'Royal Crown Luxury',
     images: [
-      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+      "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=600&q=80"
     ],
     inStock: true,
     stockCount: 15,
@@ -3151,6 +2985,7 @@ export const PRODUCTS: Product[] = [
     isNew: true,
     deliveryDays: 2
   }
+
 ];
 
 export const REVIEWS: Review[] = [

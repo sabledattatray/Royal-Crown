@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import React, { use } from 'react';
 import Link from 'next/link';
 import { ArrowLeft, Calendar, Clock, ChevronRight, User } from 'lucide-react';
@@ -67,11 +68,7 @@ export default function BlogDetailPage({ params }: PageProps) {
 
       {/* Large Featured Image */}
       <div className="relative w-full aspect-[21/9] rounded-3xl overflow-hidden bg-slate-100 border border-[var(--border)] shadow-md">
-        <img 
-          src={blog.image} 
-          alt={blog.title} 
-          className="w-full h-full object-cover"
-        />
+        <Image src={blog.image} alt={blog.title} width={600} height={600} className="w-full h-full object-cover" />
       </div>
 
       {/* Body Content */}

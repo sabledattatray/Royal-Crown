@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import React from 'react';
 import { Sparkles, Trophy, ShieldCheck, Heart, Calendar, MapPin } from 'lucide-react';
 
@@ -75,11 +76,7 @@ export default function AboutPage() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[160px] md:auto-rows-[200px]">
           {/* Image 1: Golden Teddy Bear */}
           <div className="relative rounded-3xl overflow-hidden shadow-lg border border-[var(--border)] card-shadow md:col-span-2 md:row-span-2 group">
-            <img
-              src="https://images.unsplash.com/photo-1559251606-c623743a6d76?auto=format&fit=crop&w=800&q=80"
-              alt="Soft golden plush teddy bear toy"
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer"
-            />
+            <Image src="https://images.unsplash.com/photo-1559251606-c623743a6d76?auto=format&fit=crop&w=800&q=80" alt="Soft golden plush teddy bear toy" width={600} height={600} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer" />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 pointer-events-none">
               <span className="text-white font-poppins font-bold text-sm">Huggable Teddy Bears</span>
             </div>
@@ -87,11 +84,7 @@ export default function AboutPage() {
 
           {/* Image 2: Sensory Puzzles */}
           <div className="relative rounded-3xl overflow-hidden shadow-lg border border-[var(--border)] card-shadow group">
-            <img
-              src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&w=600&q=80"
-              alt="Colorful sensory block toys"
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer"
-            />
+            <Image src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&w=600&q=80" alt="Colorful sensory block toys" width={600} height={600} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer" />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3 pointer-events-none">
               <span className="text-white font-poppins font-bold text-xs">Sensory blocks</span>
             </div>
@@ -99,11 +92,7 @@ export default function AboutPage() {
 
           {/* Image 3: Spiderman Action Figure */}
           <div className="relative rounded-3xl overflow-hidden shadow-lg border border-[var(--border)] card-shadow group md:row-span-2">
-            <img
-              src="https://images.unsplash.com/photo-1635805737707-575885ab0820?auto=format&fit=crop&w=600&q=80"
-              alt="Marvel Spider-Man action figure toy"
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer"
-            />
+            <Image src="https://images.unsplash.com/photo-1635805737707-575885ab0820?auto=format&fit=crop&w=600&q=80" alt="Marvel Spider-Man action figure toy" width={600} height={600} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer" />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3 pointer-events-none">
               <span className="text-white font-poppins font-bold text-xs">Action Figures</span>
             </div>
@@ -111,11 +100,7 @@ export default function AboutPage() {
 
           {/* Image 4: Educational Puzzle */}
           <div className="relative rounded-3xl overflow-hidden shadow-lg border border-[var(--border)] card-shadow group">
-            <img
-              src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=600&q=80"
-              alt="Wooden educational puzzle shapes toy"
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer"
-            />
+            <Image src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=600&q=80" alt="Wooden educational puzzle shapes toy" width={600} height={600} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer" />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3 pointer-events-none">
               <span className="text-white font-poppins font-bold text-xs">Learning Kits</span>
             </div>
@@ -123,11 +108,7 @@ export default function AboutPage() {
 
           {/* Image 5: Hot Wheels Diecast Car */}
           <div className="relative rounded-3xl overflow-hidden shadow-lg border border-[var(--border)] card-shadow group">
-            <img
-              src="https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?auto=format&fit=crop&w=600&q=80"
-              alt="Diecast racing sports car toy"
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer"
-            />
+            <Image src="https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?auto=format&fit=crop&w=600&q=80" alt="Diecast racing sports car toy" width={600} height={600} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer" />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3 pointer-events-none">
               <span className="text-white font-poppins font-bold text-xs">Die-Cast Cars</span>
             </div>
@@ -135,11 +116,7 @@ export default function AboutPage() {
 
           {/* Image 6: RC Off-road Rally Car */}
           <div className="relative rounded-3xl overflow-hidden shadow-lg border border-[var(--border)] card-shadow group">
-            <img
-              src="https://images.unsplash.com/photo-1594787318286-3d835c1d207f?auto=format&fit=crop&w=600&q=80"
-              alt="High-speed remote control rally car toy"
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer"
-            />
+            <Image src="https://images.unsplash.com/photo-1594787318286-3d835c1d207f?auto=format&fit=crop&w=600&q=80" alt="High-speed remote control rally car toy" width={600} height={600} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer" />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3 pointer-events-none">
               <span className="text-white font-poppins font-bold text-xs">Remote Control Cars</span>
             </div>
@@ -147,11 +124,7 @@ export default function AboutPage() {
 
           {/* Image 7: Jenga Stacking Tower */}
           <div className="relative rounded-3xl overflow-hidden shadow-lg border border-[var(--border)] card-shadow group">
-            <img
-              src="https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?auto=format&fit=crop&w=600&q=80"
-              alt="Wooden block stacking tower game toy"
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer"
-            />
+            <Image src="https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?auto=format&fit=crop&w=600&q=80" alt="Wooden block stacking tower game toy" width={600} height={600} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer" />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3 pointer-events-none">
               <span className="text-white font-poppins font-bold text-xs">Stacking Games</span>
             </div>
@@ -159,11 +132,7 @@ export default function AboutPage() {
 
           {/* Image 8: RC Camera Drone */}
           <div className="relative rounded-3xl overflow-hidden shadow-lg border border-[var(--border)] card-shadow group">
-            <img
-              src="https://images.unsplash.com/photo-1527977966376-1c8408f9f108?auto=format&fit=crop&w=600&q=80"
-              alt="High-speed camera drone flying toy"
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer"
-            />
+            <Image src="https://images.unsplash.com/photo-1527977966376-1c8408f9f108?auto=format&fit=crop&w=600&q=80" alt="High-speed camera drone flying toy" width={600} height={600} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer" />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3 pointer-events-none">
               <span className="text-white font-poppins font-bold text-xs">RC Drones</span>
             </div>

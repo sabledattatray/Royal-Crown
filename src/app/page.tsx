@@ -499,10 +499,12 @@ export default function Home() {
               <div>
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center space-x-3">
-                    <img 
+                    <Image 
                       src={rev.avatar} 
-                      alt={rev.author} 
-                      className="w-10 h-10 rounded-full object-cover border border-[var(--border)]"
+                      alt={rev.author}
+                      width={40}
+                      height={40}
+                      className="rounded-full object-cover border border-[var(--border)]"
                     />
                     <div>
                       <h4 className="font-bold text-sm text-[var(--foreground)]">{rev.author}</h4>
