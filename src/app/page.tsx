@@ -215,16 +215,16 @@ export default function Home() {
 
         <div className="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto">
           {[
-            { age: '0-12 Months', label: '0-12 Months', icon: '👶', bg: 'bg-rose-100 hover:bg-rose-200 text-rose-700 border-rose-200 dark:bg-rose-950/25 dark:text-rose-400' },
-            { age: '3-5', label: '1-3 Years', icon: '🧸', bg: 'bg-amber-100 hover:bg-amber-200 text-amber-700 border-amber-200 dark:bg-amber-950/25 dark:text-amber-400' },
-            { age: '3-5 Years', label: '3-5 Years', icon: '🧩', bg: 'bg-emerald-100 hover:bg-emerald-200 text-emerald-700 border-emerald-200 dark:bg-emerald-950/25 dark:text-emerald-400' },
-            { age: '6-8 Years', label: '6-8 Years', icon: '🎮', bg: 'bg-blue-100 hover:bg-blue-200 text-blue-700 border-blue-200 dark:bg-blue-950/25 dark:text-blue-400' },
-            { age: '8-12 Years', label: '8-12 Years', icon: '🚀', bg: 'bg-purple-100 hover:bg-purple-200 text-purple-700 border-purple-200 dark:bg-purple-950/25 dark:text-purple-400' },
-            { age: '12+ Years', label: '12+ Years', icon: '👾', bg: 'bg-indigo-100 hover:bg-indigo-200 text-indigo-700 border-indigo-200 dark:bg-indigo-950/25 dark:text-indigo-400' },
+            { age: '0-12', label: '0-12 Months', icon: '👶', bg: 'bg-rose-100 hover:bg-rose-200 text-rose-700 border-rose-200 dark:bg-rose-950/25 dark:text-rose-400' },
+            { age: '1-3', label: '1-3 Years', icon: '🧸', bg: 'bg-amber-100 hover:bg-amber-200 text-amber-700 border-amber-200 dark:bg-amber-950/25 dark:text-amber-400' },
+            { age: '3-5', label: '3-5 Years', icon: '🧩', bg: 'bg-emerald-100 hover:bg-emerald-200 text-emerald-700 border-emerald-200 dark:bg-emerald-950/25 dark:text-emerald-400' },
+            { age: '6-8', label: '6-8 Years', icon: '🎮', bg: 'bg-blue-100 hover:bg-blue-200 text-blue-700 border-blue-200 dark:bg-blue-950/25 dark:text-blue-400' },
+            { age: '8-12', label: '8-12 Years', icon: '🚀', bg: 'bg-purple-100 hover:bg-purple-200 text-purple-700 border-purple-200 dark:bg-purple-950/25 dark:text-purple-400' },
+            { age: '12+', label: '12+ Years', icon: '👾', bg: 'bg-indigo-100 hover:bg-indigo-200 text-indigo-700 border-indigo-200 dark:bg-indigo-950/25 dark:text-indigo-400' },
           ].map((item, idx) => (
             <Link 
               key={idx}
-              href={`/shop?search=${encodeURIComponent(item.age)}`}
+              href={`/shop?age=${encodeURIComponent(item.age)}`}
               className={`flex flex-col items-center justify-center w-24 h-24 rounded-full border shadow-sm transition-all duration-300 hover:scale-110 active:scale-95 hover:rotate-3 cursor-pointer ${item.bg}`}
             >
               <span className="text-3.5xl animate-bounce-soft" style={{ animationDelay: `${idx * 0.15}s` }}>{item.icon}</span>
@@ -256,7 +256,7 @@ export default function Home() {
                   {cat.name}
                 </h3>
                 <span className="text-[11px] font-semibold opacity-80">
-                  {cat.count}+ Products
+                  {PRODUCTS.filter((p) => p.category.toLowerCase() === cat.name.toLowerCase()).length} Products
                 </span>
               </div>
             </Link>

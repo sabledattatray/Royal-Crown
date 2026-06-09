@@ -364,6 +364,910 @@ export const PRODUCTS: Product[] = [
     },
     isNew: true,
     deliveryDays: 1
+  },
+  {
+    id: 'prod-ed-3',
+    name: 'Wooden Geometric Shape Sorter',
+    category: 'Educational Toys',
+    price: 499,
+    originalPrice: 699,
+    rating: 4.7,
+    reviewsCount: 42,
+    ageGroup: '1-3 Years',
+    brand: 'LittleSprout',
+    images: [
+      'https://images.unsplash.com/photo-1607457561901-e6ec3a6d16cf?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 30,
+    description: 'Help toddlers learn shapes, colors, and hand-eye coordination with this premium quality, non-toxic wooden geometric shape sorting box.',
+    specifications: {
+      'Material': 'Natural Pine Wood',
+      'Paint': 'Water-based non-toxic',
+      'Dimensions': '15 x 15 x 15 cm'
+    },
+    isTrending: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-ed-4',
+    name: 'DIY Volcano Science Experiment Kit',
+    category: 'Educational Toys',
+    price: 899,
+    originalPrice: 1199,
+    rating: 4.6,
+    reviewsCount: 27,
+    ageGroup: '8-12 Years',
+    brand: 'STEMLab',
+    images: [
+      'https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 18,
+    description: 'Build your own volcano and watch it erupt! A safe and thrilling science kit containing ingredients and tools for multiple eruptions, plus a learning guide.',
+    specifications: {
+      'Includes': 'Volcano mold, plaster, paint brush, erupting powders',
+      'Recommended Age': '8 Years and above',
+      'Safety': 'Adult supervision recommended'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-ed-5',
+    name: 'Magnetic Building Tiles (60pcs)',
+    category: 'Educational Toys',
+    price: 1599,
+    originalPrice: 1999,
+    rating: 4.8,
+    reviewsCount: 63,
+    ageGroup: '3-5 Years',
+    brand: 'MagnaBuild',
+    images: [
+      'https://images.unsplash.com/photo-1587654780291-39c9404d746b?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 22,
+    description: 'Clear 3D magnetic building blocks that spark creativity. Design and construct towers, houses, castles, and complex geometric shapes.',
+    specifications: {
+      'Tile Count': '60 pieces',
+      'Magnet Type': 'Neodymium',
+      'Material': 'Food-grade ABS plastic'
+    },
+    isOffer: true,
+    deliveryDays: 1
+  },
+  {
+    id: 'prod-rc-3',
+    name: 'RC Amphibious Waterproof Stunt Car',
+    category: 'Remote Control Toys',
+    price: 2999,
+    originalPrice: 3599,
+    rating: 4.7,
+    reviewsCount: 38,
+    ageGroup: '6-8 Years',
+    brand: 'X-Racer',
+    images: [
+      'https://images.unsplash.com/photo-1594787318286-3d835c1d207f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 12,
+    description: 'Drives on land, mud, and water! 360-degree rotation and double-sided flipping RC stunt vehicle with remote control.',
+    specifications: {
+      'Drive Type': '4WD',
+      'Charging Time': '2 Hours',
+      'Control Distance': '40m',
+      'Waterproof': 'IPX8 Rated'
+    },
+    isTrending: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-rc-4',
+    name: 'Combat RC Helicopter with Gyro',
+    category: 'Remote Control Toys',
+    price: 1999,
+    originalPrice: 2499,
+    rating: 4.4,
+    reviewsCount: 29,
+    ageGroup: '8-12 Years',
+    brand: 'SkyCruiser',
+    images: [
+      'https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 14,
+    description: 'Ultra-stable flight controls powered by built-in gyro sensor. Features collision avoidance and auto hover, ideal for beginner pilots.',
+    specifications: {
+      'Channels': '3.5 CH',
+      'Charging Time': '40 mins',
+      'Flying Time': '8-10 mins',
+      'Range': '15 meters'
+    },
+    deliveryDays: 1
+  },
+  {
+    id: 'prod-rc-5',
+    name: 'High-Speed RC Racing Boat',
+    category: 'Remote Control Toys',
+    price: 2299,
+    originalPrice: 2799,
+    rating: 4.5,
+    reviewsCount: 22,
+    ageGroup: '12+ Years',
+    brand: 'X-Racer',
+    images: [
+      'https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 9,
+    description: 'Rip through lakes and pools at 20 km/h! Features a water-cooled motor system, low battery alarm, and self-righting hull design.',
+    specifications: {
+      'Max Speed': '20 km/h',
+      'Frequency': '2.4 GHz',
+      'Play Time': '15 mins',
+      'Range': '80 meters'
+    },
+    isNew: true,
+    deliveryDays: 3
+  },
+  {
+    id: 'prod-hw-2',
+    name: 'Hot Wheels City Robo T-Rex Attack Playset',
+    category: 'Hot Wheels',
+    price: 2799,
+    originalPrice: 3499,
+    rating: 4.8,
+    reviewsCount: 88,
+    ageGroup: '3-5 Years',
+    brand: 'Hot Wheels',
+    images: [
+      'https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'Knock down the giant mechanical T-Rex before it crushes Hot Wheels City. Includes a launcher and one Hot Wheels vehicle.',
+    specifications: {
+      'Material': 'Durable Plastic',
+      'Batteries Required': 'No',
+      'Includes': '1 City Playset, 1 Die-cast Car'
+    },
+    isBestSeller: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-hw-3',
+    name: 'Hot Wheels Track Builder Multi-Loop Kit',
+    category: 'Hot Wheels',
+    price: 1899,
+    originalPrice: 2299,
+    rating: 4.7,
+    reviewsCount: 45,
+    ageGroup: '6-8 Years',
+    brand: 'Hot Wheels',
+    images: [
+      'https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 19,
+    description: 'Create mega stunts with multiple loops, curves, and launchers. Connects to other Hot Wheels track sets.',
+    specifications: {
+      'Total Track Length': '10 feet',
+      'Connectors': 'Multi-angle track connectors',
+      'Includes': 'Loop pieces, launcher, 1 car'
+    },
+    isNew: true,
+    deliveryDays: 1
+  },
+  {
+    id: 'prod-hw-4',
+    name: 'Hot Wheels Monster Truck 4-Pack (1:64)',
+    category: 'Hot Wheels',
+    price: 1299,
+    originalPrice: 1599,
+    rating: 4.9,
+    reviewsCount: 57,
+    ageGroup: '3-5 Years',
+    brand: 'Hot Wheels',
+    images: [
+      'https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 25,
+    description: 'Giant wheels and rugged details! This 4-pack of Hot Wheels Monster Trucks is perfect for head-to-head crashing action.',
+    specifications: {
+      'Scale': '1:64',
+      'Material': 'Die-cast metal body',
+      'Tires': 'Oversized rubber tires'
+    },
+    isOffer: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-hw-5',
+    name: 'Hot Wheels Speed Wind-Up Launcher Set',
+    category: 'Hot Wheels',
+    price: 799,
+    originalPrice: 999,
+    rating: 4.6,
+    reviewsCount: 31,
+    ageGroup: '3-5 Years',
+    brand: 'Hot Wheels',
+    images: [
+      'https://images.unsplash.com/photo-1594787318286-3d835c1d207f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 40,
+    description: 'Face off in epic drag races with this wind-up dual booster launcher. No batteries required, just crank and launch.',
+    specifications: {
+      'Boosters': 'Dual wind-up boosters',
+      'Compatibility': 'Standard Hot Wheels track',
+      'Recommended Age': '4 Years and above'
+    },
+    deliveryDays: 1
+  },
+  {
+    id: 'prod-baby-2',
+    name: 'Soft Organic Cotton Baby Rattle Set (3pcs)',
+    category: 'Baby Toys',
+    price: 399,
+    originalPrice: 599,
+    rating: 4.8,
+    reviewsCount: 52,
+    ageGroup: '0-12 Months',
+    brand: 'FisherCare',
+    images: [
+      'https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 35,
+    description: 'Made from 100% organic cotton fabric and smooth beechwood. Gentle rattling sound that calms babies and promotes hand grip development.',
+    specifications: {
+      'Material': 'Organic Cotton & Beechwood',
+      'Packs': 'Set of 3 Rattles',
+      'Cleaning': 'Hand wash only'
+    },
+    isNew: true,
+    deliveryDays: 1
+  },
+  {
+    id: 'prod-baby-3',
+    name: 'Musical Stack-Up Duck Ring Tower',
+    category: 'Baby Toys',
+    price: 599,
+    originalPrice: 799,
+    rating: 4.6,
+    reviewsCount: 71,
+    ageGroup: '0-12 Months',
+    brand: 'FisherCare',
+    images: [
+      'https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 20,
+    description: 'Stack colorful rings on the wobbly base to hear cheerful tunes and flashing lights. Helps babies build fine motor skills.',
+    specifications: {
+      'Batteries': '2 x AA (Not Included)',
+      'Material': 'BPA-free plastic',
+      'Rings': '5 colorful stacked rings'
+    },
+    isTrending: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-baby-4',
+    name: 'Baby Wooden Activity Walker',
+    category: 'Baby Toys',
+    price: 2199,
+    originalPrice: 2999,
+    rating: 4.7,
+    reviewsCount: 39,
+    ageGroup: '1-3 Years',
+    brand: 'LittleSprout',
+    images: [
+      'https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 12,
+    description: 'Sturdy wooden walker featuring a xylophone, bead maze, gear wheels, and shape sorters to keep your baby busy while learning to walk.',
+    specifications: {
+      'Material': 'Premium Birch Wood',
+      'Dimensions': '50 x 32 x 30 cm',
+      'Finish': 'Non-toxic child-safe varnish'
+    },
+    isBestSeller: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-baby-5',
+    name: 'Plush Elephant Sleep Soother',
+    category: 'Baby Toys',
+    price: 1199,
+    originalPrice: 1599,
+    rating: 4.9,
+    reviewsCount: 46,
+    ageGroup: '0-12 Months',
+    brand: 'FisherCare',
+    images: [
+      'https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 18,
+    description: 'Cute plush elephant that projects a starry night sky onto ceilings while playing soft lullabies and gentle white noise to help baby sleep.',
+    specifications: {
+      'Sound Options': '10 lullabies, white noise, heartbeat',
+      'Timer': '30-minute auto shut off',
+      'Battery': '3 x AAA'
+    },
+    deliveryDays: 1
+  },
+  {
+    id: 'prod-bg-2',
+    name: 'Junior Detective Board Game',
+    category: 'Board Games',
+    price: 799,
+    originalPrice: 999,
+    rating: 4.6,
+    reviewsCount: 34,
+    ageGroup: '6-8 Years',
+    brand: 'TumblePlay',
+    images: [
+      'https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 16,
+    description: 'Search for clues, match items, and solve mysteries in the town. Simple rules, highly interactive and ideal for family game nights.',
+    specifications: {
+      'Players': '2-4 players',
+      'Average Playtime': '20-30 mins',
+      'Includes': 'Game board, detective magnifying glass, 40 clue cards'
+    },
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-bg-3',
+    name: 'Deluxe Wooden Chess & Checkers Set (2-in-1)',
+    category: 'Board Games',
+    price: 1499,
+    originalPrice: 1999,
+    rating: 4.8,
+    reviewsCount: 92,
+    ageGroup: '8-12 Years',
+    brand: 'FunFactory',
+    images: [
+      'https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 20,
+    description: 'Beautiful hand-crafted folding wooden chessboard with internal slots for chess pieces. Play Chess and Checkers on the same premium board.',
+    specifications: {
+      'Board Size': '30 x 30 cm',
+      'Material': 'Walnut and Maple wood',
+      'Piece Count': '32 Chessmen, 24 Checker pieces'
+    },
+    isBestSeller: true,
+    deliveryDays: 1
+  },
+  {
+    id: 'prod-bg-4',
+    name: 'Fast-Paced Card Matching Family Game',
+    category: 'Board Games',
+    price: 399,
+    originalPrice: 499,
+    rating: 4.5,
+    reviewsCount: 108,
+    ageGroup: '6-8 Years',
+    brand: 'TumblePlay',
+    images: [
+      'https://images.unsplash.com/photo-1606167668584-78701c57f13d?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 50,
+    description: 'Test your reflexes! Match identical symbols between cards. The fastest player to name the match wins the round. Exciting and hilarious game.',
+    specifications: {
+      'Card Count': '55 cards',
+      'Players': '2-8 players',
+      'Package': 'Sturdy Tin Box'
+    },
+    isTrending: true,
+    deliveryDays: 1
+  },
+  {
+    id: 'prod-bg-5',
+    name: 'Kids 3D Snake & Ladders Adventure Game',
+    category: 'Board Games',
+    price: 699,
+    originalPrice: 899,
+    rating: 4.4,
+    reviewsCount: 25,
+    ageGroup: '3-5 Years',
+    brand: 'FunFactory',
+    images: [
+      'https://images.unsplash.com/photo-1585504198199-20277593b94f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 22,
+    description: 'Bring the classic game to life with a 3D board featuring plastic slides for snakes and steps for ladders. Watch your balls slide down!',
+    specifications: {
+      'Players': '2-4 players',
+      'Material': 'Non-toxic plastic & cardboard',
+      'Includes': '3D game board, 4 ball tokens, 1 die'
+    },
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-af-2',
+    name: 'Spider-Man Web Shooter Action Figure',
+    category: 'Action Figures',
+    price: 1499,
+    originalPrice: 1799,
+    rating: 4.7,
+    reviewsCount: 81,
+    ageGroup: '6-8 Years',
+    brand: 'Hasbro',
+    images: [
+      'https://images.unsplash.com/photo-1604200213928-ba3cf4fc8436?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 12,
+    description: 'Launch webs just like Spider-Man! Features a wrist-mounted shooter that launches safe soft-plastic web projectiles.',
+    specifications: {
+      'Height': '30 cm',
+      'Includes': 'Spider-man figure, wrist shooter, 3 web darts',
+      'Official License': 'Marvel Hasbro'
+    },
+    isTrending: true,
+    deliveryDays: 1
+  },
+  {
+    id: 'prod-af-3',
+    name: 'Batman Dark Knight Deluxe Figure',
+    category: 'Action Figures',
+    price: 1799,
+    originalPrice: 2199,
+    rating: 4.8,
+    reviewsCount: 64,
+    ageGroup: '6-8 Years',
+    brand: 'Hasbro',
+    images: [
+      'https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 10,
+    description: 'Protect Gotham City! Deluxe Batman action figure with expanding wings, light-up Bat-Signal chest emblem, and 15+ sound effects.',
+    specifications: {
+      'Height': '30 cm',
+      'Batteries': '3 x AG13 (Included)',
+      'Wingspan': '45 cm'
+    },
+    isNew: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-af-4',
+    name: 'Transformers Optimus Prime Converting Toy',
+    category: 'Action Figures',
+    price: 2499,
+    originalPrice: 2999,
+    rating: 4.9,
+    reviewsCount: 53,
+    ageGroup: '8-12 Years',
+    brand: 'Hasbro',
+    images: [
+      'https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 8,
+    description: 'Convert Optimus Prime from a powerful robot warrior to a heavy-duty semi-truck in 12 simple steps. Ready for battle!',
+    specifications: {
+      'Height': '28 cm',
+      'Transform Steps': '12 steps',
+      'Material': 'ABS Plastic & Die-cast joints'
+    },
+    isBestSeller: true,
+    deliveryDays: 1
+  },
+  {
+    id: 'prod-af-5',
+    name: 'Naruto Shippuden Anime Hero Figure',
+    category: 'Action Figures',
+    price: 1199,
+    originalPrice: 1499,
+    rating: 4.6,
+    reviewsCount: 47,
+    ageGroup: '12+ Years',
+    brand: 'Bandai',
+    images: [
+      'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 14,
+    description: 'Enter the world of Naruto with this highly poseable Naruto action figure. Comes with interchangeable hands and Rasengan attack effect.',
+    specifications: {
+      'Height': '15 cm',
+      'Points of Articulation': '16+',
+      'Includes': 'Naruto figure, Rasengan, 2 pairs of hands'
+    },
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-st-2',
+    name: 'Cute Soft Pink Unicorn Plush',
+    category: 'Soft Toys',
+    price: 599,
+    originalPrice: 799,
+    rating: 4.8,
+    reviewsCount: 68,
+    ageGroup: 'All Ages',
+    brand: 'HuggyBuddy',
+    images: [
+      'https://images.unsplash.com/photo-1559251606-c623743a6d76?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 24,
+    description: 'Soft and magical! Features sparkly silver horn, colorful rainbow mane and tail, and ultra-plush fabric perfect for bedtime cuddles.',
+    specifications: {
+      'Size': '45 cm',
+      'Filling': 'Hypoallergenic PP Cotton',
+      'Washable': 'Yes, surface wash'
+    },
+    isNew: true,
+    deliveryDays: 1
+  },
+  {
+    id: 'prod-st-3',
+    name: 'Green Huggable Dino Soft Toy',
+    category: 'Soft Toys',
+    price: 499,
+    originalPrice: 699,
+    rating: 4.7,
+    reviewsCount: 39,
+    ageGroup: 'All Ages',
+    brand: 'HuggyBuddy',
+    images: [
+      'https://images.unsplash.com/photo-1559251606-c623743a6d76?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 30,
+    description: 'Cute green T-Rex plush made with super soft premium material, detailed teeth, and friendly embroidered eyes.',
+    specifications: {
+      'Size': '35 cm',
+      'Material': 'Plush fleece',
+      'Color': 'Soft Mint Green'
+    },
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-st-4',
+    name: 'Disney Mickey Mouse Plush Toy',
+    category: 'Soft Toys',
+    price: 799,
+    originalPrice: 999,
+    rating: 4.8,
+    reviewsCount: 85,
+    ageGroup: 'All Ages',
+    brand: 'Disney Plush',
+    images: [
+      'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'Officially licensed Disney Mickey Mouse plush in his classic red shorts and yellow shoes. Soft fabric with detailed embroidery.',
+    specifications: {
+      'Size': '40 cm',
+      'Official License': 'Disney Store India',
+      'Material': 'Super soft plush polyester'
+    },
+    isBestSeller: true,
+    deliveryDays: 1
+  },
+  {
+    id: 'prod-st-5',
+    name: 'Cute White Bunny Plush Toy',
+    category: 'Soft Toys',
+    price: 449,
+    originalPrice: 599,
+    rating: 4.9,
+    reviewsCount: 51,
+    ageGroup: 'All Ages',
+    brand: 'HuggyBuddy',
+    images: [
+      'https://images.unsplash.com/photo-1582298538104-fe2e74c27f59?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 28,
+    description: 'Lovable fluffy bunny with long droopy ears and a cute pink nose. Made from extremely soft fabric, ideal for babies and kids.',
+    specifications: {
+      'Size': '30 cm',
+      'Ear Length': '15 cm',
+      'Color': 'Snow White'
+    },
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-ot-2',
+    name: 'Colorful Kids Garden Swing Seat',
+    category: 'Outdoor Toys',
+    price: 1299,
+    originalPrice: 1699,
+    rating: 4.6,
+    reviewsCount: 18,
+    ageGroup: '3-5 Years',
+    brand: 'SportyKids',
+    images: [
+      'https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 10,
+    description: 'Safe and heavy-duty plastic swing seat that can be hung from trees or metal swing sets. Features adjustable ropes and T-bar guard.',
+    specifications: {
+      'Weight Limit': '35 kg',
+      'Rope Length': 'Adjustable up to 2m',
+      'Material': 'High-density polyethylene'
+    },
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-ot-3',
+    name: 'Premium Kids Kick Scooter (3-Wheel)',
+    category: 'Outdoor Toys',
+    price: 2499,
+    originalPrice: 2999,
+    rating: 4.7,
+    reviewsCount: 44,
+    ageGroup: '3-5 Years',
+    brand: 'SportyKids',
+    images: [
+      'https://images.unsplash.com/photo-1584285418504-00632b77ad9f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'Lean-to-steer kick scooter featuring glowing LED wheels, 3-level adjustable height handlebar, and an extra-wide rear foot brake.',
+    specifications: {
+      'Max Weight': '50 kg',
+      'Wheels': 'Polyurethane LED wheels',
+      'Handlebar Heights': '65, 70, 75 cm'
+    },
+    isTrending: true,
+    deliveryDays: 1
+  },
+  {
+    id: 'prod-ot-4',
+    name: 'Kids First Training Bicycle (14-Inch)',
+    category: 'Outdoor Toys',
+    price: 4999,
+    originalPrice: 5999,
+    rating: 4.8,
+    reviewsCount: 32,
+    ageGroup: '3-5 Years',
+    brand: 'SportyKids',
+    images: [
+      'https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 7,
+    description: 'High-quality kids bike with training wheels, rear coaster brakes, chain guard, and front basket. Perfect first bicycle.',
+    specifications: {
+      'Wheel Size': '14 Inches',
+      'Frame Material': 'Carbon Steel',
+      'Training Wheels': 'Removable'
+    },
+    isBestSeller: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-ot-5',
+    name: 'Sand & Water Adventure Play Table',
+    category: 'Outdoor Toys',
+    price: 1899,
+    originalPrice: 2499,
+    rating: 4.5,
+    reviewsCount: 20,
+    ageGroup: '1-3 Years',
+    brand: 'SportyKids',
+    images: [
+      'https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 12,
+    description: 'Double-sided play table with one side for sand and the other for water. Includes water wheel, sand molds, shovel, and rake.',
+    specifications: {
+      'Dimensions': '60 x 60 x 40 cm',
+      'Includes': '8 play accessories',
+      'Material': 'UV-resistant plastic'
+    },
+    isNew: true,
+    deliveryDays: 3
+  },
+  {
+    id: 'prod-bgf-2',
+    name: 'Deluxe Disney Frozen Stationery Gift Set',
+    category: 'Birthday Gifts',
+    price: 599,
+    originalPrice: 799,
+    rating: 4.7,
+    reviewsCount: 38,
+    ageGroup: '6-8 Years',
+    brand: 'Toy Shopee Special',
+    images: [
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 30,
+    description: 'Complete stationery kit in a premium metal case. Includes coloring books, pencils, rulers, eraser, stamps, and a Frozen-themed wallet.',
+    specifications: {
+      'Pieces': '30+ stationery items',
+      'Case Material': 'Tinplate',
+      'Theme': 'Disney Frozen II'
+    },
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-bgf-3',
+    name: 'Premium Chocolate & Toy Birthday Hamper',
+    category: 'Birthday Gifts',
+    price: 1199,
+    originalPrice: 1499,
+    rating: 4.9,
+    reviewsCount: 54,
+    ageGroup: 'All Ages',
+    brand: 'Toy Shopee Special',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 20,
+    description: 'Luxury cardboard gift box filled with premium chocolates, a small plush teddy, and a personalized birthday card.',
+    specifications: {
+      'Chocolates': 'Ferrero Rocher & Hershey bars',
+      'Plush': '15cm Brown Bear',
+      'Gift Wrap': 'Included'
+    },
+    isTrending: true,
+    deliveryDays: 1
+  },
+  {
+    id: 'prod-bgf-4',
+    name: 'DIY Scrapbook Craft Gift Kit',
+    category: 'Birthday Gifts',
+    price: 699,
+    originalPrice: 899,
+    rating: 4.6,
+    reviewsCount: 21,
+    ageGroup: '8-12 Years',
+    brand: 'STEMLab',
+    images: [
+      'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 15,
+    description: 'Unleash creativity with this scrapbook design kit. Contains blank hardback journal, stickers, printed papers, ribbons, and metallic pens.',
+    specifications: {
+      'Journal Pages': '40 pages',
+      'Pens': '5 metallic glitter markers',
+      'Stickers': '200+ assorted sheets'
+    },
+    isNew: true,
+    deliveryDays: 1
+  },
+  {
+    id: 'prod-bgf-5',
+    name: 'Princess Pretend Play Makeup Vanity Set',
+    category: 'Birthday Gifts',
+    price: 1499,
+    originalPrice: 1999,
+    rating: 4.8,
+    reviewsCount: 42,
+    ageGroup: '3-5 Years',
+    brand: 'PartyShopee',
+    images: [
+      'https://images.unsplash.com/photo-1607457561901-e6ec3a6d16cf?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 14,
+    description: 'Cute table-top vanity mirror with child-safe non-toxic pretend makeup accessories, hair dryer (with real blowing action), and comb.',
+    specifications: {
+      'Mirror': 'Shatterproof acrylic',
+      'Batteries': '1 x AA (Not Included)',
+      'Material': 'Safe ABS plastic'
+    },
+    isOffer: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-rg-2',
+    name: 'Magic Water Painting Books (Set of 10)',
+    category: 'Return Gifts',
+    price: 599,
+    originalPrice: 899,
+    rating: 4.7,
+    reviewsCount: 75,
+    ageGroup: '3-5 Years',
+    brand: 'PartyShopee',
+    images: [
+      'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 50,
+    description: 'Reuse over and over! Paint with water and see colors appear, which disappear as the page dries. Great mess-free activity for return gifts.',
+    specifications: {
+      'Quantity': '10 coloring books',
+      'Includes': '10 water refill pens',
+      'Pages': '4 pages per book'
+    },
+    isTrending: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-rg-3',
+    name: 'Pull-back Racing Cars Pack (Set of 12)',
+    category: 'Return Gifts',
+    price: 499,
+    originalPrice: 699,
+    rating: 4.5,
+    reviewsCount: 62,
+    ageGroup: '3-5 Years',
+    brand: 'PartyShopee',
+    images: [
+      'https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 60,
+    description: 'A bundle of 12 pull-back die-cast look racing cars. Sturdy, colorful, and individually packaged, making them perfect favors.',
+    specifications: {
+      'Quantity': '12 cars per box',
+      'Drive Type': 'Pull-back spring',
+      'Material': 'Non-toxic plastic body'
+    },
+    deliveryDays: 1
+  },
+  {
+    id: 'prod-rg-4',
+    name: 'Modeling Clay Play-Doh Party Packs (Set of 15)',
+    category: 'Return Gifts',
+    price: 699,
+    originalPrice: 999,
+    rating: 4.8,
+    reviewsCount: 95,
+    ageGroup: '3-5 Years',
+    brand: 'PartyShopee',
+    images: [
+      'https://images.unsplash.com/photo-1560421683-6856ea585c78?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 40,
+    description: 'Gift creative play! Set of 15 mini clay tubs in vibrant colors with 10 small shape cutter molds. Safe and non-toxic.',
+    specifications: {
+      'Quantity': '15 tubs + 10 cutters',
+      'Material': 'Non-toxic wheat-based dough',
+      'Tub Weight': '50g each'
+    },
+    isBestSeller: true,
+    deliveryDays: 2
+  },
+  {
+    id: 'prod-rg-5',
+    name: 'Mini Board Game Assortment (Set of 10)',
+    category: 'Return Gifts',
+    price: 899,
+    originalPrice: 1200,
+    rating: 4.6,
+    reviewsCount: 43,
+    ageGroup: '6-8 Years',
+    brand: 'PartyShopee',
+    images: [
+      'https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?auto=format&fit=crop&w=600&q=80'
+    ],
+    inStock: true,
+    stockCount: 35,
+    description: 'Bundle of 10 mini pocket-sized board games (Ludo, Snakes & Ladders, Tic-Tac-Toe, Chess). Great return gift choice for school parties.',
+    specifications: {
+      'Quantity': '10 mini board games',
+      'Size': '10 x 10 cm each',
+      'Material': 'Magnetic plastic board'
+    },
+    isNew: true,
+    deliveryDays: 2
   }
 ];
 

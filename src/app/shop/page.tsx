@@ -18,6 +18,7 @@ import QuickViewModal from '../../components/QuickViewModal';
 function ShopContent() {
   const searchParams = useSearchParams();
   const searchQ = searchParams.get('search') || '';
+  const ageQ = searchParams.get('age') || '';
 
   // Filter & Sort States
   const [search, setSearch] = useState(searchQ);
@@ -31,6 +32,10 @@ function ShopContent() {
   // Sync URL search parameters if changed
   useEffect(() => {
     setSearch(searchParams.get('search') || '');
+    const ageParam = searchParams.get('age') || '';
+    if (ageParam) {
+      setSelectedAge(ageParam);
+    }
   }, [searchParams]);
 
   // Handle resets
@@ -183,11 +188,12 @@ function ShopContent() {
               className="w-full py-2 px-3 rounded-xl border border-[var(--border)] bg-[var(--background)] text-sm focus:outline-none"
             >
               <option value="all">All Ages</option>
-              <option value="0-12 Months">0-12 Months</option>
-              <option value="3-5 Years">3-5 Years</option>
-              <option value="6-8 Years">6-8 Years</option>
-              <option value="8-12 Years">8-12 Years</option>
-              <option value="12+ Years">12+ Years</option>
+              <option value="0-12">0-12 Months</option>
+              <option value="1-3">1-3 Years</option>
+              <option value="3-5">3-5 Years</option>
+              <option value="6-8">6-8 Years</option>
+              <option value="8-12">8-12 Years</option>
+              <option value="12+">12+ Years</option>
               <option value="all-ages">All Family</option>
             </select>
           </div>
