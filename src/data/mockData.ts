@@ -1274,37 +1274,57 @@ export const PRODUCTS: Product[] = [
 export const REVIEWS: Review[] = [
   {
     id: 'rev-1',
-    author: 'Amit Sharma',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80',
-    rating: 5,
-    date: '1 week ago',
-    text: 'Best toy shop in Badlapur! They have an incredible collection of Hot Wheels and educational toys. The staff is extremely helpful. Got free local home delivery for my daughters birthday gift!',
-    response: 'Thank you Amit! We appreciate your support and are glad you liked our fast home delivery service.'
+    author: 'Om Refrigeration Ac Solutions',
+    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&q=80',
+    rating: 4,
+    date: '4 years ago',
+    text: 'Very high rates but overall fine because all types of age toys available here , near railway bridge badlapur east, baught a remote car on my friends birthday from here . There are no guarantee warranty of products please check and purchase carefully. Thanks',
+    response: 'Thank you for shopping at Toy Shopee! We carry toys for all ages and test all electronic/RC items at the counter prior to checkout to ensure everything is working perfectly for you. We look forward to seeing you again!'
   },
   {
     id: 'rev-2',
-    author: 'Priya Patel',
+    author: 'Trushna Doke',
     avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80',
     rating: 4,
-    date: '2 weeks ago',
-    text: 'Great collection of board games and baby toys at reasonable prices. They accept cards and UPI. Knocked off 1 star because the remote control car I wanted was out of stock, but they ordered it for me and kept it ready in 3 days!',
-    response: 'Hi Priya, thank you for the feedback. We are working on stocking up fast, and we are glad we could arrange the RC car for you quickly!'
+    date: '9 years ago',
+    text: 'It is a nice shop for toys and other playing stuff. They also keep board games and many more variety with them. I often buy Hot wheels from here. Only the issue is they don\'t keep large variety in it,they just order same toys and hotwheels to sell.',
+    response: 'Hi Trushna! Thanks for the review. Over the years, we have significantly expanded our catalogs. We now offer dozens of new board games, puzzle sets, and hot wheels additions. Drop by to check out our fresh stock!'
   },
   {
     id: 'rev-3',
-    author: 'Rajesh Patil',
+    author: 'Sameer Bhosale',
     avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80',
-    rating: 5,
-    date: '1 month ago',
-    text: 'Very trustworthy local business. We ordered return gifts in bulk (50 pieces) for our son\'s birthday. Quality was amazing, and they packed them individually in beautiful bags. Kids loved it!'
+    rating: 2,
+    date: '2 years ago',
+    text: 'Rates of toys are very high. Worker in shop are nonsens. Dont have sens of how to talk with customer. Other than this there are many shops with reasonable rates in badlapur. Poor experience. Worst shop ever.',
+    response: 'Hi Sameer, we sincerely apologize for the poor experience. We have taken your feedback seriously and trained our team to provide polite and helpful service. We also now offer special discounts on many toys. We would love the opportunity to welcome you back and make things right!'
   },
   {
     id: 'rev-4',
-    author: 'Sneha Deshmukh',
-    avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&q=80',
+    author: 'Akash Chaudhari',
+    avatar: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80',
     rating: 4,
-    date: '3 weeks ago',
-    text: 'Nice experience. Located near Kartik Complex, easy to spot. Lots of variety for birthday gift packs. Clean store and friendly store owner.'
+    date: '4 years ago',
+    text: 'Store arrangements are good. All type of toys available here. Nearby railway stn. But prices are little costly.',
+    response: 'Thank you Akash! We are glad you enjoyed our store arrangement and convenient location near the railway station. We aim to keep all varieties of toys in stock for our customers.'
+  },
+  {
+    id: 'rev-5',
+    author: 'Nilesh Kedare',
+    avatar: 'https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=150&q=80',
+    rating: 4,
+    date: '6 years ago',
+    text: 'It is the only good toy shop. But rates are compartively high but considering a variety of available products makes it a good toy shop in badlapur.',
+    response: 'Thank you Nilesh! We strive to be the best toy shop in Badlapur by keeping the widest variety of quality products available under one roof. We appreciate your support!'
+  },
+  {
+    id: 'rev-6',
+    author: 'nikhil deshmukh',
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80',
+    rating: 5,
+    date: '3 years ago',
+    text: 'One of the better shops in Badlapur to shop gifts for kids. Variety of toys available in all budgets.',
+    response: 'Thank you Nikhil! We are glad we could help you find perfect gifts within your budget. Your recommendation means a lot to us!'
   }
 ];
 

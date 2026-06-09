@@ -432,7 +432,9 @@ export default function Home() {
           <div className="flex flex-col items-center md:items-end flex-shrink-0">
             <div className="flex items-center space-x-1 text-amber-500 mb-1">
               <Star size={18} fill="currentColor" />
-              <span className="font-bold text-base text-[var(--foreground)]">3.8 / 5</span>
+              <span className="font-bold text-base text-[var(--foreground)]">
+                {(REVIEWS.reduce((acc, curr) => acc + curr.rating, 0) / REVIEWS.length).toFixed(1)} / 5
+              </span>
               <span className="text-xs text-[var(--muted)]">(Google Reviews)</span>
             </div>
             <Link href="/reviews" className="text-xs font-bold text-primary hover:underline">View All Reviews →</Link>

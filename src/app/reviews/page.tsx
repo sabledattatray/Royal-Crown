@@ -47,6 +47,10 @@ export default function ReviewsPage() {
     1: reviews.filter(r => r.rating === 1).length
   };
   const totalRatingCount = reviews.length;
+  const averageRating = totalRatingCount > 0 
+    ? (reviews.reduce((acc, curr) => acc + curr.rating, 0) / totalRatingCount).toFixed(1)
+    : '5.0';
+  const avgStars = Math.round(parseFloat(averageRating));
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-10">
@@ -62,14 +66,14 @@ export default function ReviewsPage() {
         
         {/* Rating Score */}
         <div className="md:col-span-4 text-center space-y-2 border-b md:border-b-0 md:border-r border-[var(--border)] pb-6 md:pb-0">
-          <div className="text-5xl font-poppins font-black text-[var(--foreground)]">3.8</div>
+          <div className="text-5xl font-poppins font-black text-[var(--foreground)]">{averageRating}</div>
           <div className="flex justify-center text-amber-500">
             {Array.from({ length: 5 }).map((_, i) => (
               <Star 
                 key={i} 
                 size={20} 
-                fill={i < 4 ? 'currentColor' : 'none'} 
-                className={i < 4 ? 'text-amber-500' : 'text-slate-300'} 
+                fill={i < avgStars ? 'currentColor' : 'none'} 
+                className={i < avgStars ? 'text-amber-500' : 'text-slate-300 dark:text-slate-700'} 
               />
             ))}
           </div>
