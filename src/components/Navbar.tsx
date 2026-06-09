@@ -71,27 +71,28 @@ export default function Navbar() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-14 sm:h-20">
           
           {/* Brand Logo */}
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="flex items-center space-x-2 group">
-              <div className="flex items-center space-x-1">
+              <div className="flex items-center space-x-0.5 sm:space-x-1">
                 {/* T block */}
-                <span className="inline-flex items-center justify-center w-8 h-8 rounded-xl bg-primary text-white shadow font-poppins font-black text-lg transform -rotate-6 group-hover:rotate-12 group-hover:scale-110 transition-all duration-300">
+                <span className="inline-flex items-center justify-center w-6 h-6 sm:w-8 sm:h-8 rounded-lg sm:rounded-xl bg-primary text-white shadow font-poppins font-black text-sm sm:text-lg transform -rotate-6 group-hover:rotate-12 group-hover:scale-110 transition-all duration-300">
                   T
                 </span>
                 {/* O block */}
-                <span className="inline-flex items-center justify-center w-8 h-8 rounded-xl bg-secondary text-slate-900 shadow font-poppins font-black text-lg transform rotate-6 group-hover:-rotate-12 group-hover:scale-110 transition-all duration-300">
+                <span className="inline-flex items-center justify-center w-6 h-6 sm:w-8 sm:h-8 rounded-lg sm:rounded-xl bg-secondary text-slate-900 shadow font-poppins font-black text-sm sm:text-lg transform rotate-6 group-hover:-rotate-12 group-hover:scale-110 transition-all duration-300">
                   O
                 </span>
                 {/* Y block */}
-                <span className="inline-flex items-center justify-center w-8 h-8 rounded-xl bg-accent text-white shadow font-poppins font-black text-lg transform -rotate-3 group-hover:rotate-6 group-hover:scale-110 transition-all duration-300">
+                <span className="inline-flex items-center justify-center w-6 h-6 sm:w-8 sm:h-8 rounded-lg sm:rounded-xl bg-accent text-white shadow font-poppins font-black text-sm sm:text-lg transform -rotate-3 group-hover:rotate-6 group-hover:scale-110 transition-all duration-300">
                   Y
                 </span>
-                <span className="font-poppins font-black text-2xl tracking-tight text-[var(--foreground)] ml-1 group-hover:text-primary transition-colors flex items-center">
-                  SHOPEE
-                  <Sparkles size={16} className="text-secondary ml-1 animate-spin-slow" />
+                <span className="font-poppins font-black text-base sm:text-2xl tracking-tight text-[var(--foreground)] ml-1 group-hover:text-primary transition-colors flex items-center">
+                  <span className="hidden xs:inline">SHOPEE</span>
+                  <span className="inline xs:hidden">SHOPEE</span>
+                  <Sparkles size={12} className="text-secondary ml-1 animate-spin-slow sm:w-4 sm:h-4" />
                 </span>
               </div>
             </Link>
@@ -173,26 +174,26 @@ export default function Navbar() {
           </nav>
 
           {/* Action Icons (Desktop & Mobile) */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-1 sm:space-x-4">
             
             {/* Theme Toggle */}
             <button
               onClick={toggleTheme}
-              className="p-2.5 rounded-full hover:bg-[var(--card)] text-[var(--foreground)] border border-transparent hover:border-[var(--border)] hover:scale-110 hover:rotate-12 transition-all duration-300 cursor-pointer"
+              className="p-1.5 sm:p-2.5 rounded-full hover:bg-[var(--card)] text-[var(--foreground)] border border-transparent hover:border-[var(--border)] hover:scale-110 hover:rotate-12 transition-all duration-300 cursor-pointer"
               aria-label="Toggle dark mode"
             >
-              {theme === 'light' ? <Moon size={20} /> : <Sun size={20} className="text-secondary" />}
+              {theme === 'light' ? <Moon size={18} className="sm:w-5 sm:h-5" /> : <Sun size={18} className="text-secondary sm:w-5 sm:h-5" />}
             </button>
 
             {/* Wishlist */}
             <Link 
               href="/wishlist"
-              className="relative p-2.5 rounded-full hover:bg-[var(--card)] text-[var(--foreground)] border border-transparent hover:border-[var(--border)] hover:scale-110 hover:animate-wiggle transition-all duration-300"
+              className="relative p-1.5 sm:p-2.5 rounded-full hover:bg-[var(--card)] text-[var(--foreground)] border border-transparent hover:border-[var(--border)] hover:scale-110 hover:animate-wiggle transition-all duration-300"
               aria-label="View Wishlist"
             >
-              <Heart size={20} className="hover:text-primary" />
+              <Heart size={18} className="hover:text-primary sm:w-5 sm:h-5" />
               {mounted && wishlistCount > 0 && (
-                <span className="absolute -top-1 -right-1 w-5 h-5 bg-primary text-white text-[10px] font-bold rounded-full flex items-center justify-center animate-bounce">
+                <span className="absolute -top-0.5 -right-0.5 w-4 h-4 sm:w-5 sm:h-5 bg-primary text-white text-[9px] sm:text-[10px] font-bold rounded-full flex items-center justify-center animate-bounce">
                   {wishlistCount}
                 </span>
               )}
@@ -205,12 +206,12 @@ export default function Navbar() {
                 e.preventDefault();
                 setCartOpen(true);
               }}
-              className="relative p-2.5 rounded-full hover:bg-[var(--card)] text-[var(--foreground)] border border-transparent hover:border-[var(--border)] hover:scale-110 hover:animate-wiggle transition-all duration-300 cursor-pointer"
+              className="relative p-1.5 sm:p-2.5 rounded-full hover:bg-[var(--card)] text-[var(--foreground)] border border-transparent hover:border-[var(--border)] hover:scale-110 hover:animate-wiggle transition-all duration-300 cursor-pointer"
               aria-label="View Cart"
             >
-              <ShoppingBag size={20} className="hover:text-secondary" />
+              <ShoppingBag size={18} className="hover:text-secondary sm:w-5 sm:h-5" />
               {mounted && cartItemCount > 0 && (
-                <span className="absolute -top-1 -right-1 w-5 h-5 bg-secondary text-slate-900 text-[10px] font-extrabold rounded-full flex items-center justify-center animate-bounce">
+                <span className="absolute -top-0.5 -right-0.5 w-4 h-4 sm:w-5 sm:h-5 bg-secondary text-slate-900 text-[9px] sm:text-[10px] font-extrabold rounded-full flex items-center justify-center animate-bounce">
                   {cartItemCount}
                 </span>
               )}
@@ -219,10 +220,10 @@ export default function Navbar() {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden p-2.5 rounded-full hover:bg-[var(--card)] text-[var(--foreground)] transition-all duration-300"
+              className="lg:hidden p-1.5 sm:p-2.5 rounded-full hover:bg-[var(--card)] text-[var(--foreground)] transition-all duration-300"
               aria-label="Toggle Menu"
             >
-              {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              {mobileMenuOpen ? <X size={20} className="sm:w-6 sm:h-6" /> : <Menu size={20} className="sm:w-6 sm:h-6" />}
             </button>
 
           </div>
