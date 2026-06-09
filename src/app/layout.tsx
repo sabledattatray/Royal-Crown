@@ -25,6 +25,12 @@ export const metadata: Metadata = {
   description: 'Buy premium toys, educational kits, board games, Hot Wheels, action figures, baby toys, and custom birthday return gifts in Badlapur East. Shop Online!',
   keywords: 'Toy store Badlapur, Toy Shopee Badlapur, kids gifts, educational toys, board games, Hot Wheels Badlapur East, return gifts, baby toys, online toy shopping',
   metadataBase: new URL('https://toyshopee.com'),
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+    apple: '/apple-touch-icon.svg',
+  },
   openGraph: {
     title: 'Toy Shopee | Badlapur\'s Favorite Premium Toy & Gift Store',
     description: 'Explore thousands of premium toys, games, and customized gifts at Badlapur\'s favorite toy shop.',
