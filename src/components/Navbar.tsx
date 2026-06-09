@@ -33,6 +33,8 @@ export default function Navbar() {
   const [categoriesOpen, setCategoriesOpen] = useState(false);
   const [cartOpen, setCartOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const [visible, setVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   React.useEffect(() => {
     const timer = setTimeout(() => {
@@ -40,6 +42,26 @@ export default function Navbar() {
     }, 0);
     return () => clearTimeout(timer);
   }, []);
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      if (mobileMenuOpen) return;
+      const currentScrollY = window.scrollY;
+      
+      // Hide on scroll down, show on scroll up/top
+      if (currentScrollY < 10) {
+        setVisible(true);
+      } else if (currentScrollY > lastScrollY) {
+        setVisible(false);
+      } else {
+        setVisible(true);
+      }
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollY, mobileMenuOpen]);
 
   
   // Calculate total items in cart
@@ -55,23 +77,23 @@ export default function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full transition-all duration-300 glassmorphism border-b border-[var(--border)]">
+    <header className={`sticky top-0 z-50 w-full transition-transform duration-300 glassmorphism border-b border-[var(--border)] ${!visible ? '-translate-y-full lg:translate-y-0' : 'translate-y-0'}`}>
       {/* Top Banner: Local Store Info & Timings */}
-      <div className="w-full bg-slate-900 text-slate-100 py-1 sm:py-1.5 px-2 sm:px-4 text-[9px] sm:text-xs flex justify-between items-center overflow-hidden">
+      <div className="w-full bg-slate-900 text-slate-100 py-1.5 sm:py-1.5 px-2 sm:px-4 text-[10px] sm:text-xs flex justify-between items-center overflow-hidden">
         <div className="flex items-center space-x-2 sm:space-x-4 min-w-0">
           <span className="flex items-center space-x-0.5 sm:space-x-1 whitespace-nowrap">
-            <MapPin size={9} className="text-secondary flex-shrink-0 sm:w-3 sm:h-3" />
+            <MapPin size={10} className="text-secondary flex-shrink-0 sm:w-3.5 sm:h-3.5" />
             <span className="hidden sm:inline">Badlapur East, MH</span>
             <span className="sm:hidden">Badlapur</span>
           </span>
           <a href="tel:09112270222" className="flex items-center space-x-0.5 sm:space-x-1 hover:text-secondary transition-colors cursor-pointer whitespace-nowrap">
-            <Phone size={9} className="text-secondary flex-shrink-0 sm:w-3 sm:h-3" />
+            <Phone size={10} className="text-secondary flex-shrink-0 sm:w-3.5 sm:h-3.5" />
             <span className="hidden sm:inline">09112270222</span>
             <span className="sm:hidden">09112270222</span>
           </a>
         </div>
         <div className="flex items-center space-x-0.5 sm:space-x-2 whitespace-nowrap flex-shrink-0">
-          <Sparkles size={9} className="text-secondary animate-pulse sm:w-3 sm:h-3" />
+          <Sparkles size={10} className="text-secondary animate-pulse sm:w-3.5 sm:h-3.5" />
           <span className="font-semibold text-secondary">
             <span className="hidden sm:inline">Free Local Delivery in Badlapur!</span>
             <span className="sm:hidden">Free Delivery!</span>
@@ -80,19 +102,19 @@ export default function Navbar() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-14 sm:h-20">
+        <div className="flex items-center justify-between h-16 sm:h-20">
           
           {/* Brand Logo */}
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="flex items-center space-x-2 group">
               <div className="flex items-center space-x-0.5 sm:space-x-1">
                 {/* R block with crown */}
-                <span className="relative inline-flex items-center justify-center w-6 h-6 sm:w-8 sm:h-8 rounded-lg sm:rounded-xl bg-primary text-white shadow font-poppins font-black text-sm sm:text-lg transform -rotate-6 group-hover:rotate-12 group-hover:scale-110 transition-all duration-300">
-                  <Crown size={11} className="absolute -top-2 sm:-top-2.5 left-1/2 -translate-x-1/2 text-yellow-400 rotate-12 drop-shadow-md sm:w-4 sm:h-4" fill="currentColor" />
+                <span className="relative inline-flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-lg sm:rounded-xl bg-primary text-white shadow font-poppins font-black text-sm sm:text-lg transform -rotate-6 group-hover:rotate-12 group-hover:scale-110 transition-all duration-300">
+                  <Crown size={12} className="absolute -top-2.5 left-1/2 -translate-x-1/2 text-yellow-400 rotate-12 drop-shadow-md sm:w-4 sm:h-4" fill="currentColor" />
                   R
                 </span>
                 {/* C block */}
-                <span className="inline-flex items-center justify-center w-6 h-6 sm:w-8 sm:h-8 rounded-lg sm:rounded-xl bg-secondary text-slate-900 shadow font-poppins font-black text-sm sm:text-lg transform rotate-6 group-hover:-rotate-12 group-hover:scale-110 transition-all duration-300">
+                <span className="inline-flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-lg sm:rounded-xl bg-secondary text-slate-900 shadow font-poppins font-black text-sm sm:text-lg transform rotate-6 group-hover:-rotate-12 group-hover:scale-110 transition-all duration-300">
                   C
                 </span>
                 <span className="font-poppins font-black text-base sm:text-2xl tracking-tight text-[var(--foreground)] ml-1 group-hover:text-primary transition-colors flex items-center">
