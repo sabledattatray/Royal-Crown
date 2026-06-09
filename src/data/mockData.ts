@@ -1018,7 +1018,7 @@ export const PRODUCTS: Product[] = [
     ageGroup: '3-5 Years',
     brand: 'SportyKids',
     images: [
-      'https://images.unsplash.com/photo-1584285418504-00632b77ad9f?auto=format&fit=crop&w=600&q=80'
+      'https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?auto=format&fit=crop&w=600&q=80'
     ],
     inStock: true,
     stockCount: 15,
