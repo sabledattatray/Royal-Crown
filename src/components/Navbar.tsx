@@ -53,20 +53,23 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full transition-all duration-300 glassmorphism border-b border-[var(--border)]">
       {/* Top Banner: Local Store Info & Timings */}
-      <div className="w-full bg-slate-900 text-slate-100 py-1.5 px-4 text-xs flex flex-wrap justify-between items-center">
-        <div className="flex items-center space-x-4">
-          <span className="flex items-center space-x-1">
-            <MapPin size={12} className="text-secondary" />
+      <div className="w-full bg-slate-900 text-slate-100 py-1 sm:py-1.5 px-3 sm:px-4 text-[10px] sm:text-xs flex justify-between items-center overflow-hidden">
+        <div className="flex items-center space-x-2 sm:space-x-4 min-w-0">
+          <span className="flex items-center space-x-1 whitespace-nowrap">
+            <MapPin size={10} className="text-secondary flex-shrink-0 sm:w-3 sm:h-3" />
             <span>Badlapur East, MH</span>
           </span>
-          <a href="tel:+919730044342" className="flex items-center space-x-1 hover:text-secondary transition-colors cursor-pointer">
+          <a href="tel:+919730044342" className="hidden sm:flex items-center space-x-1 hover:text-secondary transition-colors cursor-pointer whitespace-nowrap">
             <Phone size={12} className="text-secondary" />
             <span>+91 97300 44342</span>
           </a>
         </div>
-        <div className="flex items-center space-x-2">
-          <Sparkles size={12} className="text-secondary animate-pulse" />
-          <span className="font-semibold text-secondary">Free Local Delivery in Badlapur!</span>
+        <div className="flex items-center space-x-1 sm:space-x-2 whitespace-nowrap flex-shrink-0">
+          <Sparkles size={10} className="text-secondary animate-pulse sm:w-3 sm:h-3" />
+          <span className="font-semibold text-secondary">
+            <span className="hidden sm:inline">Free Local Delivery in Badlapur!</span>
+            <span className="sm:hidden">Free Delivery!</span>
+          </span>
         </div>
       </div>
 
