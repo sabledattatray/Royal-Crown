@@ -1,2 +1,1 @@
-# toyshopee
-a comprehensive Product Requirements Document (PRD) prompt you can give to any AI coding assistant
+Premium Next.js eCommerce website for Toy Shopee featuring product catalog, WhatsApp integration, online ordering, responsive design, and modern UI/UX.
